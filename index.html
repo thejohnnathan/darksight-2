@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Darksight is a CSS Library by John Durtche built with NodeJS, Gulp, and SASS.">
+    <meta name="keywords"
+        content="Darksight, CSS Library, SASS, Gulp, SASS, Stylesheet, cascading, framework, css design, user interface, user experience, front end development, frontend">
+    <meta name="author" content="John Durtche">
+    <meta name="copyright" content="Copyright 2023 John Durtche. All Rights Reserved.">
+    <meta name="application-name" content="Darksight v2.0">
+    <meta name="theme-color" content="#171717">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
+    <title>Darksight | A CSS Library by John Durtche</title>
+</head>
+
+<body>
+    <nav class="navbar text-white glass bs-none">
+        <div class="container">
+            <div class="display-f">
+                <h4>Darksight <sup class="badge-neutral-800 text-emerald-400 weight-bold">v2.0</sup></h4>
+            </div>
+            <ul class="display-f">
+                <li><a href="#about" class="text-white text-hover-emerald-400 font-lg"><i
+                            class="bx bx-info-circle bx-burst-hover"></i></a></li>
+                <li><a href="#type" class="text-white text-hover-emerald-400 ml-2 font-lg"><i
+                            class="bx bx-text bx-burst-hover"></i></a></li>
+                <li><a href="#grid" class="text-white text-hover-emerald-400 ml-2 font-lg"><i
+                            class="bx bxs-grid bx-burst-hover"></i></a></li>
+                <li><a href="#color" class="text-white text-hover-emerald-400 ml-2 font-lg"><i
+                            class="bx bx-palette bx-burst-hover"></i></a></li>
+                <li><a href="#icon" class="text-white text-hover-emerald-400 ml-2 font-lg"><i
+                            class="bx bxs-cube bx-burst-hover"></i></a></li>
+                <li><a href="#component" class="text-white text-hover-emerald-400 ml-2 font-lg"><i
+                            class="bx bxs-component bx-burst-hover"></i></a></li>
+                <li><a href="#utility" class="text-white text-hover-emerald-400 ml-2 font-lg"><i
+                            class="bx bxs-wrench bx-burst-hover"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container mt-4">
+        <section class="hero-md bg-gradient br-sm">
+            <header>
+                <h1 class="mt-3">Darksight</h1>
+            </header>
+            <p class="content mt-2">A CSS Library by John Durtche</p>
+        </section>
+        <section id="about">
+            <div class="card pr-2 pl-2 mt-4">
+                <header class="mb-2"><i class="bx bx-info-circle p-2 br-sm bg-neutral-800 font-xl text-emerald-500"></i>
+                </header>
+                <div class="content">
+                    <h3 class="mb-1">About Darksight</h3>
+                    <p>A dark-themed, CSS library composed of a series of re-usable, responsive, material design
+                        components.
+                        <br />Created for <a href="https://vuejs.org/" target="_blank">Vue.js</a>, developed in Gulp,
+                        styled with SASS, and lovingly crafted by Front-End Developer <a
+                            href="mailto:johndurtche@gmail.com" target="_blank">John Durtche</a>.
+                    </p>
+                    <p class="mb-5">Divided into 7 main categories: Typography, Grid System, Color Palette, Icons,
+                        Components, and Utilities.</p>
+                </div>
+                <footer>
+                    <a href="#" class="btn-outlined-emerald-500">Read More <i
+                            class="bx bx-right-arrow-alt ml-1"></i></a>
+                </footer>
+            </div>
+        </section>
+        <hr class="mt-4 mb-4" />
+        <section id="type">
+            <header>
+                <h3 class="mb-2"><i
+                        class="bx bx-text p-2 br-sm bg-neutral-800 font-xl mr-2 text-emerald-500"></i>Typography</h3>
+            </header>
+            <p>Our Typography section offers a variety of pre-built styles for headings, font weights and sizes, and
+                more. These
+                styles are designed to be consistent and visually appealing across your entire website.</p>
+            <div class="row gap-2 justify-center">
+                <div class="col-12-xs col-6-sm col-6-xl">
+                    <div class="card e-none br-none bg-neutral-950">
+                        <header>
+                            <span class="badge-outlined-neutral-800">&lt;h1&gt;</span>
+                            <span class="badge-outlined-neutral-800">&lt;h2&gt;</span>
+                            <span class="badge-outlined-neutral-800">&lt;h3&gt;</span>
+                            <span class="badge-outlined-neutral-800">&lt;h4&gt;</span>
+                            <span class="badge-outlined-neutral-800">&lt;h5&gt;</span>
+                            <span class="badge-outlined-neutral-800">&lt;h6&gt;</span>
+                        </header>
+                        <div class="content">
+                            <h3 class="weight-light text-emerald-400">Headers</h3>
+                            <hr />
+                            <h1>H1 Header</h1>
+                            <h2>H2 Header</h2>
+                            <h3>H3 Header</h3>
+                            <h4>H4 Header</h4>
+                            <h5>H5 Header</h5>
+                            <h6>H6 Header</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-6-xl">
+                    <div class="card e-none br-none bg-neutral-950">
+                        <header>
+                            <span class="badge-outlined-neutral-800">&lt;weight-bold&gt;</span>
+                            <span class="badge-outlined-neutral-800">&lt;weight-semi-bold&gt;</span>
+                            <span class="badge-outlined-neutral-800">&lt;weight-light&gt;</span>
+                        </header>
+                        <div class="content">
+                            <h3 class="weight-light text-emerald-400">Weights</h3>
+                            <hr />
+                            <p class="weight-bold">Bold text</p>
+                            <p class="weight-semi-bold">Semi-Bold text</p>
+                            <p>Normal text</p>
+                            <p class="weight-light">Light text</p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-6-xl">
+                    <div class="card e-none br-none bg-neutral-950">
+                        <header>
+                            <span class="badge-outlined-neutral-800">&lt;font-xl&gt;</span>
+                            <span class="badge-outlined-neutral-800">&lt;font-lg&gt;</span>
+                            <span class="badge-outlined-neutral-800">&lt;font-md&gt;</span>
+                            <span class="badge-outlined-neutral-800">&lt;font-sm&gt;</span>
+                        </header>
+                        <div class="content">
+                            <h3 class="weight-light text-emerald-400">Sizes</h3>
+                            <hr />
+                            <p class="font-xl">Extra Large</p>
+                            <p class="font-lg">Large</p>
+                            <p class="font-md">Medium</p>
+                            <p class="font-sm">Small</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-6-xl">
+                    <div class="card e-none br-none bg-neutral-950">
+                        <header>
+                            <span class="badge-outlined-neutral-800">.caption</span>
+                            <span class="badge-outlined-neutral-800">&lt;sup&gt;</span>
+                            <span class="badge-outlined-neutral-800">&lt;sub&gt;</span>
+                            <span class="badge-outlined-neutral-800">&lt;a&gt;</span>
+                        </header>
+                        <div class="content">
+                            <h3 class="weight-light text-emerald-400">Styles</h3>
+                            <hr />
+                            <p class="caption">caption</p>
+                            <p>Superscript<sup>up here</sup></p>
+                            <p>Subscript<sub>down here</sub></p>
+                            <p><a href="#">Hyperlink</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="mt-4 mb-4" />
+        <section id="grid">
+            <h3 class="mb-2"><i class="bx bxs-grid p-2 br-sm bg-neutral-800 font-xl mr-2 text-emerald-500"></i>Grid
+                System <sup class="badge bg-emerald-500 text-neutral-900 weight-bold">New</sup></h3>
+            <p class="mb-1">Our Grid System uses a standard 12-column implementation with default 1rem gutters but we
+                also offer 2x
+                and 3x gutter options with the <code>&lt;gap-2&gt;</code> and <code>&lt;gap-3&gt;</code> classes.</p>
+            <p class="subtitle">1200px 12C</p>
+            <div class="row gap-1 justify-center">
+                <div class="col-12-xs col-6-sm col-1-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-1-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-1-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-1-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-1-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-1-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-1-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-1-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-1-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-1-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-1-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-6-sm col-1-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+            <h4 class="subtitle">Gap-2</h4>
+            <div class="row gap-2">
+                <div class="col-12-xs col-4-sm col-2-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-4-sm col-2-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-4-sm col-2-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-4-sm col-2-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-4-sm col-2-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-4-sm col-2-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+            <h4 class="subtitle">Gap-3</h4>
+            <div class="row gap-3">
+                <div class="col-12-xs col-4-sm col-4-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-4-sm col-4-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-12-xs col-4-sm col-4-xl">
+                    <div class="bg-neutral-950">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="mb-4 mt-4" />
+        <section id="color">
+            <h3 class="mb-2"><i class="bx bx-palette p-2 br-sm bg-neutral-800 font-xl mr-2 text-emerald-500"></i>Color
+                Palette</h3>
+            <p>Our colors section provides a comprehensive set of color variables that can be easily customized to match
+                your brand identity. These colors are used consistently throughout the library ensuring a cohesive
+                visual experience of your users.</p>
+
+            <div class="row gap-2 justify-center">
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-neutral-900 br-none">
+                        <header>
+                            <h6>Neutral 900</h6>
+                        </header>
+                        <p class="caption">#171717</pre>
+                        <p class="content">
+                            <span class="bg-neutral-800 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-neutral-700 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-neutral-600 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-neutral-500 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-neutral-400 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-neutral-300 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-neutral-200 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-neutral-100 pl-1 pr-1">&nbsp;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-neutral-800 br-none">
+                        <header>
+                            <h6>Neutral 800</h6>
+                        </header>
+                        <p class="content caption">#262626</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-neutral-700 br-none">
+                        <header>
+                            <h6>Neutral 700</h6>
+                        </header>
+                        <p class="caption content">#404040</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-neutral-600 br-none">
+                        <header>
+                            <h6>Neutral 600</h6>
+                        </header>
+                        <p class="content caption text-neutral-950">#525252</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-neutral-500 br-none">
+                        <header>
+                            <h6>Neutral 500</h6>
+                        </header>
+                        <p class="content caption text-neutral-950">#737373</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-neutral-400 br-none">
+                        <header>
+                            <h6>Neutral 400</h6>
+                        </header>
+                        <p class="content caption text-neutral-950">#a3a3a3</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-neutral-300 br-none">
+                        <header>
+                            <h6 class="text-neutral-900">Neutral 300</h6>
+                        </header>
+                        <p class="content caption text-neutral-950">#d4d4d4</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-neutral-200 br-none">
+                        <header>
+                            <h6 class="text-slate-900">Neutral 200</h6>
+                        </header>
+                        <p class="content caption text-neutral-950">#e5e5e5</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 mt-3 weight-light text-emerald-400">Highlights</h3>
+            <div class="row gap-2 justify-center">
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-emerald-900 br-none">
+                        <header>
+                            <h6>Emerald 900</h6>
+                        </header>
+                        <p class="caption text-emerald-300">#064e3b</pre>
+                        <p class="content">
+                            <span class="bg-emerald-800 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-emerald-700 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-emerald-600 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-emerald-500 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-emerald-400 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-emerald-300 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-emerald-200 pl-1 pr-1">&nbsp;</span>
+                            <span class="bg-emerald-100 pl-1 pr-1">&nbsp;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-emerald-800 br-none">
+                        <header>
+                            <h6>Emerald 800</h6>
+                        </header>
+                        <p class="content caption text-emerald-300">#065f46</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-emerald-700 br-none">
+                        <header>
+                            <h6>Emerald 700</h6>
+                        </header>
+                        <p class="caption content text-emerald-300">#047857</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-emerald-600 br-none">
+                        <header>
+                            <h6>Emerald 600</h6>
+                        </header>
+                        <p class="content caption text-emerald-950">#059669</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-emerald-500 br-none">
+                        <header>
+                            <h6>Emerald 500</h6>
+                        </header>
+                        <p class="content caption text-emerald-950">#10b981</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-emerald-400 br-none">
+                        <header>
+                            <h6 class="text-emerald-900">Emerald 400</h6>
+                        </header>
+                        <p class="content caption text-emerald-950">#34d399</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-emerald-300 br-none">
+                        <header>
+                            <h6 class="text-emerald-900">Emerald 300</h6>
+                        </header>
+                        <p class="content caption text-emerald-950">#6ee7b7</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-emerald-200 br-none">
+                        <header>
+                            <h6 class="text-emerald-900">Emerald 200</h6>
+                        </header>
+                        <p class="content caption text-emerald-950">#a7f3d0</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 mt-3 weight-light text-emerald-400">Light / Dark</h3>
+            <div class="row gap-2 justify-center">
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-white br-none">
+                        <header>
+                            <h3 class="text-neutral-950">White</h3>
+                        </header>
+                        <p class="content caption text-neutral-950">#ffffff</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-emerald-100 br-none">
+                        <header>
+                            <h3 class="text-emerald-950">Emerald 100</h3>
+                        </header>
+                        <p class="content caption text-emerald-950">#d1fae5</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-emerald-950 br-none">
+                        <header>
+                            <h3 class="text-emerald-100">Emerald 950</h3>
+                        </header>
+                        <p class="content caption text-emerald-100">#022c22</p>
+                    </div>
+                </div>
+                <div class="col-12-xs col-5-sm col-3-xl">
+                    <div class="card e-none bg-black br-none">
+                        <header>
+                            <h3 class="text-neutral-100">Black</h3>
+                        </header>
+                        <p class="content caption text-neutral-100">#000000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="mb-4 mt-4" />
+        <section id="icon">
+            <h3 class="mb-2"><i class="bx bxs-cube p-2 br-sm bg-neutral-800 font-xl mr-2 text-emerald-500"></i>Icons
+            </h3>
+            <p>We use icons from <a href="https://boxicons.com/" target="_blank">Boxicons</a>. They are imported as a
+                font using a <code>&lt;link&gt;</code> element in the head of our HTML document.</p>
+            <div class="row gap-2 justify-center">
+                <div class="col-12-xs col-12-sm col-12-xl">
+                    <p class="font-xl">
+                        <i class='bx bx-user'></i>
+                        <i class='bx bx-expand-horizontal'></i>
+                        <i class='bx bx-chevron-down'></i>
+                        <i class='bx bx-chevron-up'></i>
+                        <i class='bx bx-chevron-left'></i>
+                        <i class='bx bx-chevron-right'></i>
+                        <i class='bx bxs-quote-single-left'></i>
+                        <i class='bx bx-comment'></i>
+                        <i class='bx bx-menu'></i>
+                        <i class='bx bx-moon'></i>
+                        <i class='bx bx-sun'></i>
+                        <i class='bx bx-x-circle'></i>
+                        <i class='bx bx-home'></i>
+                        <i class='bx bx-x'></i>
+                        <i class='bx bx-cog'></i>
+                        <i class='bx bx-link-external'></i>
+                        <i class='bx bx-user-circle'></i>
+                        <i class='bx bxs-error'></i>
+                        <i class='bx bxs-info-circle'></i>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr class="mt-4 mb-4" />
+        <section id="component">
+            <h3 class="mb-2"><i
+                    class="bx bxs-component p-2 br-sm bg-neutral-800 font-xl mr-2 text-emerald-500"></i>Components</h3>
+            <p class="mb-2">The Components section of our library includes a wide range of reusable UI elements, such as
+                buttons, forms, and navigation bars. These compoonents are designed to be flexible and customizable,
+                allowing you to easily integreate them into your own projects.</p>
+            <article>
+                <h3 class="mb-2 weight-light text-emerald-400">Elevation</h3>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-5-sm col-3-xl">
+                        <div class="card e-none bg-neutral-800 b-none">
+                            <header>
+                                <div class="badge-neutral-900">&lt;e-none&gt;</div>
+                            </header>
+                            <p class="content">Elevation none</p>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-5-sm col-3-xl">
+                        <div class="card e-1 bg-neutral-800 b-none">
+                            <header>
+                                <div class="badge-neutral-900">&lt;e-1&gt;</div>
+                            </header>
+                            <p class="content">Elevation 1</p>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-5-sm col-3-xl">
+                        <div class="card e-2 bg-neutral-800 b-none">
+                            <header>
+                                <div class="badge-neutral-900">&lt;e-2&gt;</div>
+                            </header>
+                            <p class="content">Elevation 2</p>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-5-sm col-3-xl">
+                        <div class="card e-3 bg-neutral-800 b-none">
+                            <header>
+                                <div class="badge-neutral-900">&lt;e-3&gt;</div>
+                            </header>
+                            <p class="content">Elevation 3</p>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-5-sm col-3-xl">
+                        <div class="card e-4 bg-neutral-800 b-none">
+                            <header>
+                                <div class="badge-neutral-900">&lt;e-4&gt;</div>
+                            </header>
+                            <p class="content">Elevation 4</p>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-5-sm col-3-xl">
+                        <div class="card e-5 bg-neutral-800 b-none">
+                            <header>
+                                <div class="badge-neutral-900">&lt;e-5&gt;</div>
+                            </header>
+                            <p class="content">Elevation 5</p>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-5-sm col-3-xl">
+                        <div class="card e-6 bg-neutral-800 b-none">
+                            <header>
+                                <div class="badge-neutral-900">&lt;e-6&gt;</div>
+                            </header>
+                            <p class="content">Elevation 6</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h3 class="mb-2 weight-light text-emerald-400">Avatars <sup
+                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
+                </h3>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
+                        <div class="avatar-neutral-800">JD</div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
+                        <div class="avatar avatar-outlined-neutral-800">JD</div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
+                        <div class="avatar-neutral-800">JD<div class="status">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
+                        <div class="avatar-neutral-800">JD<div class="status is-idle">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
+                        <div class="avatar-neutral-800">JD<div class="status is-off">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
+                        <div class="avatar-neutral-800">JD<div class="status is-active">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
+                        <div class="avatar-neutral-800 br-circle">JD</div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
+                        <div class="avatar-outlined-neutral-800 br-circle">JD</div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
+                        <div class="avatar-neutral-800 br-circle has-image">&nbsp;</div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
+                        <div class="avatar-neutral-800 br-circle has-image">JD</div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
+                        <div class="avatar-neutral-800 br-circle has-image">JD<div class="status is-active">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
+                        <div class="avatar-neutral-800 br-circle glass">JD<div class="status">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h3 class="mb-4 weight-light text-emerald-400">Buttons <sup
+                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
+                </h3>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
+                        <a href="#" class="btn text-black">Default</a>
+                    </div>
+                    <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
+                        <a href="#" class="btn text-black" aria-disabled="true" disabled>Disabled</a>
+                    </div>
+                    <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
+                        <a href="#" class="btn-emerald-500 text-white text-hover-black">Button</a>
+                    </div>
+                    <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
+                        <a href="#" class="btn-outlined-emerald-500 text-emerald-500 text-hover-white">Outlined</a>
+                    </div>
+                    <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
+                        <a href="#" class="btn-complement-emerald-700 text-hover-black">Complement</a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h3 class="mb-4 weight-light text-emerald-400">Taskbar <sup
+                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
+                </h3>
+                <div class="taskbar">
+                    <a href="#" class="task-item">Item</a>
+                    <a class="task-item">Item</a>
+                    <a href="#" class="task-item">Item</a>
+                    <a href="#" class="task-item">Item</a>
+                    <a href="#" class="task-item">Item</a>
+                </div>
+            </article>
+            <article>
+                <h3 class="mb-4 weight-light text-emerald-400">Sidebar <sup
+                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
+                </h3>
+                <div class="sidebar">
+                    <div class="container">
+                        <h4>Sidebar Title</h4>
+                        <a href="#">Item One</a>
+                        <a href="#">Item Two</a>
+                        <a href="#">Item Three</a>
+                        <a href="#">Item Four</a>
+                        <a href="#">Item Five</a>
+                        <a href="#">Item Six</a>
+                    </div>
+                    <hr class="mt-4" />
+                </div>
+            </article>
+            <article>
+                <h3 class="mb-4 weight-light text-emerald-400">Tables</h3>
+                <table class="tbl">
+                    <tr>
+                        <th>Head One</th>
+                        <th>Head Two</th>
+                        <th>Head Three</th>
+                    </tr>
+                    <tr>
+                        <td>Table Cell One</td>
+                        <td>Table Cell Two</td>
+                        <td>Table Cell Three</td>
+                    </tr>
+                    <tr>
+                        <td>Table Cell One</td>
+                        <td>Table Cell Two</td>
+                        <td>Table Cell Three</td>
+                    </tr>
+                    <tr>
+                        <td>Table Cell One</td>
+                        <td>Table Cell Two</td>
+                        <td>Table Cell Three</td>
+                    </tr>
+                </table>
+                <table class="tbl-striped-emerald-900">
+                    <tr class="text-neutral-950 bg-emerald-500">
+                        <th>Head One</th>
+                        <th>Head Two</th>
+                        <th>Head Three</th>
+                    <tr class="text-emerald-500">
+                        <td>Table Cell One</td>
+                        <td>Table Cell Two</td>
+                        <td>Table Cell Three</td>
+                    </tr>
+                    <tr class="text-emerald-500">
+                        <td>Table Cell One</td>
+                        <td>Table Cell Two</td>
+                        <td>Table Cell Three</td>
+                    </tr>
+                    <tr class="text-emerald-500">
+                        <td>Table Cell One</td>
+                        <td>Table Cell Two</td>
+                        <td>Table Cell Three</td>
+                    </tr>
+                </table>
+                <table class="tbl-outlined-emerald-900">
+                    <tr>
+                        <th>Head One</th>
+                        <th>Head Two</th>
+                        <th>Head Three</th>
+                    <tr>
+                        <td>Table Cell One</td>
+                        <td>Table Cell Two</td>
+                        <td>Table Cell Three</td>
+                    </tr>
+                    <tr>
+                        <td>Table Cell One</td>
+                        <td>Table Cell Two</td>
+                        <td>Table Cell Three</td>
+                    </tr>
+                    <tr>
+                        <td>Table Cell One</td>
+                        <td>Table Cell Two</td>
+                        <td>Table Cell Three</td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <h3 class="mb-4 weight-light text-emerald-400">Forms <sup
+                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
+                </h3>
+                <div class="row justify-center">
+                    <form>
+                        <fieldset>
+                            <label>Text Input</label>
+                            <input placeholder="Default" type="text" />
+                            <label>Password Input</label>
+                            <input placeholder="Password" type="password" />
+                            <label>Search</label>
+                            <input placeholder="Search" type="search" />
+                        </fieldset>
+                        <fieldset>
+                            <label>Range Input</label>
+                            <input placeholder="Range" type="range" value="50" />
+                            <label>Checkbox Input</label>
+                            <input placeholder="Range" type="checkbox" />
+                            <label>Radio Input</label>
+                            <input placeholder="Range" type="radio" />
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Submit" type="submit" class="btn-outlined-emerald-500" />
+                        </fieldset>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <hr class="mt-4 mb-4" />
+        <section id="utility">
+            <h3 class="mb-2"><i
+                    class="bx bx-wrench p-2 br-sm bg-neutral-800 font-xl mr-2 text-emerald-500"></i>Utilities <sup
+                    class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
+            <p class="mb-2">The Utilities section of our library includes a wide range of default SASS mixins which
+                provide rapid prototyping of CSS classes like padding, margin, opacity, and border radius.</p>
+            <article>
+                <h3 class="mb-2 weight-light text-emerald-400">Padding</h3>
+                <p class="mb-2">The Padding Utility provides overall padding and padding for left, right, top and
+                    bottom.</p>
+                <div class="row justify-center">
+                    <table class="tbl">
+                        <thead class="bg-neutral-800">
+                            <tr class="text-emerald-500">
+                                <th>Name</th>
+                                <th>Prefix</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>padding</td>
+                                <td>.p-</td>
+                                <td>0, 1, 2, 3, 4, 5</td>
+                            </tr>
+                            <tr>
+                                <td>padding-left</td>
+                                <td>.pl-</td>
+                                <td>0, 1, 2, 3, 4, 5</td>
+                            </tr>
+                            <tr>
+                                <td>padding-top</td>
+                                <td>.pt-</td>
+                                <td>0, 1, 2, 3, 4, 5</td>
+                            </tr>
+                            <tr>
+                                <td>padding-bottom</td>
+                                <td>.pb-</td>
+                                <td>0, 1, 2, 3, 4, 5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            <article>
+                <h3 class="mb-2 weight-light text-emerald-400">Margin</h3>
+                <p class="mb-2">The Margin Utility provides overall margin and margins for left, right, top and bottom.
+                </p>
+                <div class="row justify-center">
+                    <table class="tbl">
+                        <thead class="bg-neutral-800">
+                            <tr class="text-emerald-500">
+                                <th>Name</th>
+                                <th>Prefix</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>margin</td>
+                                <td>.p-</td>
+                                <td>0, 1, 2, 3, 4, 5</td>
+                            </tr>
+                            <tr>
+                                <td>margin-left</td>
+                                <td>.pl-</td>
+                                <td>0, 1, 2, 3, 4, 5</td>
+                            </tr>
+                            <tr>
+                                <td>margin-top</td>
+                                <td>.pt-</td>
+                                <td>0, 1, 2, 3, 4, 5</td>
+                            </tr>
+                            <tr>
+                                <td>margin-bottom</td>
+                                <td>.pb-</td>
+                                <td>0, 1, 2, 3, 4, 5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            <article>
+                <h3 class="mb-2 weight-light text-emerald-400">Opacity</h3>
+                <p class="mb-2">The Opacity Utility provides opacity for an element and ranges from 10 (0.1) percent to
+                    100 (1).</p>
+                <div class="row justify-center">
+                    <table class="tbl">
+                        <thead class="bg-neutral-800">
+                            <tr class="text-emerald-500">
+                                <th>Name</th>
+                                <th>Prefix</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>opacity</td>
+                                <td>.o-</td>
+                                <td>10, 20, 30, 40, 50, 60, 70, 80, 90, 100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            <article>
+                <h3 class="mb-2 weight-light text-emerald-400">Border Radius</h3>
+                <p class="mb-2">The Border Radius Utility provides various border radi based on the base font size of
+                    1rem.</p>
+                <div class="row justify-center">
+                    <table class="tbl">
+                        <thead class="bg-neutral-800">
+                            <tr class="text-emerald-500">
+                                <th>Name</th>
+                                <th>Prefix</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>border-radius</td>
+                                <td>.br-</td>
+                                <td>default (&dollar;base-border-radius), none, xm, sm, lg, xl, circle</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            <article>
+                <h3 class="mb-2 weight-light text-emerald-400">Display</h3>
+                <p class="mb-2">The Display Utility provides options for changing an element's display property.</p>
+                <div class="row justify-center">
+                    <table class="tbl">
+                        <thead class="bg-neutral-800">
+                            <tr class="text-emerald-500">
+                                <th>Name</th>
+                                <th>Prefix</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>display</td>
+                                <td>.display-n</td>
+                                <td>none</td>
+                            </tr>
+                            <tr>
+                                <td>display</td>
+                                <td>.display-n</td>
+                                <td>block</td>
+                            </tr>
+                            <tr>
+                                <td>display</td>
+                                <td>.display-f</td>
+                                <td>flex</td>
+                            </tr>
+                            <tr>
+                                <td>display</td>
+                                <td>.display-i</td>
+                                <td>inline</td>
+                            </tr>
+                            <tr>
+                                <td>display</td>
+                                <td>.display-i-b</td>
+                                <td>inline-block</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            <article>
+                <h3 class="mb-2 weight-light text-emerald-400">Font Size</h3>
+                <p class="mb-2">The Font Size Utility provides classes for various font size presets. These are derived
+                    from the <code>&dollar;base-font-size</code> SASS variable which is set to 16px (1rem) by default.
+                </p>
+                <div class="row justify-center">
+                    <table class="tbl">
+                        <thead class="bg-neutral-800">
+                            <tr class="text-emerald-500">
+                                <th>Name</th>
+                                <th>Prefix</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>font-size</td>
+                                <td>.font-sm</td>
+                                <td>&dollar;base-font-size * 0.75</td>
+                            </tr>
+                            <tr>
+                                <td>font-size</td>
+                                <td>.font-md</td>
+                                <td>&dollar;base-font-size</td>
+                            </tr>
+                            <tr>
+                                <td>font-size</td>
+                                <td>.font-lg</td>
+                                <td>&dollar;base-font-size * 1.5</td>
+                            </tr>
+                            <tr>
+                                <td>font-size</td>
+                                <td>.font-xl</td>
+                                <td>&dollar;base-font-size * 2</td>
+                            </tr>
+                            <tr>
+                                <td>font-size</td>
+                                <td>.font-xxl</td>
+                                <td>&dollar;base-font-size * 3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            <article>
+                <h3 class="mb-2 weight-light text-emerald-400">Font Weight</h3>
+                <p class="mb-2">The Font Weight Utility provides classes for various font weights. These are derived
+                    from the imported Google fonts <code>Inter</code> and <code>Lato</code>. Default weight is set to
+                    400.</p>
+                <div class="row justify-center">
+                    <table class="tbl">
+                        <thead class="bg-neutral-800">
+                            <tr class="text-emerald-500">
+                                <th>Name</th>
+                                <th>Prefix</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>.weight-default</td>
+                                <td>400</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>.weight-light</td>
+                                <td>300</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>.weight-semi-bold</td>
+                                <td>500</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>.weight-bold</td>
+                                <td>700</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>.weight-bolder</td>
+                                <td>900</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            <article>
+                <h3 class="mb-2 weight-light text-emerald-400">Border</h3>
+                <p class="mb-2">The Border Utility provides classes for various element border presets. These are
+                    derived from preset SASS variables like <code>&dollar;base-border</code> and
+                    <code>&dollar;base-border-color</code> by default.</p>
+                <div class="row justify-center">
+                    <table class="tbl">
+                        <thead class="bg-neutral-800">
+                            <tr class="text-emerald-500">
+                                <th>Name</th>
+                                <th>Prefix</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>border</td>
+                                <td>.b-default</td>
+                                <td>&dollar;base-border solid &dollar;base-border-color</td>
+                            </tr>
+                            <tr>
+                                <td>border</td>
+                                <td>.b-none</td>
+                                <td>none</td>
+                            </tr>
+                            <tr>
+                                <td>border</td>
+                                <td>.b-solid</td>
+                                <td>&dollar;base-border solid &dollar;base-border-color</td>
+                            </tr>
+                            <tr>
+                                <td>border</td>
+                                <td>.b-dashed</td>
+                                <td>&dollar;base-border dashed &dollar;base-border-color</td>
+                            </tr>
+                            <tr>
+                                <td>border</td>
+                                <td>.b-double</td>
+                                <td>&dollar;base-border double &dollar;base-border-color</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+        <footer class="row bg-neutral-950 justify-center p-2 text-neutral-600">
+            <p>Copyright &copy;2023 John Durtche. All Rights Reserved.</p>
+        </footer>
+    </main>
+</body>
+
+</html>

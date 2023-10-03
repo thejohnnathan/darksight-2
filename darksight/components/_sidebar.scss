@@ -1,0 +1,58 @@
+.sidebar {
+    display: flex;
+    flex-flow: column nowrap;
+    /* disabled for preview in library
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    */
+    border: $base-border solid lighten($base-background-color, 5);
+    border-radius: $base-border-radius;
+    width: 264px;
+    max-width: 264px !important;
+    height: 100vh;
+    z-index: 99 !important;
+
+    .site-title {
+        font-size: $font-size-lg;
+    }
+
+    .container {
+        display: inline-flex;
+        flex-flow: column nowrap !important;
+        text-align: left;
+        padding: 7rem 1rem !important;
+        margin: 0;
+        width: 100%;
+
+        & a {
+            display: inline-flex;
+            flex-flow: row nowrap;
+            height: 3rem;
+            margin: 0;
+            align-items: center;
+            padding: 0 $base-padding;
+            border-radius: $base-border-radius * 0.75;
+            margin: 0;
+            border: $base-border solid transparent;
+
+            &:hover {
+                background-color: darken($base-link-color, 40);
+            }
+
+            &:active,
+            &:focus {
+                background-color: darken($base-background-color, 5);
+                border: $base-border solid $base-link-color;
+                text-decoration: none !important;
+            }
+        }
+    }
+}
+
+@each $key, $val in $colors {
+    .sidebar-#{$key} {
+        @extend .sidebar;
+        background-color: $val;
+    }
+}

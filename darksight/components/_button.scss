@@ -1,0 +1,79 @@
+@mixin btn($bg-color: darken($base-background-color, 5)) {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    border: 0;
+    padding: $base-padding 30px;
+    border-radius: $base-border-radius * 0.75;
+    background-color: $bg-color;
+    align-content: center;
+    align-items: center;
+    color: $base-text-color;
+    border: $base-border solid transparent;
+
+    &[disabled] {
+        cursor: not-allowed;
+        background-color: $base-background-color;
+        box-shadow: none;
+        color: darken($base-text-color, 60);
+        border: $base-border solid darken($base-text-color, 80);
+        pointer-events: none !important;
+
+        &:hover {
+            background-color: $base-background-color;
+        }
+    }
+
+    &.has-icon {
+        & i {
+            margin-left: 1rem !important;
+        }
+    }
+
+    &:active,
+    &:focus {
+        box-shadow: none;
+        background-color: darken($bg-color, 10);
+        text-decoration: none !important;
+        border: $base-border solid $base-text-color;
+    }
+
+    &:hover {
+        background-color: lighten($bg-color, 10);
+    }
+}
+
+.btn {
+    @include btn;
+}
+
+@each $key, $val in $colors {
+    .btn-#{$key} {
+        @include btn($val);
+
+        &:hover {
+            background-color: lighten($val, 5) !important;
+        }
+    }
+
+    .btn-outlined-#{$key} {
+        @include btn;
+        color: lighten($val, 20);
+        border: $base-border solid $val;
+
+        &:hover {
+            color: darken($val, 80);
+            background-color: $val;
+        }
+    }
+
+    .btn-complement-#{$key} {
+        @include btn($val);
+        color: light-comp($val);
+
+        &:hover {
+            color: darken($val, 80);
+            background-color: light-comp($val);
+        }
+    }
+}

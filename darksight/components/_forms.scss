@@ -1,0 +1,152 @@
+form {
+    display: inline-flex;
+    width: 100%;
+    flex-flow: column wrap;
+    gap: $base-padding;
+    border-radius: $base-border-radius;
+    border: 1px solid lighten($base-background-color, 5);
+    margin-bottom: $base-padding;
+    padding: $base-padding;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="color"],
+input[type="search"],
+input[type="range"],
+textarea {
+    color: $base-text-color;
+    background-color: darken($base-background-color, 5);
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: $base-border solid lighten($base-background-color, 5);
+    border-radius: $base-border-radius * 0.25;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="color"]:focus,
+input[type="search"]:focus,
+input[type="range"]:focus,
+textarea:focus {
+    border-color: $base-link-color;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: 1px solid lighten($base-background-color, 5);
+    display: inline-flex;
+    flex-flow: row wrap;
+}
+
+fieldset,
+legend,
+label {
+    padding: $base-padding;
+    outline: none;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(to right, darken($base-link-color, 40), lighten($base-link-color, 10));
+    border-radius: 50px;
+    outline: none;
+    transition: opacity 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: $base-link-color;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+    background: darken($base-link-color, 10);
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    background: $base-text-color;
+}
+
+input[type="range"]:focus {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin: auto 0;
+    background-color: darken($base-background-color, 5);
+    border: $base-border solid lighten($base-background-color, 5);
+    border-radius: $base-border-radius;
+    cursor: pointer;
+    transition: border-color 0.2s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+    border-color: lighten($base-link-color, 5);
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+    border-color: lighten($base-link-color, 5);
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    background-color: lighten($base-link-color, 5);
+    border-color: lighten($base-link-color, 5);
+}
+
+input[type="checkbox"]:disabled,
+input[type="radio"]:disabled {
+    background-color: darken($base-link-color, 40);
+    border-color: darken($base-link-color, 40);
+    cursor: not-allowed;
+}
+
+input[type="checkbox"]:checked:disabled,
+input[type="radio"]:checked:disabled {
+    background-color: $base-link-color;
+    border-color: $base-link-color;
+    cursor: not-allowed;
+}

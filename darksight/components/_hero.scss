@@ -1,0 +1,47 @@
+@use 'sass:math';
+
+.hero {
+    color: $base-text-color;
+    display: block;
+    padding: $base-padding * 8, $base-padding * 4;
+    border-radius: $base-border-radius;
+    min-height: 16rem;
+    width: 100%;
+    margin-top: 1rem;
+
+    header {
+        font-size: $base-font-size * 2;
+        padding: $base-padding * 2;
+        font-weight: bold;
+    }
+
+    .content {
+        font-size: $base-font-size * 1.5;
+        padding: $base-padding * 2;
+    }
+
+    footer {
+        font-size: $base-font-size;
+        padding: $base-padding * 2;
+    }
+
+    &-sm {
+        padding: ($base-padding * 1.5) ($base-padding * 4);
+        min-height: 10rem;
+    }
+
+    &-md {
+        padding: ($base-padding * 4) ($base-padding * 4);
+        min-height: 15rem;
+    }
+
+    &-lg {
+        padding: ($base-padding * 8) ($base-padding * 4);
+        min-height: 20rem;
+    }
+
+    &-xl {
+        padding: ($base-padding * 16) ($base-padding * 4);
+        min-height: 30rem;
+    }
+}

@@ -1,0 +1,69 @@
+@mixin tbl($bg-color: $base-background-color) {
+    display: inline-table; // makes the table responsive
+    width: 100%;
+    overflow-x: auto;
+    padding: $base-padding;
+    border-radius: $base-border-radius * 0.75;
+    background-color: $bg-color;
+    color: $base-text-color;
+    border-collapse: collapse;
+    margin-bottom: $base-padding;
+
+    & tr {
+        width: 100%;
+
+        & th,
+        td {
+            padding: $base-padding * 0.5 $base-padding;
+            vertical-align: middle;
+            text-align: left;
+            border-bottom: $base-border solid lighten($base-background-color, 5);
+        }
+    }
+}
+
+.tbl {
+    @include tbl;
+}
+
+@each $key, $val in $colors {
+    .tbl-#{$key} {
+        @include tbl($val);
+
+        & tr:nth-child(even):hover {
+            background-color: lighten($val, 5);
+        }
+
+        & td:hover {
+            background-color: lighten($val, 5);
+        }
+    }
+
+    .tbl-outlined-#{$key} {
+        @include tbl;
+        border-collapse: separate !important;
+        border: 1px solid darken($base-link-color, 40);
+
+        & th,
+        td {
+            border: $base-border solid $val;
+            border-bottom: $base-border solid $val !important;
+        }
+
+        & td:hover {
+            background-color: lighten($val, 5);
+        }
+    }
+
+    .tbl-striped-#{$key} {
+        @include tbl;
+
+        & tr:nth-child(even) {
+            background-color: lighten($val, 10);
+        }
+
+        & td:hover {
+            background-color: lighten($val, 5);
+        }
+    }
+}

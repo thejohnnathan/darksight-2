@@ -1,0 +1,35 @@
+/*
+* DARKSIGHT v2 < ~ .~)>
+* @thejohnnathan
+* MIT license
+* last updated 20231003@1930
+*/  
+
+// variables and functions
+@import 'functions';
+@import 'variables';
+
+// reset & base & layout
+@import 'reset';
+@import 'breakpoints';
+@import 'grid';
+
+// colors
+@import 'colors';
+
+// components (button, card, navbar)
+@import 'components/hero';
+@import 'components/card';
+@import 'components/button';
+@import 'components/navbar';
+@import 'components/badge';
+@import 'components/avatar';
+@import 'components/taskbar';
+@import 'components/sidebar';
+@import 'components/tables';
+@import 'components/forms';
+
+// utilities (margin, padding, shadow, opacity)
+@import 'materials';
+@import 'elevation';
+@import 'utilities';
