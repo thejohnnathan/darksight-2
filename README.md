@@ -1,10 +1,10 @@
 # DARKSIGHT
->v2.0
+>v2.0.1
 
 A dark-themed, CSS library composed of a series of re-usable, responsive, material design components.
 Created for [Vue.js][vue], developed in Gulp, styled with SASS, and lovingly crafted by Front-End Developer [John Durtche][email].
 
-Divided into 7 main categories: Typography, Grid System, Color Palette, Icons, Components, and Utilities.
+Divided into 8 main categories: Typography, Grid System, Color Palette, Icons, Components, Utilities, and Release Notes.
 
 ## The Principles
 
@@ -23,7 +23,7 @@ Using the library is now as easy as downloading one CSS file, and adding the fol
 ```
 ## Development
 
-You can clone this version (2.0) of Darksight or build your own. You'll need to install NodeJS and use the following dependencies:
+You can clone this version (2.0.1) of Darksight or build your own. You'll need to install NodeJS and use the following dependencies:
 
 ```sh
 npm install boxicons --save
