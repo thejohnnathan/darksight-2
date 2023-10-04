@@ -10,6 +10,7 @@
     align-items: center;
     color: $base-text-color;
     border: $base-border solid transparent;
+    transition: all 0.4s ease;
 
     &[disabled] {
         cursor: not-allowed;

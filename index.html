@@ -14,33 +14,60 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
     <title>Darksight | A CSS Library by John Durtche</title>
+    <script>
+        // Smooth scroll to sections using data-target on links in top navbar
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll("a[data-target]");
+
+            links.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+
+                    const targetId = this.getAttribute("data-target");
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        const offset = -80; // Offset by 80 pixels (5rem) above the target section
+                        const targetTop = targetSection.getBoundingClientRect().top + window.pageYOffset;
+
+                        window.scrollTo({
+                            top: targetTop + offset,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
     <nav class="navbar text-white glass bs-none">
         <div class="container">
-            <div class="display-f">
-                <h4>Darksight <sup class="badge-neutral-800 text-emerald-400 weight-bold">v2.0</sup></h4>
+            <div class="display-f justify-flex-start">
+                <h5>Darksight <sup class="badge-neutral-800 text-emerald-400 weight-bold">v2.0.1</sup></h5>
             </div>
             <ul class="display-f">
-                <li><a href="#about" class="text-white text-hover-emerald-400 font-lg"><i
-                            class="bx bx-info-circle bx-burst-hover"></i></a></li>
-                <li><a href="#type" class="text-white text-hover-emerald-400 ml-2 font-lg"><i
+                <li><a href="#" data-target="about" class="text-white text-hover-emerald-400 font-lg"><i
+                            class="bx bx-info-circle bx-burst-hover"></i></button></li>
+                <li><a href="#" data-target="type" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
                             class="bx bx-text bx-burst-hover"></i></a></li>
-                <li><a href="#grid" class="text-white text-hover-emerald-400 ml-2 font-lg"><i
+                <li><a href="#" data-target="grid" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
                             class="bx bxs-grid bx-burst-hover"></i></a></li>
-                <li><a href="#color" class="text-white text-hover-emerald-400 ml-2 font-lg"><i
+                <li><a href="#" data-target="color" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
                             class="bx bx-palette bx-burst-hover"></i></a></li>
-                <li><a href="#icon" class="text-white text-hover-emerald-400 ml-2 font-lg"><i
+                <li><a href="#" data-target="icon" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
                             class="bx bxs-cube bx-burst-hover"></i></a></li>
-                <li><a href="#component" class="text-white text-hover-emerald-400 ml-2 font-lg"><i
+                <li><a href="#" data-target="component" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
                             class="bx bxs-component bx-burst-hover"></i></a></li>
-                <li><a href="#utility" class="text-white text-hover-emerald-400 ml-2 font-lg"><i
+                <li><a href="#" data-target="utility" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
                             class="bx bxs-wrench bx-burst-hover"></i></a></li>
+                            <li><a href="#" data-target="release" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
+                                class="bx bxs-calendar-edit bx-burst-hover"></i></a></li>
             </ul>
         </div>
     </nav>
-    <main class="container mt-4">
+    <main class="container mt-5">
         <section class="hero-md bg-gradient br-sm">
             <header>
                 <h1 class="mt-3">Darksight</h1>
@@ -48,7 +75,7 @@
             <p class="content mt-2">A CSS Library by John Durtche</p>
         </section>
         <section id="about">
-            <div class="card pr-2 pl-2 mt-4">
+            <div class="card pr-2 pl-2 mt-3">
                 <header class="mb-2"><i class="bx bx-info-circle p-2 br-sm bg-neutral-800 font-xl text-emerald-500"></i>
                 </header>
                 <div class="content">
@@ -148,7 +175,8 @@
                         <div class="content">
                             <h3 class="weight-light text-emerald-400">Styles</h3>
                             <hr />
-                            <p class="caption">caption</p>
+                            <p class="caption">Caption</p>
+                            <p><code>Code Text</code></p>
                             <p>Superscript<sup>up here</sup></p>
                             <p>Subscript<sub>down here</sub></p>
                             <p><a href="#">Hyperlink</a></p>
@@ -160,7 +188,7 @@
         <hr class="mt-4 mb-4" />
         <section id="grid">
             <h3 class="mb-2"><i class="bx bxs-grid p-2 br-sm bg-neutral-800 font-xl mr-2 text-emerald-500"></i>Grid
-                System <sup class="badge bg-emerald-500 text-neutral-900 weight-bold">New</sup></h3>
+                System</h3>
             <p class="mb-1">Our Grid System uses a standard 12-column implementation with default 1rem gutters but we
                 also offer 2x
                 and 3x gutter options with the <code>&lt;gap-2&gt;</code> and <code>&lt;gap-3&gt;</code> classes.</p>
@@ -577,8 +605,7 @@
                 </div>
             </article>
             <article>
-                <h3 class="mb-2 weight-light text-emerald-400">Avatars <sup
-                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
+                <h3 class="mb-2 weight-light text-emerald-400">Avatars
                 </h3>
                 <div class="row gap-2 justify-center">
                     <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
@@ -679,6 +706,7 @@
             <article>
                 <h3 class="mb-4 weight-light text-emerald-400">Tables</h3>
                 <table class="tbl">
+                    <caption class="caption">Table 1-1: Table Caption Here.</caption>
                     <tr>
                         <th>Head One</th>
                         <th>Head Two</th>
@@ -744,8 +772,7 @@
                 </table>
             </article>
             <article>
-                <h3 class="mb-4 weight-light text-emerald-400">Forms <sup
-                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
+                <h3 class="mb-4 weight-light text-emerald-400">Forms
                 </h3>
                 <div class="row justify-center">
                     <form>
@@ -880,8 +907,8 @@
             </article>
             <article>
                 <h3 class="mb-2 weight-light text-emerald-400">Border Radius</h3>
-                <p class="mb-2">The Border Radius Utility provides various border radi based on the base font size of
-                    1rem.</p>
+                <p class="mb-2">The Border Radius Utility provides various border radi based on the <code>&dollar;base-border-radius</code> variable of
+                    16px (1rem).</p>
                 <div class="row justify-center">
                     <table class="tbl">
                         <thead class="bg-neutral-800">
@@ -894,8 +921,38 @@
                         <tbody>
                             <tr>
                                 <td>border-radius</td>
-                                <td>.br-</td>
-                                <td>default (&dollar;base-border-radius), none, xm, sm, lg, xl, circle</td>
+                                <td>.br-default</td>
+                                <td>default (&dollar;base-border-radius)</td>
+                            </tr>
+                            <tr>
+                                <td>border-radius</td>
+                                <td>.br-none</td>
+                                <td>none</td>
+                            </tr>
+                            <tr>
+                                <td>border-radius</td>
+                                <td>.br-xs</td>
+                                <td>math.div(&dollar;base-border-radius, 4)</td>
+                            </tr>
+                            <tr>
+                                <td>border-radius</td>
+                                <td>.br-sm</td>
+                                <td>math.div(&dollar;base-border-radius, 2)</td>
+                            </tr>
+                            <tr>
+                                <td>border-radius</td>
+                                <td>.br-lg</td>
+                                <td>&dollar;base-border-radius * 2</td>
+                            </tr>
+                            <tr>
+                                <td>border-radius</td>
+                                <td>.br-xl</td>
+                                <td>&dollar;base-border-radius * 6</td>
+                            </tr>
+                            <tr>
+                                <td>border-radius</td>
+                                <td>.br-circle</td>
+                                <td>50%</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1076,7 +1133,29 @@
                 </div>
             </article>
         </section>
-        <footer class="row bg-neutral-950 justify-center p-2 text-neutral-600">
+        <hr class="mt-4 mb-4" />
+        <section id="release">
+            <header class="bg-gradient br pt-1 justify-flex-start">
+            <h3 class="mb-3"><i
+                    class="bx bx-calendar-edit p-2 br-sm bg-neutral-900 font-xl mr-2 text-emerald-500 mb-1 ml-1"></i>Release Notes</h3>
+            </header>
+            <div class="mb-2 card">
+                <header>
+                    <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.0.1</div>
+                </header>
+                <div class="content mb-2">
+                    <h6 class="mt-1 mb-2 text-emerald-400 weight-light">October 4th, 2023</h6>
+                    <ul class="bx-ul">
+                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Included this Release Notes section to bottom of <code>index.html</code>.</li>
+                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Updated <code>_navbar.scss</code> to have a min-height of 64px instead of a max-height of 60px because on sm viewports and mobile the title was not visible due to flex restrictions. Also narrowed the margin-left for the nav links from `ml-2` to `ml-1`.</li>
+                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Added a javascript function in <code>index.html</code> for SPA routing that uses the data-target attribute for smooth section navigation using the navbar links.</li>
+                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Added a nice ease transition to all links and buttons which affects the taskbar and sidebar components too.</li>
+                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Converted all colors from <code>_variables.scss</code> from hex to hsl values.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="row bg-neutral-950 justify-center p-2 text-neutral-600 font-sm">
             <p>Copyright &copy;2023 John Durtche. All Rights Reserved.</p>
         </footer>
     </main>
