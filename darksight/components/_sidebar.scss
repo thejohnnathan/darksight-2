@@ -1,11 +1,6 @@
 .sidebar {
     display: flex;
     flex-flow: column nowrap;
-    /* disabled for preview in library
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    */
     border: $base-border solid lighten($base-background-color, 5);
     border-radius: $base-border-radius;
     width: 264px;
@@ -15,6 +10,18 @@
 
     .site-title {
         font-size: $font-size-lg;
+    }
+
+    &.is-fixed-left {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+    }
+
+    &.is-fixed-right {
+        position: fixed !important;
+        top: 0;
+        right: 0;
     }
 
     .container {

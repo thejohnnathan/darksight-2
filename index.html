@@ -11,7 +11,6 @@
     <meta name="copyright" content="Copyright 2023 John Durtche. All Rights Reserved.">
     <meta name="application-name" content="Darksight v2.0">
     <meta name="theme-color" content="#171717">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
     <title>Darksight | A CSS Library by John Durtche</title>
     <script>
@@ -62,15 +61,15 @@
                             class="bx bxs-component bx-burst-hover"></i></a></li>
                 <li><a href="#" data-target="utility" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
                             class="bx bxs-wrench bx-burst-hover"></i></a></li>
-                            <li><a href="#" data-target="release" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
-                                class="bx bxs-calendar-edit bx-burst-hover"></i></a></li>
+                <li><a href="#" data-target="release" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
+                            class="bx bxs-calendar-edit bx-burst-hover"></i></a></li>
             </ul>
         </div>
     </nav>
     <main class="container mt-5">
         <section class="hero-md bg-gradient br-sm">
             <header>
-                <h1 class="mt-3">Darksight</h1>
+                <h1 class="mt-3 font-xxl">Darksight</h1>
             </header>
             <p class="content mt-2">A CSS Library by John Durtche</p>
         </section>
@@ -168,6 +167,7 @@
                     <div class="card e-none br-none bg-neutral-950">
                         <header>
                             <span class="badge-outlined-neutral-800">.caption</span>
+                            <span class="badge-outlined-neutral-800">&lt;code&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;sup&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;sub&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;a&gt;</span>
@@ -508,8 +508,9 @@
         <section id="icon">
             <h3 class="mb-2"><i class="bx bxs-cube p-2 br-sm bg-neutral-800 font-xl mr-2 text-emerald-500"></i>Icons
             </h3>
-            <p>We use icons from <a href="https://boxicons.com/" target="_blank">Boxicons</a>. They are imported as a
-                font using a <code>&lt;link&gt;</code> element in the head of our HTML document.</p>
+            <p>We use icons <code>&lt;i&gt;</code> from <a href="https://boxicons.com/" target="_blank">Boxicons</a>.
+                These icons are directly included in this project as an embeded font-face and it's associated CSS syles.
+            </p>
             <div class="row gap-2 justify-center">
                 <div class="col-12-xs col-12-sm col-12-xl">
                     <p class="font-xl">
@@ -667,10 +668,37 @@
                         <a href="#" class="btn-emerald-500 text-white text-hover-black">Button</a>
                     </div>
                     <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
+                        <a href="#" class="btn bg-gradient text-white text-hover-black">Gradient</a>
+                    </div>
+                    <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
                         <a href="#" class="btn-outlined-emerald-500 text-emerald-500 text-hover-white">Outlined</a>
                     </div>
                     <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
                         <a href="#" class="btn-complement-emerald-700 text-hover-black">Complement</a>
+                    </div>
+                    <div class="row gap-2 justify-center">
+                        <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
+                            <a href="#" class="btn p-1"><i class="bx bx-envelope font-lg text-white"></i></a>
+                        </div>
+                    </div>
+                    <div class="row gap-2 justify-center">
+                        <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
+                            <a href="#" class="btn p-1 has-icon-left"><i
+                                    class="bx bx-send font-lg text-emerald-400 bx-fade-right"></i> Send</a>
+                        </div>
+                    </div>
+                    <div class="row gap-2 justify-center">
+                        <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
+                            <a href="#" class="btn-outlined-red-500 p-1 has-icon-right text-hover-red-500">Delete <i
+                                    class="bx bx-trash font-lg text-red-400 bx-tada"></i></a>
+                        </div>
+                    </div>
+                    <div class="row gap-2 justify-center">
+                        <div class="btn-group m-0">
+                            <a href="#" class="btn"><i class="bx bx-envelope font-lg text-white"></i></a>
+                            <a href="#" class="btn"><i class="bx bx-send font-lg text-white"></i></a>
+                            <a href="#" class="btn"><i class="bx bx-trash font-lg text-white"></i></a>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -678,29 +706,86 @@
                 <h3 class="mb-4 weight-light text-emerald-400">Taskbar <sup
                         class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
                 </h3>
-                <div class="taskbar">
-                    <a href="#" class="task-item">Item</a>
-                    <a class="task-item">Item</a>
-                    <a href="#" class="task-item">Item</a>
-                    <a href="#" class="task-item">Item</a>
-                    <a href="#" class="task-item">Item</a>
+                <div class="row gap-2 justify-center">
+                    <div class="taskbar">
+                        <a href="#" class="task-item">Item</a>
+                        <a class="task-item">Item</a>
+                        <a href="#" class="task-item">Item</a>
+                        <a href="#" class="task-item">Item</a>
+                        <a href="#" class="task-item">Item</a>
+                    </div>
+                </div>
+                <div class="row gap-2 justify-center">
+                    <div class="taskbar mt-2">
+                        <a href="#" class="task-item"><i class="bx bx-info-circle mr-1"></i> About</a>
+                        <a class="task-item"><i class="bx bx-text mr-1"></i> Type</a>
+                        <a href="#" class="task-item"><i class="bx bx-grid mr-1"></i> Grid</a>
+                        <a href="#" class="task-item"><i class="bx bx-palette mr-1"></i> Colors</a>
+                        <a href="#" class="task-item"><i class="bx bxs-cube mr-1"></i> Icons</a>
+                        <a href="#" class="task-item"><i class="bx bxs-component mr-1"></i> Components</a>
+                        <a href="#" class="task-item"><i class="bx bxs-wrench mr-1"></i> Utility</a>
+                        <a href="#" class="task-item"><i class="bx bx-calendar-edit mr-1"></i> Releases</a>
+                    </div>
+                </div>
+                <div class="row gap-2 justify-center">
+                    <div class="taskbar mt-2 font-lg">
+                        <a href="#" class="task-item"><i class="bx bx-info-circle"></i></a>
+                        <a class="task-item"><i class="bx bx-text"></i></a>
+                        <a href="#" class="task-item"><i class="bx bx-grid"></i></a>
+                        <a href="#" class="task-item"><i class="bx bx-palette"></i></a>
+                        <a href="#" class="task-item"><i class="bx bxs-cube"></i></a>
+                        <a href="#" class="task-item"><i class="bx bxs-component"></i></a>
+                        <a href="#" class="task-item"><i class="bx bxs-wrench"></i></a>
+                        <a href="#" class="task-item"><i class="bx bx-calendar-edit"></i></a>
+                    </div>
                 </div>
             </article>
             <article>
                 <h3 class="mb-4 weight-light text-emerald-400">Sidebar <sup
                         class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
                 </h3>
-                <div class="sidebar">
-                    <div class="container">
-                        <h4>Sidebar Title</h4>
-                        <a href="#">Item One</a>
-                        <a href="#">Item Two</a>
-                        <a href="#">Item Three</a>
-                        <a href="#">Item Four</a>
-                        <a href="#">Item Five</a>
-                        <a href="#">Item Six</a>
+                <div class="row justify-center">
+                    <div class="sidebar">
+                        <div class="container">
+                            <header>
+                                <div class="badge-emerald-500 text-neutral-950 weight-bold display-i-b mb-2">
+                                    .is-fixed-left</div>
+                            </header>
+                            <h4>Sidebar Left</h4>
+                            <a href="#">Item One</a>
+                            <a href="#">Item Two</a>
+                            <a href="#">Item Three</a>
+                            <a href="#">Item Four</a>
+                            <a href="#">Item Five</a>
+                            <a href="#">Item Six</a>
+                        </div>
+                        <hr class="mt-4" />
                     </div>
-                    <hr class="mt-4" />
+                    <div class="sidebar ml-2 bg-emerald-900 pb-5 b-none">
+                        <div class="container">
+                            <header>
+                                <div class="badge-emerald-500 text-neutral-950 weight-bold display-i-b mb-2">
+                                    .is-fixed-right</div>
+                            </header>
+                            <h4>Sidebar Right</h4>
+                            <a href="#"><i class="bx bx-info-circle mr-1"></i> About</a>
+                            <a href="#"><i class="bx bx-text mr-1"></i> Typography</a>
+                            <a href="#"><i class="bx bx-grid mr-1"></i>Grid System</a>
+                            <a href="#"><i class="bx bx-palette mr-1"></i>Color Palette</a>
+                            <a href="#"><i class="bx bxs-cube mr-1"></i>Icons</a>
+                            <a href="#"><i class="bx bxs-component mr-1"></i>Components</a>
+                            <a href="#"><i class="bx bxs-wrench mr-1"></i>Utilities</a>
+                            <a href="#"><i class="bx bxs-calendar-edit mr-1"></i>Release Notes</a>
+                        </div>
+                        <div class="card bg-emerald-600 e-none ml-2 mr-2 mt-0 b-none">
+                            <header>
+                                <h5>Positioning</h5>
+                            </header>
+                            <p class="content">The <code>.sidebar</code> component has two classes, an
+                                <code>.is-fixed-left</code> and an <code>.is-fixed-right</code> to fix its position to
+                                the left or right of your screen with a set width of 264px.</p>
+                        </div>
+                    </div>
                 </div>
             </article>
             <article>
@@ -781,7 +866,7 @@
                             <input placeholder="Default" type="text" />
                             <label>Password Input</label>
                             <input placeholder="Password" type="password" />
-                            <label>Search</label>
+                            <label>Search Input</label>
                             <input placeholder="Search" type="search" />
                         </fieldset>
                         <fieldset>
@@ -907,7 +992,8 @@
             </article>
             <article>
                 <h3 class="mb-2 weight-light text-emerald-400">Border Radius</h3>
-                <p class="mb-2">The Border Radius Utility provides various border radi based on the <code>&dollar;base-border-radius</code> variable of
+                <p class="mb-2">The Border Radius Utility provides various border radi based on the
+                    <code>&dollar;base-border-radius</code> variable of
                     16px (1rem).</p>
                 <div class="row justify-center">
                     <table class="tbl">
@@ -1092,7 +1178,8 @@
                 <h3 class="mb-2 weight-light text-emerald-400">Border</h3>
                 <p class="mb-2">The Border Utility provides classes for various element border presets. These are
                     derived from preset SASS variables like <code>&dollar;base-border</code> and
-                    <code>&dollar;base-border-color</code> by default.</p>
+                    <code>&dollar;base-border-color</code> by default.
+                </p>
                 <div class="row justify-center">
                     <table class="tbl">
                         <thead class="bg-neutral-800">
@@ -1136,8 +1223,9 @@
         <hr class="mt-4 mb-4" />
         <section id="release">
             <header class="bg-gradient br pt-1 justify-flex-start">
-            <h3 class="mb-3"><i
-                    class="bx bx-calendar-edit p-2 br-sm bg-neutral-900 font-xl mr-2 text-emerald-500 mb-1 ml-1"></i>Release Notes</h3>
+                <h3 class="mb-3"><i
+                        class="bx bx-calendar-edit p-2 br-sm bg-neutral-900 font-xl mr-2 text-emerald-500 mb-1 ml-1"></i>Release
+                    Notes</h3>
             </header>
             <div class="mb-2 card">
                 <header>
@@ -1146,11 +1234,24 @@
                 <div class="content mb-2">
                     <h6 class="mt-1 mb-2 text-emerald-400 weight-light">October 4th, 2023</h6>
                     <ul class="bx-ul">
-                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Included this Release Notes section to bottom of <code>index.html</code>.</li>
-                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Updated <code>_navbar.scss</code> to have a min-height of 64px instead of a max-height of 60px because on sm viewports and mobile the title was not visible due to flex restrictions. Also narrowed the margin-left for the nav links from `ml-2` to `ml-1`.</li>
-                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Added a javascript function in <code>index.html</code> for SPA routing that uses the data-target attribute for smooth section navigation using the navbar links.</li>
-                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Added a nice ease transition to all links and buttons which affects the taskbar and sidebar components too.</li>
-                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Converted all colors from <code>_variables.scss</code> from hex to hsl values.</li>
+                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Included this Release Notes section to
+                            bottom of <code>index.html</code>.</li>
+                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Updated <code>_navbar.scss</code> to have
+                            a min-height of 64px instead of a max-height of 60px because on sm viewports and mobile the
+                            title was not visible due to flex restrictions. Also narrowed the margin-left for the nav
+                            links from `ml-2` to `ml-1`.</li>
+                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Added a javascript function in
+                            <code>index.html</code> for SPA routing that uses the data-target attribute for smooth
+                            section navigation using the navbar links.</li>
+                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Added a nice ease transition to all links
+                            and buttons which affects the taskbar and sidebar components too.</li>
+                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Converted all colors from
+                            <code>_variables.scss</code> from hex to hsl values.</li>
+                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Included boxicon fonts inside assets
+                            folder and <code>_boxicons.scss</code> for relevant CSS.
+                        <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Added new buttons, a button group
+                            (<code>.btn-group</code>), taskbars, sidebar, and a <code>.bg-gradient</code> class to the
+                            theme <code>_variables.scss</code>.</li>
                     </ul>
                 </div>
             </div>

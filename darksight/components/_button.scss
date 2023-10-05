@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @mixin btn($bg-color: darken($base-background-color, 5)) {
     text-decoration: none;
     cursor: pointer;
@@ -9,7 +11,7 @@
     align-content: center;
     align-items: center;
     color: $base-text-color;
-    border: $base-border solid transparent;
+    border: $base-border solid $bg-color;
     transition: all 0.4s ease;
 
     &[disabled] {
@@ -25,7 +27,13 @@
         }
     }
 
-    &.has-icon {
+    &.has-icon-left {
+        & i {
+            margin-right: 1rem !important;
+        }
+    }
+
+    &.has-icon-right {
         & i {
             margin-left: 1rem !important;
         }
@@ -46,6 +54,28 @@
 
 .btn {
     @include btn;
+}
+
+.btn-group {
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: $base-border-radius;
+    background: transparent;
+
+    & .btn {
+        display: inline-flex;
+        width: min-content;
+        border-radius: 0 !important;
+        padding: $base-padding;
+
+        &:first-child {
+            border-radius: $base-border-radius 0 0 $base-border-radius !important;
+        }
+
+        &:last-child {
+            border-radius: 0 $base-border-radius $base-border-radius 0 !important;
+        }
+    }
 }
 
 @each $key, $val in $colors {
