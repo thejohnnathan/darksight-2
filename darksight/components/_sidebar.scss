@@ -1,12 +1,19 @@
 .sidebar {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
     border: $base-border solid lighten($base-background-color, 5);
     border-radius: $base-border-radius;
     width: 264px;
     max-width: 264px !important;
     height: 100vh;
     z-index: 99 !important;
+    padding: 0;
+    align-content: center;
+
+    & button.toggler {
+        align-self: right;
+    }
 
     .site-title {
         font-size: $font-size-lg;
@@ -16,42 +23,55 @@
         position: fixed !important;
         top: 0;
         left: 0;
+        bottom: 0;
     }
 
     &.is-fixed-right {
         position: fixed !important;
         top: 0;
         right: 0;
+        bottom: 0;
     }
 
-    .container {
-        display: inline-flex;
+    & nav {
+        display: flex;
         flex-flow: column nowrap !important;
-        text-align: left;
-        padding: 7rem 1rem !important;
-        margin: 0;
-        width: 100%;
+        padding: $base-padding;
+        height: 60vh;
 
-        & a {
-            display: inline-flex;
-            flex-flow: row nowrap;
-            height: 3rem;
+        & li {
+            display: flex;
             margin: 0;
-            align-items: center;
-            padding: 0 $base-padding;
-            border-radius: $base-border-radius * 0.5;
-            margin: 0;
-            border: $base-border solid transparent;
 
-            &:hover {
-                background-color: darken($base-link-color, 40);
+            &:first-child {
+                justify-content: space-between;
             }
 
-            &:active,
-            &:focus {
-                background-color: darken($base-background-color, 5);
-                border: $base-border solid $base-link-color;
-                text-decoration: none !important;
+            & a {
+                position: relative;
+                display: flex;
+                flex-flow: row nowrap;
+                transition: all 0.4s ease-in-out;
+                align-items: center;
+                height: 3rem;
+                align-items: center;
+                padding: 0 1rem;
+                border: $base-border solid transparent;
+                border-radius: $base-border-radius * 0.5;
+                width: 100%;
+                flex-grow: 1;
+
+                &:hover {
+                    background-color: darken($base-link-color, 40);
+                }
+
+                &:active,
+                &:focus,
+                &.active {
+                    background-color: darken($base-background-color, 5);
+                    border: $base-border solid $base-link-color;
+                    text-decoration: none !important;
+                }
             }
         }
     }

@@ -388,6 +388,10 @@
   content: "\ed03";
 }
 
+.bxs-chevrons-left:before {
+  content: "\ed3f";
+}
+
 .bxs-component:before {
   content: "\ed61";
 }
@@ -1408,46 +1412,62 @@ fieldset {
 .sidebar {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-between;
   border: 1px solid #242424;
   border-radius: 16px;
   width: 264px;
   max-width: 264px !important;
   height: 100vh;
   z-index: 99 !important;
+  padding: 0;
+  align-content: center;
+}
+.sidebar button.toggler {
+  align-self: right;
 }
 .sidebar.is-fixed-left {
   position: fixed !important;
   top: 0;
   left: 0;
+  bottom: 0;
 }
 .sidebar.is-fixed-right {
   position: fixed !important;
   top: 0;
   right: 0;
+  bottom: 0;
 }
-.sidebar .container {
-  display: inline-flex;
+.sidebar nav {
+  display: flex;
   flex-flow: column nowrap !important;
-  text-align: left;
-  padding: 7rem 1rem !important;
-  margin: 0;
-  width: 100%;
+  padding: 0.75rem;
+  height: 60vh;
 }
-.sidebar .container a {
-  display: inline-flex;
+.sidebar nav li {
+  display: flex;
+  margin: 0;
+}
+.sidebar nav li:first-child {
+  justify-content: space-between;
+}
+.sidebar nav li a {
+  position: relative;
+  display: flex;
   flex-flow: row nowrap;
-  height: 3rem;
-  margin: 0;
+  transition: all 0.4s ease-in-out;
   align-items: center;
-  padding: 0 0.75rem;
-  border-radius: 8px;
-  margin: 0;
+  height: 3rem;
+  align-items: center;
+  padding: 0 1rem;
   border: 1px solid transparent;
+  border-radius: 8px;
+  width: 100%;
+  flex-grow: 1;
 }
-.sidebar .container a:hover {
+.sidebar nav li a:hover {
   background-color: #0b3224;
 }
-.sidebar .container a:active, .sidebar .container a:focus {
+.sidebar nav li a:active, .sidebar nav li a:focus {
   background-color: #0a0a0a;
   border: 1px solid hsl(158, 64%, 52%);
   text-decoration: none !important;
@@ -1738,8 +1758,8 @@ input[type=radio]:checked:disabled {
   padding-top: 0.75rem;
 }
 
-.pb-5 {
-  padding-bottom: 6rem;
+.pb-2 {
+  padding-bottom: 1.5rem;
 }
 
 .m-0 {
