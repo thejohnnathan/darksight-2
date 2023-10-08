@@ -748,8 +748,10 @@
                     <div class="sidebar" id="sidebar">
                         <nav>
                             <li>
-                                <div class="badge-emerald-500 text-neutral-950 weight-bold display-i-b mb-2">.is-fixed-left</div>
-                                <button class="btn-outlined-emerald-500 p-1 br-circle toggler" id="toggleButton"><i class="bx bxs-chevrons-left"></i></button>
+                                <div class="badge-emerald-500 text-neutral-950 weight-bold display-i-b mb-2">
+                                    .is-fixed-left</div>
+                                <button class="btn-outlined-emerald-500 p-1 br-circle toggler" id="toggleButton"><i
+                                        class="bx bxs-chevrons-left"></i></button>
                             </li>
                             <li>
                                 <h4>Sidebar Left</h4>
@@ -816,7 +818,48 @@
                             </header>
                             <p class="content">The <code>.sidebar</code> component has two classes, an
                                 <code>.is-fixed-left</code> and an <code>.is-fixed-right</code> to fix its position to
-                                the left or right of your screen with a set width of 264px.</p>
+                                the left or right of your screen with a set width of 264px.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h3 class="mb-4 weight-bold text-emerald-400">Cards <sup
+                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
+                <div class="row justify-center">
+                    <div class="vs-card">
+                        <div class="card_img">
+                            <img src="https://placebeard.it/640x360" alt="" />
+                            <div class="card_interactions">
+                                <button class="btn p-1" type="button">
+                                    <i class="bx bx-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card_title">
+                            <h5>Title</h5>
+                        </div>
+                        <div class="card_text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipliscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-center mt-2">
+                    <div class="vs-card type-3">
+                        <div class="card_img">
+                            <img src="https://placebeard.it/600x400" alt="" />
+                            <div class="card_interactions">
+                                <button class="btn p-1" type="button">
+                                    <i class="bx bx-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card_title">
+                            <h5>Title</h5>
+                            <div class="card_text">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipliscing elit.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1027,7 +1070,8 @@
                 <h3 class="mb-2 weight-light text-emerald-400">Border Radius</h3>
                 <p class="mb-2">The Border Radius Utility provides various border radi based on the
                     <code>&dollar;base-border-radius</code> variable of
-                    16px (1rem).</p>
+                    16px (1rem).
+                </p>
                 <div class="row justify-center">
                     <table class="tbl">
                         <thead class="bg-neutral-800">
@@ -1265,6 +1309,19 @@
                     <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.0.1</div>
                 </header>
                 <div class="content mb-2">
+                    <h6 class="mt-1 mb-2 text-emerald-400 weight-light">October 7th, 2023</h6>
+                    <ul class="bx-ul">
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added card section with two card component examples from Vuesax to <code>_card.scss</code> with <code>.vs-card</code> and <code>.vs-card.type-3</code>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-2 card">
+                <header>
+                    <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.0.1</div>
+                </header>
+                <div class="content mb-2">
                     <h6 class="mt-1 mb-2 text-emerald-400 weight-light">October 4th, 2023</h6>
                     <ul class="bx-ul">
                         <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Included this Release Notes section to
@@ -1275,11 +1332,13 @@
                             links from `ml-2` to `ml-1`.</li>
                         <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Added a javascript function in
                             <code>index.html</code> for SPA routing that uses the data-target attribute for smooth
-                            section navigation using the navbar links.</li>
+                            section navigation using the navbar links.
+                        </li>
                         <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Added a nice ease transition to all links
                             and buttons which affects the taskbar and sidebar components too.</li>
                         <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Converted all colors from
-                            <code>_variables.scss</code> from hex to hsl values.</li>
+                            <code>_variables.scss</code> from hex to hsl values.
+                        </li>
                         <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Included boxicon fonts inside assets
                             folder and <code>_boxicons.scss</code> for relevant CSS.
                         <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Added new buttons, a button group
