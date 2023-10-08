@@ -46,23 +46,48 @@
             <div class="display-f justify-flex-start">
                 <h5>Darksight <sup class="badge-neutral-800 text-emerald-400 weight-bold">v2.0.1</sup></h5>
             </div>
-            <ul class="display-f">
-                <li><a href="#" data-target="about" class="text-white text-hover-emerald-400 font-lg"><i
-                            class="bx bx-info-circle bx-burst-hover"></i></button></li>
-                <li><a href="#" data-target="type" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
-                            class="bx bx-text bx-burst-hover"></i></a></li>
-                <li><a href="#" data-target="grid" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
-                            class="bx bxs-grid bx-burst-hover"></i></a></li>
-                <li><a href="#" data-target="color" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
-                            class="bx bx-palette bx-burst-hover"></i></a></li>
-                <li><a href="#" data-target="icon" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
-                            class="bx bxs-cube bx-burst-hover"></i></a></li>
-                <li><a href="#" data-target="component" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
-                            class="bx bxs-component bx-burst-hover"></i></a></li>
-                <li><a href="#" data-target="utility" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
-                            class="bx bxs-wrench bx-burst-hover"></i></a></li>
-                <li><a href="#" data-target="release" class="text-white text-hover-emerald-400 ml-1 font-lg"><i
-                            class="bx bxs-calendar-edit bx-burst-hover"></i></a></li>
+            <ul class="display-f justify-flex-end">
+                <li class="tooltip-container right m-1">
+                    <a href="#" data-target="about" class="text-white text-hover-emerald-400 font-lg tooltip-trigger"
+                        aria-describedby="tooltip-right-about"><i class="bx bx-info-circle bx-burst-hover"></i></a>
+                    <span class="tooltip" id="tooltip-right-about">About</span>
+                </li>
+                <li class="tooltip-container bottom m-1">
+                    <a href="#" data-target="type" class="text-white text-hover-emerald-400 font-lg tooltip-trigger"
+                        aria-describedby="tooltip-bottom-type"><i class="bx bx-text bx-burst-hover"></i></a>
+                    <span class="tooltip" id="tooltip-bottom-type">Typography</span>
+                </li>
+                <li class="tooltip-container bottom m-1">
+                    <a href="#" data-target="grid" class="text-white text-hover-emerald-400 font-lg tooltip-trigger"
+                        aria-describedby="tooltip-bottom-grid"><i class="bx bxs-grid bx-burst-hover"></i></a>
+                    <span class="tooltip" id="tooltip-bottom-grid">Grid System</span>
+                </li>
+                <li class="tooltip-container bottom m-1">
+                    <a href="#" data-target="color" class="text-white text-hover-emerald-400 font-lg tooltip-trigger"
+                        aria-describedby="tooltip-bottom-color"><i class="bx bx-palette bx-burst-hover"></i></a>
+                    <span class="tooltip" id="tooltip-bottom-color">Color Palette</span>
+                </li>
+                <li class="tooltip-container bottom m-1">
+                    <a href="#" data-target="icon" class="text-white text-hover-emerald-400 font-lg tooltip-trigger"
+                        aria-describedby="tooltip-bottom-icon"><i class="bx bxs-cube bx-burst-hover"></i></a>
+                    <span class="tooltip" id="tooltip-bottom-icon">Icons</span>
+                </li>
+                <li class="tooltip-container bottom m-1">
+                    <a href="#" data-target="component"
+                        class="text-white text-hover-emerald-400 font-lg tooltip-trigger"
+                        aria-describedby="tooltip-bottom-component"><i class="bx bxs-component bx-burst-hover"></i></a>
+                    <span class="tooltip" id="tooltip-bottom-component">Components</span>
+                </li>
+                <li class="tooltip-container bottom m-1">
+                    <a href="#" data-target="utility" class="text-white text-hover-emerald-400 font-lg tooltip-trigger"
+                        aria-describedby="tooltip-bottom-utility"><i class="bx bxs-wrench bx-burst-hover"></i></a>
+                    <span class="tooltip" id="tooltip-bottom-utility">Utilities</span>
+                </li>
+                <li class="tooltip-container left m-1">
+                    <a href="#" data-target="release" class="text-white text-hover-emerald-400 font-lg tooltip-trigger"
+                        aria-describedby="tooltip-left-release"><i class="bx bxs-calendar-edit bx-burst-hover"></i></a>
+                    <span class="tooltip" id="tooltip-left-release">Release Notes</span>
+                </li>
             </ul>
         </div>
     </nav>
@@ -85,11 +110,11 @@
                         styled with SASS, and lovingly crafted by Front-End Developer <a
                             href="mailto:johndurtche@gmail.com" target="_blank">John Durtche</a>.
                     </p>
-                    <p class="mb-5">Divided into 7 main categories: Typography, Grid System, Color Palette, Icons,
-                        Components, and Utilities.</p>
+                    <p class="mb-5">Divided into 8 main categories: Typography, Grid System, Color Palette, Icons,
+                        Components, Utilities, and Release Notes.</p>
                 </div>
                 <footer>
-                    <a href="#" class="btn-outlined-emerald-500">Read More <i
+                    <a href="#" data-target="release" class="btn-outlined-emerald-500">What's New <i
                             class="bx bx-right-arrow-alt ml-1"></i></a>
                 </footer>
             </div>
@@ -703,6 +728,29 @@
                 </div>
             </article>
             <article>
+                <h3 class="mb-4 weight-light text-emerald-400">Tooltips <sup
+                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
+                </h3>
+                <div class="row justify-center">
+                    <div class="tooltip-container left">
+                        <button class="btn tooltip-trigger" aria-describedby="tooltip-left">Left Tooltip</button>
+                        <div class="tooltip" id="tooltip-left">This is a left tooltip.</div>
+                    </div>
+                    <div class="tooltip-container right">
+                        <button class="btn tooltip-trigger" aria-describedby="tooltip-right">Right Tooltip</button>
+                        <div class="tooltip" id="tooltip-right">This is a right tooltip.</div>
+                    </div>
+                    <div class="tooltip-container top">
+                        <button class="btn tooltip-trigger" aria-describedby="tooltip-top">Top Tooltip</button>
+                        <div class="tooltip" id="tooltip-top">This is a top tooltip.</div>
+                    </div>
+                    <div class="tooltip-container bottom">
+                        <button class="btn tooltip-trigger" aria-describedby="tooltip-bottom">Bottom Tooltip</button>
+                        <div class="tooltip" id="tooltip-bottom">This is a bottom tooltip.</div>
+                    </div>
+                </div>
+            </article>
+            <article>
                 <h3 class="mb-4 weight-light text-emerald-400">Taskbar <sup
                         class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
                 </h3>
@@ -846,7 +894,7 @@
                     </div>
                 </div>
                 <div class="row justify-center mt-2">
-                    <div class="vs-card type-3">
+                    <div class="vs-card type-h">
                         <div class="card_img">
                             <img src="https://placebeard.it/600x400" alt="" />
                             <div class="card_interactions">
@@ -1309,10 +1357,31 @@
                     <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.0.1</div>
                 </header>
                 <div class="content mb-2">
+                    <h6 class="mt-1 mb-2 text-emerald-400 weight-light">October 8th, 2023</h6>
+                    <ul class="bx-ul">
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added tooltip section with four tooltip
+                            components to <code>_tooltip.scss</code> with the <code>.tooltip-container</code> and its
+                            children <code>.tooltip-left</code>, <code>.tooltip-right</code>, <code>.tooltip-top</code>
+                            and <code>.tooltip-bottom</code> classes.
+                        </li>
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Made the taskbar and navbar component contents capable of wrapping by specifying a flex-flow for each.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-2 card">
+                <header>
+                    <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.0.1</div>
+                </header>
+                <div class="content mb-2">
                     <h6 class="mt-1 mb-2 text-emerald-400 weight-light">October 7th, 2023</h6>
                     <ul class="bx-ul">
                         <li>
-                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added card section with two card component examples from Vuesax to <code>_card.scss</code> with <code>.vs-card</code> and <code>.vs-card.type-3</code>.
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added card section with two card component
+                            examples from Vuesax to <code>_card.scss</code> with <code>.vs-card</code> and
+                            <code>.vs-card.type-h</code>.
                         </li>
                     </ul>
                 </div>

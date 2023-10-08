@@ -2,15 +2,15 @@
     text-decoration: none;
     cursor: pointer;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     border: $base-border solid lighten($base-background-color, 5);
     padding: 0.25rem;
     border-radius: $base-border-radius;
     background-color: $bg-color;
-    align-content: space-evenly;
+    justify-content: center;
     align-items: center;
     color: $base-text-color;
-    width: max-content;
+    max-width: 90vw;
     transition: all 0.4s ease;
 }
 

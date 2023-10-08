@@ -466,6 +466,7 @@ body {
   margin: 0;
   background-color: hsl(0, 0%, 9%);
   color: hsl(0, 0%, 96%);
+  overflow-x: hidden;
 }
 
 main {
@@ -696,6 +697,10 @@ fieldset {
 
 .justify-flex-start {
   justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1029,24 +1034,24 @@ fieldset {
   display: block;
   transition: all 0.25s ease;
 }
-.vs-card.type-3 {
+.vs-card.type-h {
   display: flex;
   max-width: 400px;
 }
-.vs-card.type-3:hover {
+.vs-card.type-h:hover {
   transform: scale(1.04);
   box-shadow: 0 3px 5px hsl(0, 0%, 4%);
 }
-.vs-card.type-3 .card_img {
+.vs-card.type-h .card_img {
   width: 200px;
 }
-.vs-card.type-3 .card_img img {
+.vs-card.type-h .card_img img {
   min-width: 200px;
 }
-.vs-card.type-3 .card_text {
+.vs-card.type-h .card_text {
   padding: 1.5rem 0;
 }
-.vs-card.type-3 .card_title {
+.vs-card.type-h .card_title {
   margin-left: 0;
 }
 
@@ -1297,6 +1302,7 @@ fieldset {
 .navbar .container, .navbar {
   width: 100%;
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
@@ -1475,15 +1481,15 @@ fieldset {
   text-decoration: none;
   cursor: pointer;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   border: 1px solid #242424;
   padding: 0.25rem;
   border-radius: 16px;
   background-color: hsl(0, 0%, 9%);
-  align-content: space-evenly;
+  justify-content: center;
   align-items: center;
   color: hsl(0, 0%, 96%);
-  width: max-content;
+  max-width: 90vw;
   transition: all 0.4s ease;
 }
 .taskbar > .task-item {
@@ -1776,6 +1782,123 @@ input[type=radio]:checked:disabled {
   cursor: not-allowed;
 }
 
+.tooltip-container {
+  position: relative;
+  display: inline-block !important;
+  margin: 2rem;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 0.75rem;
+  background-color: #0a0a0a;
+  border-radius: 4px;
+  width: 150px;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  border: 1px solid hsl(158, 64%, 52%);
+}
+
+.tooltip::before {
+  content: "";
+  background: transparent;
+  position: absolute;
+  border-width: 0.25rem;
+  border-style: solid;
+  border-color: hsl(158, 64%, 52%);
+  z-index: -1;
+}
+
+.tooltip-left::before {
+  border-color: transparent transparent transparent hsl(158, 64%, 52%) !important;
+  top: 50%;
+  left: -1rem;
+  transform: translateY(-50%);
+}
+
+.tooltip-right::before {
+  border-color: transparent hsl(158, 64%, 52%) transparent transparent !important;
+  top: 50%;
+  right: -1rem;
+  transform: translateY(-50%);
+}
+
+.tooltip-top::before {
+  border-color: transparent transparent hsl(158, 64%, 52%) transparent !important;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-bottom::before {
+  border-color: hsl(158, 64%, 52%) transparent transparent transparent !important;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.tooltip-trigger:hover + .tooltip,
+.tooltip:focus {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Adjust tooltip positions based on trigger positions */
+.tooltip-container.left .tooltip {
+  left: -190px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip-container.right .tooltip {
+  left: calc(100% + 1rem);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip-container.top .tooltip {
+  left: 50%;
+  bottom: calc(100% + 1rem);
+  transform: translateX(-50%);
+}
+
+.tooltip-container.bottom .tooltip {
+  left: 50%;
+  top: calc(100% + 1rem);
+  transform: translateX(-50%);
+}
+
+/* Add triangles pointing to the container */
+.tooltip-container.left .tooltip::before {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip-container.right .tooltip::before {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip-container.top .tooltip::before {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-container.bottom .tooltip::before {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .glass {
   background-blend-mode: overlay;
   -webkit-backdrop-filter: blur(8px);
@@ -1857,6 +1980,10 @@ input[type=radio]:checked:disabled {
 
 .m-0 {
   margin: 0;
+}
+
+.m-1 {
+  margin: 0.75rem;
 }
 
 .ml-1 {
