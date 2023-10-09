@@ -933,6 +933,30 @@ fieldset {
 .bg-black {
   background-color: hsl(0, 0%, 0%);
 }
+
+.bg-info {
+  background-color: hsl(175, 84%, 32%);
+}
+
+.bg-success {
+  background-color: hsl(142, 76%, 36%);
+}
+
+.bg-caution {
+  background-color: hsl(41, 96%, 40%);
+}
+
+.bg-critical {
+  background-color: hsl(0, 72%, 51%);
+}
+
+.bg-magic {
+  background-color: hsl(262, 83%, 58%);
+}
+
+.bg-emphasis {
+  background-color: hsl(221, 83%, 53%);
+}
 .hero-md {
   padding: 3rem 3rem;
   min-height: 15rem;

@@ -268,7 +268,14 @@ $colors: (
     "rose-950": hsl(343, 88%, 16%),
 
     "white": hsl(0, 0%, 100%),
-    "black": hsl(0, 0%, 0%)
+    "black": hsl(0, 0%, 0%),
+
+    "info": hsl(175, 84%, 32%),
+    "success": hsl(142, 76%, 36%),
+    "caution": hsl(41, 96%, 40%),
+    "critical": hsl(0, 72%, 51%),
+    "magic": hsl(262, 83%, 58%),
+    "emphasis": hsl(221, 83%, 53%)
 );
 
 //theme color
@@ -287,6 +294,35 @@ $base-code-background-color: map-get($map: $colors, $key: neutral-950) !default;
     background-clip: text;
     color: transparent;
 }
+
+// material colors
+$info-surface-color: map-get($map: $colors, $key: teal-200);
+$info-text-color: map-get($map: $colors, $key: teal-700);
+$info-background-color-hover: map-get($map: $colors, $key: teal-500);
+$info-background-color-text-color-hover: map-get($map: $colors, $key: teal-800);
+
+$success-surface-color: map-get($map: $colors, $key: green-200);
+$success-text-color: map-get($map: $colors, $key: green-700);
+$success-background-color-hover: map-get($map: $colors, $key: green-500);
+$success-background-color-text-color-hover: map-get($map: $colors, $key: green-100);
+
+$caution-surface-color: map-get($map: $colors, $key: yellow-200);
+$caution-text-color: map-get($map: $colors, $key: yellow-700);
+$caution-background-color-hover: map-get($map: $colors, $key: yellow-500);
+$caution-background-color-text-color-hover: map-get($map: $colors, $key: yellow-800);
+
+$critical-surface-color: map-get($map: $colors, $key: red-200);
+$critical-text-color: map-get($map: $colors, $key: red-700);
+$critical-background-color-hover: map-get($map: $colors, $key: red-500);
+$critical-background-color-text-color-hover: map-get($map: $colors, $key: red-100);
+
+$magic-surface-color: map-get($map: $colors, $key: violet-200);
+$magic-text-color: map-get($map: $colors, $key: violet-700);
+$magic-background-color-hover: map-get($map: $colors, $key: violet-500);
+$magic-background-color-text-color-hover: map-get($map: $colors, $key: violet-100);
+
+$emphasis-surface-color: map-get($map: $colors, $key: blue-700);
+$emphasis-text-color: map-get($map: $colors, $key: blue-100);
 
 // spacing
 $base-padding: 0.75rem !default;
