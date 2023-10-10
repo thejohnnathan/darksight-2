@@ -1923,6 +1923,65 @@ input[type=radio]:checked:disabled {
   transform: translateX(-50%);
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 77px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.modal-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background: hsl(0, 0%, 9%);
+  padding: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 1rem 1rem #0a0a0a;
+  max-width: 600px;
+  min-width: max-content;
+  margin: 1rem auto;
+  border: 2px solid;
+  border-left: 5px solid transparent;
+  border-color: hsl(0, 0%, 9%);
+}
+.modal-content div {
+  display: inline-flex;
+  flex-flow: column nowrap;
+}
+.modal-content div.modal-icon {
+  display: inline-block !important;
+  margin: auto 1rem auto 0;
+  text-align: center;
+  font-size: 48px;
+  width: max-content;
+}
+.modal-content div.modal-icon i {
+  padding: 0;
+  margin: 0;
+}
+.modal-content div.modal-text {
+  width: 100%;
+}
+
+.close {
+  text-align: right;
+  clear: both;
+  float: right;
+  top: -1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+}
+
 .glass {
   background-blend-mode: overlay;
   -webkit-backdrop-filter: blur(8px);
