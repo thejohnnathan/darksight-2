@@ -288,3 +288,7 @@ template {
   letter-spacing: 0.125rem;
   color: darken($base-text-color, 40);
 }
+
+figcaption {
+  text-align: center;
+}

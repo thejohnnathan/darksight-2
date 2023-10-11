@@ -1,0 +1,19 @@
+.carousel-container {
+	display: flex;
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+	padding: 1rem 1rem 2rem 1rem;
+	scroll-padding: 1rem;
+    width: 600px;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    border: $base-border solid $base-border-color;
+    box-shadow: $base-box-shadow;
+	
+	& .carousel-item {
+	flex: 0 0 100%;
+    margin-right: 1rem;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+    scroll-behavior: smooth;
+	}
+}
