@@ -25,9 +25,9 @@ $bg-color: darken($base-background-color, 5);
     content: "";
     background: transparent;
     position: absolute;
-    border-width: 0.25rem;
+    border-width: 0.5rem;
     border-style: solid;
-    border-color: $base-link-color;
+    border-color: $base-link-color transparent transparent transparent;
     z-index: -1;
 }
 
@@ -95,14 +95,16 @@ $bg-color: darken($base-background-color, 5);
 /* Add triangles pointing to the container */
 .tooltip-container.left .tooltip::before {
     left: 100%;
-    top: 50%;
+    top: calc(50% - 0.5rem);
     transform: translateY(-50%);
+    transform: rotate(270deg);
 }
 
 .tooltip-container.right .tooltip::before {
     right: 100%;
-    top: 50%;
+    top: calc(50% - 0.5rem);
     transform: translateY(-50%);
+    transform: rotate(90deg);
 }
 
 .tooltip-container.top .tooltip::before {
@@ -115,4 +117,5 @@ $bg-color: darken($base-background-color, 5);
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
+    transform: rotate(180deg);
 }

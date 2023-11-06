@@ -5,42 +5,43 @@ $shadow-opacity: 0.1;
 .card {
     color: $base-text-color;
     display: block;
-    padding: $base-padding (
-        $base-padding * 2
-    );
-border: $base-border solid map-get($map: $colors, $key: neutral-800);
-box-shadow: $base-box-shadow;
-border-radius: $base-border-radius;
-height: 100%;
+    padding: $base-padding * 2;
+    border: $base-border solid map-get($map: $colors, $key: neutral-800);
+    box-shadow: $base-box-shadow;
+    border-radius: $base-border-radius * 0.5;
+    overflow: auto;
 
-& header {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: space-between;
+    & .card_title {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
 
-    &>* {
-        display: inline-flex;
+        &>* {
+            display: inline-flex;
 
-        &:not(:last-child) {
-            margin-right: 0.5rem;
+            &:not(:last-child) {
+                margin-right: 0.5rem;
+            }
         }
     }
 
-    & .content {
-        display: inline-flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        padding: $base-padding (
-            $base-padding * 2
-        );
-}
+    & .card_text {
+        padding: $base-padding * 2 0;
+        padding-bottom: $base-padding * 3;
 
-& footer {
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-}
+        & p {
+            font-size: inherit;
+            margin: 0;
+            opacity: .8;
+        }
+    }
+
+    & .card_footer {
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 0 !important;
+    }
 }
 
 // Vuesax 4.0 card styles

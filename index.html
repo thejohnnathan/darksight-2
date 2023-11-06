@@ -9,7 +9,7 @@
         content="Darksight, CSS Library, SASS, Gulp, SASS, Stylesheet, cascading, framework, css design, user interface, user experience, front end development, frontend">
     <meta name="author" content="John Durtche">
     <meta name="copyright" content="Copyright 2023 John Durtche. All Rights Reserved.">
-    <meta name="application-name" content="Darksight v2.0.1">
+    <meta name="application-name" content="Darksight v2.0.2">
     <meta name="theme-color" content="#171717">
     <link href="/css/index.css" rel="stylesheet">
     <title>Darksight | A CSS Library by John Durtche</title>
@@ -19,7 +19,7 @@
     <nav class="navbar text-white glass bs-none">
         <div class="container">
             <div class="display-f justify-flex-start">
-                <h5>Darksight <sup class="badge-neutral-800 text-emerald-400 weight-bold">v2.0.1</sup></h5>
+                <h5>Darksight <sup class="badge-neutral-800 text-emerald-400 weight-bold">v2.0.2</sup></h5>
             </div>
             <ul class="display-f justify-flex-end">
                 <li class="tooltip-container right m-1">
@@ -75,10 +75,11 @@
         </section>
         <section id="about">
             <div class="card pr-2 pl-2 mt-3">
-                <header class="mb-2"><i class="bx bx-info-circle p-2 br-sm bg-neutral-800 font-xl text-emerald-500"></i>
+                <header class="card_title">
+                    <i class="bx bx-info-circle p-2 br-sm bg-neutral-800 font-xl text-emerald-500"></i>
+                    <h3 class="ml-1">About Darksight</h3>
                 </header>
-                <div class="content">
-                    <h3 class="mb-1">About Darksight</h3>
+                <div class="card_text">
                     <p>A dark-themed, CSS library composed of a series of re-usable, responsive, material design
                         components.
                         <br />Created for <a href="https://vuejs.org/" target="_blank">Vue.js</a>, developed in Gulp,
@@ -89,7 +90,7 @@
                         Components, Utilities, and Release Notes.</p>
                 </div>
                 <footer>
-                    <a href="#" data-target="release" class="btn-outlined-emerald-500">What's New <i
+                    <a href="#" data-target="release" class="btn bg-gradient text-white text-hover-black">What's New <i
                             class="bx bx-right-arrow-alt ml-1"></i></a>
                 </footer>
             </div>
@@ -106,7 +107,7 @@
             <div class="row gap-2 justify-center">
                 <div class="col-12-xs col-6-sm col-6-xl">
                     <div class="card e-none br-none bg-neutral-950">
-                        <header>
+                        <header class="card_title">
                             <span class="badge-outlined-neutral-800">&lt;h1&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;h2&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;h3&gt;</span>
@@ -114,7 +115,7 @@
                             <span class="badge-outlined-neutral-800">&lt;h5&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;h6&gt;</span>
                         </header>
-                        <div class="content">
+                        <div class="card_text">
                             <h3 class="weight-light text-emerald-400">Headers</h3>
                             <hr />
                             <h1>H1 Header</h1>
@@ -128,12 +129,12 @@
                 </div>
                 <div class="col-12-xs col-6-sm col-6-xl">
                     <div class="card e-none br-none bg-neutral-950">
-                        <header>
+                        <header class="card_title">
                             <span class="badge-outlined-neutral-800">&lt;weight-bold&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;weight-semi-bold&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;weight-light&gt;</span>
                         </header>
-                        <div class="content">
+                        <div class="card_text">
                             <h3 class="weight-light text-emerald-400">Weights</h3>
                             <hr />
                             <p class="weight-bold">Bold text</p>
@@ -146,13 +147,13 @@
                 </div>
                 <div class="col-12-xs col-6-sm col-6-xl">
                     <div class="card e-none br-none bg-neutral-950">
-                        <header>
+                        <header class="card_title">
                             <span class="badge-outlined-neutral-800">&lt;font-xl&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;font-lg&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;font-md&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;font-sm&gt;</span>
                         </header>
-                        <div class="content">
+                        <div class="card_text">
                             <h3 class="weight-light text-emerald-400">Sizes</h3>
                             <hr />
                             <p class="font-xl">Extra Large</p>
@@ -165,14 +166,14 @@
                 </div>
                 <div class="col-12-xs col-6-sm col-6-xl">
                     <div class="card e-none br-none bg-neutral-950">
-                        <header>
+                        <header class="card_title">
                             <span class="badge-outlined-neutral-800">.caption</span>
                             <span class="badge-outlined-neutral-800">&lt;code&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;sup&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;sub&gt;</span>
                             <span class="badge-outlined-neutral-800">&lt;a&gt;</span>
                         </header>
-                        <div class="content">
+                        <div class="card_text">
                             <h3 class="weight-light text-emerald-400">Styles</h3>
                             <hr />
                             <p class="caption">Caption</p>
@@ -318,11 +319,11 @@
             <div class="row gap-2 justify-center">
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-neutral-900 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6>Neutral 900</h6>
                         </header>
                         <p class="caption">#171717</pre>
-                        <p class="content">
+                        <p class="card_text">
                             <span class="bg-neutral-800 pl-1 pr-1">&nbsp;</span>
                             <span class="bg-neutral-700 pl-1 pr-1">&nbsp;</span>
                             <span class="bg-neutral-600 pl-1 pr-1">&nbsp;</span>
@@ -336,58 +337,58 @@
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-neutral-800 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6>Neutral 800</h6>
                         </header>
-                        <p class="content caption">#262626</p>
+                        <p class="card_text caption">#262626</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-neutral-700 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6>Neutral 700</h6>
                         </header>
-                        <p class="caption content">#404040</p>
+                        <p class="caption card_text">#404040</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-neutral-600 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6>Neutral 600</h6>
                         </header>
-                        <p class="content caption text-neutral-950">#525252</p>
+                        <p class="card_text caption text-neutral-950">#525252</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-neutral-500 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6>Neutral 500</h6>
                         </header>
-                        <p class="content caption text-neutral-950">#737373</p>
+                        <p class="card_text caption text-neutral-950">#737373</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-neutral-400 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6>Neutral 400</h6>
                         </header>
-                        <p class="content caption text-neutral-950">#a3a3a3</p>
+                        <p class="card_text caption text-neutral-950">#a3a3a3</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-neutral-300 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6 class="text-neutral-900">Neutral 300</h6>
                         </header>
-                        <p class="content caption text-neutral-950">#d4d4d4</p>
+                        <p class="card_text caption text-neutral-950">#d4d4d4</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-neutral-200 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6 class="text-slate-900">Neutral 200</h6>
                         </header>
-                        <p class="content caption text-neutral-950">#e5e5e5</p>
+                        <p class="card_text caption text-neutral-950">#e5e5e5</p>
                     </div>
                 </div>
             </div>
@@ -395,11 +396,11 @@
             <div class="row gap-2 justify-center">
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-emerald-900 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6>Emerald 900</h6>
                         </header>
                         <p class="caption text-emerald-300">#064e3b</pre>
-                        <p class="content">
+                        <p class="card_text">
                             <span class="bg-emerald-800 pl-1 pr-1">&nbsp;</span>
                             <span class="bg-emerald-700 pl-1 pr-1">&nbsp;</span>
                             <span class="bg-emerald-600 pl-1 pr-1">&nbsp;</span>
@@ -413,58 +414,58 @@
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-emerald-800 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6>Emerald 800</h6>
                         </header>
-                        <p class="content caption text-emerald-300">#065f46</p>
+                        <p class="card_text caption text-emerald-300">#065f46</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-emerald-700 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6>Emerald 700</h6>
                         </header>
-                        <p class="caption content text-emerald-300">#047857</p>
+                        <p class="caption card_text text-emerald-300">#047857</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-emerald-600 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6>Emerald 600</h6>
                         </header>
-                        <p class="content caption text-emerald-950">#059669</p>
+                        <p class="card_text caption text-emerald-950">#059669</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-emerald-500 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6>Emerald 500</h6>
                         </header>
-                        <p class="content caption text-emerald-950">#10b981</p>
+                        <p class="card_text caption text-emerald-950">#10b981</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-emerald-400 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6 class="text-emerald-900">Emerald 400</h6>
                         </header>
-                        <p class="content caption text-emerald-950">#34d399</p>
+                        <p class="card_text caption text-emerald-950">#34d399</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-emerald-300 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6 class="text-emerald-900">Emerald 300</h6>
                         </header>
-                        <p class="content caption text-emerald-950">#6ee7b7</p>
+                        <p class="card_text caption text-emerald-950">#6ee7b7</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-emerald-200 br-none">
-                        <header>
+                        <header class="card_title">
                             <h6 class="text-emerald-900">Emerald 200</h6>
                         </header>
-                        <p class="content caption text-emerald-950">#a7f3d0</p>
+                        <p class="card_text caption text-emerald-950">#a7f3d0</p>
                     </div>
                 </div>
             </div>
@@ -472,34 +473,34 @@
             <div class="row gap-2 justify-center">
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-white br-none">
-                        <header>
+                        <header class="card_title">
                             <h3 class="text-neutral-950">White</h3>
                         </header>
-                        <p class="content caption text-neutral-950">#ffffff</p>
+                        <p class="card_text caption text-neutral-950">#ffffff</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-emerald-100 br-none">
-                        <header>
+                        <header class="card_title">
                             <h3 class="text-emerald-950">Emerald 100</h3>
                         </header>
-                        <p class="content caption text-emerald-950">#d1fae5</p>
+                        <p class="card_text caption text-emerald-950">#d1fae5</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-emerald-950 br-none">
-                        <header>
+                        <header class="card_title">
                             <h3 class="text-emerald-100">Emerald 950</h3>
                         </header>
-                        <p class="content caption text-emerald-100">#022c22</p>
+                        <p class="card_text caption text-emerald-100">#022c22</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-black br-none">
-                        <header>
+                        <header class="card_title">
                             <h3 class="text-neutral-100">Black</h3>
                         </header>
-                        <p class="content caption text-neutral-100">#000000</p>
+                        <p class="card_text caption text-neutral-100">#000000</p>
                     </div>
                 </div>
             </div>
@@ -507,50 +508,50 @@
             <div class="row gap-2 justify-center">
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-info br-none">
-                        <header>
+                        <header class="card_title">
                             <h3 class="text-neutral-100">Info</h3>
                         </header>
-                        <p class="content caption text-neutral-100">&dollar;teal-600</p>
+                        <p class="card_text caption text-neutral-100">&dollar;teal-600</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-success br-none">
-                        <header>
+                        <header class="card_title">
                             <h3 class="text-neutral-100">Success</h3>
                         </header>
-                        <p class="content caption text-neutral-100">&dollar;green-600</p>
+                        <p class="card_text caption text-neutral-100">&dollar;green-600</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-caution br-none">
-                        <header>
+                        <header class="card_title">
                             <h3 class="text-neutral-100">Caution</h3>
                         </header>
-                        <p class="content caption text-neutral-100">&dollar;yellow-600</p>
+                        <p class="card_text caption text-neutral-100">&dollar;yellow-600</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-critical br-none">
-                        <header>
+                        <header class="card_title">
                             <h3 class="text-neutral-100">Critical</h3>
                         </header>
-                        <p class="content caption text-neutral-100">&dollar;red-600</p>
+                        <p class="card_text caption text-neutral-100">&dollar;red-600</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-magic br-none">
-                        <header>
+                        <header class="card_title">
                             <h3 class="text-neutral-100">Magic</h3>
                         </header>
-                        <p class="content caption text-neutral-100">&dollar;violet-600</p>
+                        <p class="card_text caption text-neutral-100">&dollar;violet-600</p>
                     </div>
                 </div>
                 <div class="col-12-xs col-5-sm col-3-xl">
                     <div class="card e-none bg-emphasis br-none">
-                        <header>
+                        <header class="card_title">
                             <h3 class="text-neutral-100">Emphasis</h3>
                         </header>
-                        <p class="content caption text-neutral-100">&dollar;blue-600</p>
+                        <p class="card_text caption text-neutral-100">&dollar;blue-600</p>
                     </div>
                 </div>
             </div>
@@ -600,64 +601,65 @@
                 <div class="row gap-2 justify-center">
                     <div class="col-12-xs col-5-sm col-3-xl">
                         <div class="card e-none bg-neutral-800 b-none">
-                            <header>
+                            <header class="card_title">
                                 <div class="badge-neutral-900">&lt;e-none&gt;</div>
                             </header>
-                            <p class="content">Elevation none</p>
+                            <p class="card_text">Elevation none</p>
                         </div>
                     </div>
                     <div class="col-12-xs col-5-sm col-3-xl">
                         <div class="card e-1 bg-neutral-800 b-none">
-                            <header>
+                            <header class="card_title">
                                 <div class="badge-neutral-900">&lt;e-1&gt;</div>
                             </header>
-                            <p class="content">Elevation 1</p>
+                            <p class="card_text">Elevation 1</p>
                         </div>
                     </div>
                     <div class="col-12-xs col-5-sm col-3-xl">
                         <div class="card e-2 bg-neutral-800 b-none">
-                            <header>
+                            <header class="card_title">
                                 <div class="badge-neutral-900">&lt;e-2&gt;</div>
                             </header>
-                            <p class="content">Elevation 2</p>
+                            <p class="card_text">Elevation 2</p>
                         </div>
                     </div>
                     <div class="col-12-xs col-5-sm col-3-xl">
                         <div class="card e-3 bg-neutral-800 b-none">
-                            <header>
+                            <header class="card_title">
                                 <div class="badge-neutral-900">&lt;e-3&gt;</div>
                             </header>
-                            <p class="content">Elevation 3</p>
+                            <p class="card_text">Elevation 3</p>
                         </div>
                     </div>
                     <div class="col-12-xs col-5-sm col-3-xl">
                         <div class="card e-4 bg-neutral-800 b-none">
-                            <header>
+                            <header class="card_title">
                                 <div class="badge-neutral-900">&lt;e-4&gt;</div>
                             </header>
-                            <p class="content">Elevation 4</p>
+                            <p class="card_text">Elevation 4</p>
                         </div>
                     </div>
                     <div class="col-12-xs col-5-sm col-3-xl">
                         <div class="card e-5 bg-neutral-800 b-none">
-                            <header>
+                            <header class="card_title">
                                 <div class="badge-neutral-900">&lt;e-5&gt;</div>
                             </header>
-                            <p class="content">Elevation 5</p>
+                            <p class="card_text">Elevation 5</p>
                         </div>
                     </div>
                     <div class="col-12-xs col-5-sm col-3-xl">
                         <div class="card e-6 bg-neutral-800 b-none">
-                            <header>
+                            <header class="card_title">
                                 <div class="badge-neutral-900">&lt;e-6&gt;</div>
                             </header>
-                            <p class="content">Elevation 6</p>
+                            <p class="card_text">Elevation 6</p>
                         </div>
                     </div>
                 </div>
             </article>
             <article>
-                <h3 class="mb-2 weight-light text-emerald-400">Avatars
+                <h3 class="mb-2 weight-light text-emerald-400">Avatars <sup
+                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
                 </h3>
                 <div class="row gap-2 justify-center">
                     <div class="col-12-xs col-3-sm col-2-xl display-f justify-center">
@@ -703,6 +705,58 @@
                         </div>
                     </div>
                 </div>
+                <h4 class="subtitle">Status Position</h4>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-3-sm col-2-xl justify-center">
+                        <div class="avatar-neutral-800">JD<div class="status is-active top-left">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl justify-center">
+                        <div class="avatar-neutral-800">JD<div class="status is-active">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl justify-center">
+                        <div class="avatar-neutral-800">JD<div class="status is-active top-right">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl justify-center">
+                        <div class="avatar-neutral-800">JD<div class="status is-active bottom-right">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="subtitle">Avatar Sizes</h4>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-3-sm col-2-xl justify-center">
+                        <div class="avatar-neutral-800 br-circle size-sm">JD</div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl justify-center">
+                        <div class="avatar-neutral-800">JD</div>
+                    </div>
+                    <div class="col-12-xs col-3-sm col-2-xl justify-center">
+                        <div class="avatar-neutral-800 size-lg">JD</div>
+                    </div>
+                </div>
+                <h4 class="subtitle">Avatar Groups</h4>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-3-sm col-2-xl justify-center">
+                        <div class="avatar-group">
+                            <div class="avatar-neutral-800 br-circle">JD</div>
+                            <div class="avatar-neutral-800 br-circle">JD</div>
+                            <div class="avatar-neutral-800 br-circle">JD</div>
+                            <div class="avatar-neutral-800 br-circle">+2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-3-sm col-2-xl justify-center">
+                        <div class="avatar-group">
+                            <div class="avatar-neutral-800 br-circle has-image"></div>
+                            <div class="avatar-neutral-800 br-circle has-image"></div>
+                            <div class="avatar-neutral-800 br-circle has-image"></div>
+                            <div class="avatar-neutral-800 br-circle">+2</div>
+                        </div>
+                    </div>
+                </div>
             </article>
             <article>
                 <h3 class="mb-4 weight-light text-emerald-400">Buttons <sup
@@ -710,13 +764,13 @@
                 </h3>
                 <div class="row gap-2 justify-center">
                     <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
-                        <a href="#" class="btn text-black">Default</a>
+                        <a href="#" class="btn">Default</a>
                     </div>
                     <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
-                        <a href="#" class="btn text-black" aria-disabled="true" disabled>Disabled</a>
+                        <a href="#" class="btn" aria-disabled="true" disabled>Disabled</a>
                     </div>
                     <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
-                        <a href="#" class="btn-emerald-500 text-white text-hover-black">Button</a>
+                        <a href="#" class="btn-emerald-500 text-white text-hover-black contained">Button</a>
                     </div>
                     <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
                         <a href="#" class="btn bg-gradient text-white text-hover-black">Gradient</a>
@@ -725,61 +779,119 @@
                         <a href="#" class="btn-outlined-emerald-500 text-emerald-500 text-hover-white">Outlined</a>
                     </div>
                     <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
+                        <a href="#" class="btn-outlined-emerald-500" aria-disabled="true" disabled>Disabled</a>
+                    </div>
+                </div>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
                         <a href="#" class="btn-complement-emerald-700 text-hover-black">Complement</a>
                     </div>
-                    <div class="row gap-2 justify-center">
-                        <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
-                            <a href="#" class="btn p-1"><i class="bx bx-envelope font-lg text-white"></i></a>
+                    <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
+                        <a href="#" class="btn p-1"><i class="bx bx-envelope font-lg text-white"></i></a>
+                    </div>
+                    <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
+                        <a href="#" class="btn p-1 has-icon-left"><i
+                                class="bx bx-send font-lg text-emerald-400 bx-fade-right"></i> Send</a>
+                    </div>
+                    <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
+                        <a href="#" class="btn-outlined-red-500 p-1 has-icon-right text-hover-red-500">Delete <i
+                                class="bx bx-trash font-lg text-red-400 bx-tada"></i></a>
+                    </div>
+                </div>
+                <h4 class="subtitle">Button Sizes</h4>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-6-sm col-2-xl justify-center">
+                        <button class="btn size-sm">Small</button>
+                    </div>
+                    <div class="col-12-xs col-6-sm col-2-xl justify-center">
+                        <button class="btn">Medium</button>
+                    </div>
+                    <div class="col-12-xs col-6-sm col-2-xl justify-center">
+                        <button class="btn size-lg">Large</button>
+                    </div>
+                </div>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-6-sm col-2-xl justify-center">
+                        <button class="btn-outlined-emerald-500 size-sm">Small</button>
+                    </div>
+                    <div class="col-12-xs col-6-sm col-2-xl justify-center">
+                        <button class="btn-outlined-emerald-500">Medium</button>
+                    </div>
+                    <div class="col-12-xs col-6-sm col-2-xl justify-center">
+                        <button class="btn-outlined-emerald-500 size-lg">Large</button>
+                    </div>
+                </div>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-6-sm col-2-xl justify-center">
+                        <a href="#" class="btn size-sm p-1"><i class="bx bx-envelope font-lg text-white"></i></a>
+                    </div>
+                    <div class="col-12-xs col-6-sm col-2-xl justify-center">
+                        <a href="#" class="btn p-1"><i class="bx bx-envelope font-lg text-white"></i></a>
+                    </div>
+                    <div class="col-12-xs col-6-sm col-2-xl justify-center">
+                        <a href="#" class="btn size-lg"><i class="bx bx-envelope font-lg text-white"></i></a>
+                    </div>
+                </div>
+                </div>
+                <h4 class="subtitle">Button Groups</h4>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-6-sm col-2-xl justify-center">
+                        <div class="btn-group">
+                            <a href="#" class="btn size-sm"><i class="bx bx-envelope font-lg"></i></a>
+                            <a href="#" class="btn size-sm"><i class="bx bx-send font-lg"></i></a>
+                            <a href="#" class="btn size-sm"><i class="bx bx-trash font-lg"></i></a>
                         </div>
                     </div>
-                    <div class="row gap-2 justify-center">
-                        <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
-                            <a href="#" class="btn p-1 has-icon-left"><i
-                                    class="bx bx-send font-lg text-emerald-400 bx-fade-right"></i> Send</a>
+                </div>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-6-sm col-2-xl justify-center">
+                        <div class="btn-group e-3">
+                            <a href="#" class="btn-emerald-500 text-hover-black"><i
+                                    class="bx bx-envelope font-lg"></i></a>
+                            <a href="#" class="btn-emerald-500 text-hover-black"><i class="bx bx-send font-lg"></i></a>
+                            <a href="#" class="btn-emerald-500 text-hover-black"><i class="bx bx-trash font-lg"></i></a>
                         </div>
                     </div>
-                    <div class="row gap-2 justify-center">
-                        <div class="col-12-xs col-6-sm col-2-xl display-f justify-center">
-                            <a href="#" class="btn-outlined-red-500 p-1 has-icon-right text-hover-red-500">Delete <i
-                                    class="bx bx-trash font-lg text-red-400 bx-tada"></i></a>
-                        </div>
-                    </div>
-                    <div class="row gap-2 justify-center">
-                        <div class="btn-group m-0">
-                            <a href="#" class="btn"><i class="bx bx-envelope font-lg text-white"></i></a>
-                            <a href="#" class="btn"><i class="bx bx-send font-lg text-white"></i></a>
-                            <a href="#" class="btn"><i class="bx bx-trash font-lg text-white"></i></a>
+                </div>
+                <div class="row gap-2 justify-center">
+                    <div class="col-12-xs col-6-sm col-2-xl justify-center">
+                        <div class="btn-group e-2">
+                            <a href="#" class="btn-outlined-emerald-500 size-lg"><i
+                                    class="bx bx-envelope font-lg"></i></a>
+                            <a href="#" class="btn-outlined-emerald-500 size-lg"><i class="bx bx-send font-lg"></i></a>
+                            <a href="#" class="btn-outlined-emerald-500 size-lg"><i class="bx bx-trash font-lg"></i></a>
                         </div>
                     </div>
                 </div>
             </article>
             <article>
                 <h3 class="mb-4 weight-light text-emerald-400">Tooltips <sup
-                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
-                </h3>
+                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
                 <div class="row justify-center">
                     <div class="tooltip-container left">
                         <button class="btn tooltip-trigger" aria-describedby="tooltip-left">Left Tooltip</button>
-                        <div class="tooltip" id="tooltip-left">This is a left tooltip.</div>
+                        <div class="tooltip" id="tooltip-left" aria-label="This is a left tooltip">This is a left
+                            tooltip.</div>
                     </div>
                     <div class="tooltip-container right">
                         <button class="btn tooltip-trigger" aria-describedby="tooltip-right">Right Tooltip</button>
-                        <div class="tooltip" id="tooltip-right">This is a right tooltip.</div>
+                        <div class="tooltip" id="tooltip-right" aria-label="This is a right tooltip.">This is a right
+                            tooltip.</div>
                     </div>
                     <div class="tooltip-container top">
                         <button class="btn tooltip-trigger" aria-describedby="tooltip-top">Top Tooltip</button>
-                        <div class="tooltip" id="tooltip-top">This is a top tooltip.</div>
+                        <div class="tooltip" id="tooltip-top" aria-label="This is a top tooltip.">This is a top tooltip.
+                        </div>
                     </div>
                     <div class="tooltip-container bottom">
                         <button class="btn tooltip-trigger" aria-describedby="tooltip-bottom">Bottom Tooltip</button>
-                        <div class="tooltip" id="tooltip-bottom">This is a bottom tooltip.</div>
+                        <div class="tooltip" id="tooltip-bottom" aria-label="This is a bottom tooltip.">This is a bottom
+                            tooltip.</div>
                     </div>
                 </div>
             </article>
             <article>
-                <h3 class="mb-4 weight-light text-emerald-400">Taskbar <sup
-                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup>
-                </h3>
+                <h3 class="mb-4 weight-light text-emerald-400">Taskbar</h3>
                 <div class="row gap-2 justify-center">
                     <div class="taskbar">
                         <a href="#" class="task-item">Item</a>
@@ -820,7 +932,7 @@
                 </h3>
                 <div class="row justify-center">
                     <div class="sidebar" id="sidebar">
-                        <nav>
+                        <nav class="mb-3">
                             <li>
                                 <div class="badge-emerald-500 text-neutral-950 weight-bold display-i-b mb-2">
                                     .is-fixed-left</div>
@@ -853,10 +965,12 @@
                         <p>&nbsp;</p>
                     </div>
                     <div class="sidebar ml-2 bg-emerald-900 pb-2 b-none">
-                        <nav>
+                        <nav class="mb-3">
                             <li>
                                 <div class="badge-emerald-500 text-neutral-950 weight-bold display-i-b mb-2">
                                     .is-fixed-right</div>
+                                <button class="btn-outlined-emerald-500 p-1 br-circle toggler" id="toggleButtonRight"><i
+                                        class="bx bxs-chevrons-right"></i></button>
                             </li>
                             <li>
                                 <h4>Sidebar Right</h4>
@@ -886,14 +1000,17 @@
                                 <a href="#"><i class="bx bxs-calendar-edit mr-1"></i>Release Notes</a>
                             </li>
                         </nav>
-                        <div class="card bg-emerald-600 e-none ml-2 mr-2 mt-0 b-none">
-                            <header>
+                        <hr class="mb-2" />
+                        <div class="card bg-emerald-600 e-none ml-2 mr-2 b-none">
+                            <header class="card_title">
                                 <h5>Positioning</h5>
                             </header>
-                            <p class="content">The <code>.sidebar</code> component has two classes, an
-                                <code>.is-fixed-left</code> and an <code>.is-fixed-right</code> to fix its position to
-                                the left or right of your screen with a set width of 264px.
-                            </p>
+                            <div class="card_text">
+                                <p>The <code>.sidebar</code> component has two classes, an
+                                    <code>.is-fixed-left</code> and an <code>.is-fixed-right</code> with a set width of
+                                    264px.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -901,6 +1018,19 @@
             <article>
                 <h3 class="mb-4 weight-bold text-emerald-400">Cards <sup
                         class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
+                <div class="row justify-center">
+                    <div class="card mb-2">
+                        <header class="card_header">
+                            <h5>Title</h5>
+                        </header>
+                        <div class="card_text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipliscing elit.</p>
+                        </div>
+                        <footer class="card_footer">
+                            <a href="#" class="btn size-sm">Read More</a>
+                        </footer>
+                    </div>
+                </div>
                 <div class="row justify-center">
                     <div class="vs-card">
                         <div class="card_img">
@@ -939,8 +1069,7 @@
                 </div>
             </article>
             <article>
-                <h3 class="mb-4 weight-light text-emerald-400">Carousel <sup
-                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
+                <h3 class="mb-4 weight-light text-emerald-400">Carousel</h3>
                 <div class="row justify-center">
                     <div class="carousel-container">
                         <div class="carousel-item">
@@ -1038,30 +1167,30 @@
                 <div class="row justify-center">
                     <form>
                         <fieldset>
-                            <label>Text Input</label>
-                            <input placeholder="Default" type="text" />
-                            <label>Password Input</label>
-                            <input placeholder="Password" type="password" />
-                            <label>Search Input</label>
-                            <input placeholder="Search" type="search" />
+                            <label for="Default">Text Input</label>
+                            <input placeholder="Default" type="text" id="Default" autocomplete="Default" />
+                            <label for="Password">Password Input</label>
+                            <input placeholder="Password" type="password" id="Password"
+                                autocomplete="current-password" />
+                            <label for="Search">Search Input</label>
+                            <input placeholder="Search" type="search" id="Search" />
                         </fieldset>
                         <fieldset>
-                            <label>Range Input</label>
-                            <input placeholder="Range" type="range" value="50" />
-                            <label>Checkbox Input</label>
-                            <input placeholder="Range" type="checkbox" />
-                            <label>Radio Input</label>
-                            <input placeholder="Range" type="radio" />
+                            <label for="Range">Range Input</label>
+                            <input placeholder="Range" type="range" value="50" id="Range" />
+                            <label for="Checkbox">Checkbox Input</label>
+                            <input placeholder="Range" type="checkbox" id="Checkbox" />
+                            <label for="Radio">Radio Input</label>
+                            <input placeholder="Range" type="radio" id="Radio" />
                         </fieldset>
                         <fieldset>
-                            <input placeholder="Submit" type="submit" class="btn-outlined-emerald-500" />
+                            <input placeholder="Submit" type="submit" class="btn-outlined-emerald-500" id="Submit" />
                         </fieldset>
                     </form>
                 </div>
             </article>
             <article>
-                <h3 class="mb-4 weight-light text-emerald-400">Modals <sup
-                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
+                <h3 class="mb-4 weight-light text-emerald-400">Modals</h3>
                 <div class="row gap-2 justify-center">
                     <button class="btn-outlined-emerald-500" title="showNotification" id="showNotification"
                         type="button">Show Notification</button>
@@ -1075,7 +1204,7 @@
                                 <h5>Notification</h5>
                                 <p>This is the notification message.</p>
                             </div>
-                            <span class="close" id="closeModal">&times;</span>
+                            <button class="btn close" id="closeModal">&times;</button>
                         </div>
                     </div>
                 </div>
@@ -1085,8 +1214,7 @@
         <hr class="mt-4 mb-4" />
         <section id="utility">
             <h3 class="mb-2"><i
-                    class="bx bx-wrench p-2 br-sm bg-neutral-800 font-xl mr-2 text-emerald-500"></i>Utilities <sup
-                    class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
+                    class="bx bx-wrench p-2 br-sm bg-neutral-800 font-xl mr-2 text-emerald-500"></i>Utilities</h3>
             <p class="mb-2">The Utilities section of our library includes a wide range of default SASS mixins which
                 provide rapid prototyping of CSS classes like padding, margin, opacity, and border radius.</p>
             <article>
@@ -1427,10 +1555,45 @@
                     Notes</h3>
             </header>
             <div class="mb-2 card">
-                <header>
-                    <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.0.1</div>
+                <header class="card_title">
+                    <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.0.2</div>
                 </header>
-                <div class="content mb-2">
+                <div class="card_text mb-2">
+                    <h6 class="mt-1 mb-2 text-emerald-400 weight-light">November 6th, 2023</h6>
+                    <ul class="bx-ul">
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Updated many components to compare to <a
+                                href="https://mui.com" target="_blank">Material UI</a> appearance and functionality,
+                            including adding
+                            classes <code>.contained</code>, <code>.size-sm</code> and <code>.size-lg</code> to Buttons,
+                            and classes <code>.size-sm</code> and <code>.size-lg</code> to Avatars.
+                        </li>
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added new classes for Avatar component
+                            <code>.status</code> indicators for positioning. Default is bottom-right positioning now and
+                            new classes include <code>.top-right</code>, <code>.bottom-left</code>, and
+                            <code>.top-left</code>.
+                        </li>
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added new Button and Avatar component
+                            groups with <code>.button-group</code> and <code>.avatar-group</code> classes.
+                        </li>
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added new Card Compoinent default card
+                            classes and styles.
+                        </li>
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Adjusted the Tooltips to properly display
+                            pointing triangle arrows as intended instead of squares.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-2 card">
+                <header class="card_title">
+                    <div class="badge-neutral-500 text-neutral-950 weight-bold">v2.0.1</div>
+                </header>
+                <div class="card_text mb-2">
                     <h6 class="mt-1 mb-2 text-emerald-400 weight-light">October 11th, 2023</h6>
                     <ul class="bx-ul">
                         <li>
@@ -1441,10 +1604,10 @@
                 </div>
             </div>
             <div class="mb-2 card">
-                <header>
-                    <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.0.1</div>
+                <header class="card_title">
+                    <div class="badge-neutral-500 text-neutral-950 weight-bold">v2.0.1</div>
                 </header>
-                <div class="content mb-2">
+                <div class="card_text mb-2">
                     <h6 class="mt-1 mb-2 text-emerald-400 weight-light">October 9th, 2023</h6>
                     <ul class="bx-ul">
                         <li>
@@ -1462,10 +1625,10 @@
                 </div>
             </div>
             <div class="mb-2 card">
-                <header>
-                    <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.0.1</div>
+                <header class="card_title">
+                    <div class="badge-neutral-500 text-neutral-950 weight-bold">v2.0.1</div>
                 </header>
-                <div class="content mb-2">
+                <div class="card_text mb-2">
                     <h6 class="mt-1 mb-2 text-emerald-400 weight-light">October 8th, 2023</h6>
                     <ul class="bx-ul">
                         <li>
@@ -1482,10 +1645,10 @@
                 </div>
             </div>
             <div class="mb-2 card">
-                <header>
-                    <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.0.1</div>
+                <header class="card_title">
+                    <div class="badge-neutral-500 text-neutral-950 weight-bold">v2.0.1</div>
                 </header>
-                <div class="content mb-2">
+                <div class="card_text mb-2">
                     <h6 class="mt-1 mb-2 text-emerald-400 weight-light">October 7th, 2023</h6>
                     <ul class="bx-ul">
                         <li>
@@ -1497,10 +1660,10 @@
                 </div>
             </div>
             <div class="mb-2 card">
-                <header>
-                    <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.0.1</div>
+                <header class="card_title">
+                    <div class="badge-neutral-500 text-neutral-950 weight-bold">v2.0.1</div>
                 </header>
-                <div class="content mb-2">
+                <div class="card_text mb-2">
                     <h6 class="mt-1 mb-2 text-emerald-400 weight-light">October 4th, 2023</h6>
                     <ul class="bx-ul">
                         <li><i class="bx bx-plus bx-fw text-emerald-400"></i> Included this Release Notes section to

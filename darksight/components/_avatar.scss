@@ -4,15 +4,26 @@
     display: inline-flex;
     border-radius: $base-border-radius;
     background-color: $bg-color;
-    font-size: $font-size-sm;
     font-weight: normal;
+    font-size: $font-size-lg;
     height: 4rem;
     width: 4rem;
     align-content: center;
     align-items: center;
     justify-content: center;
     overflow: visible !important;
-    font-size: $base-font-size * 2;
+
+    &.size-sm {
+        font-size: $base-font-size !important;
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+
+    &.size-lg {
+        height: 6rem !important;
+        width: 6rem !important;
+        font-size: $font-size-xxl !important;
+    }
 
     &.has-image {
         background: url('/assets/john_avatar.png') center center no-repeat !important;
@@ -21,7 +32,7 @@
     & .status {
         display: inline-flex;
         position: relative;
-        top: -0.75rem;
+        top: calc(100% - 2.25rem);
         right: 0.25rem;
         height: 6px;
         width: 6px;
@@ -43,11 +54,35 @@
         &.is-off {
             background-color: map-get($map: $colors, $key: red-600);
         }
+
+        &.top-left {
+            top: -0.75rem !important;
+            right: calc(100% - 1.5rem) !important;
+        }
+
+        &.top-right {
+            top: -0.75rem !important;
+        }
+
+        &.bottom-left {
+            top: calc(100% - 2.25rem) !important;
+            right: calc(100% - 1.5rem) !important;
+        }
     }
 }
 
 .avatar {
     @include avatar;
+}
+
+.avatar-group {
+    display: inline-flex;
+
+    & * {
+        border: 4px solid $base-background-color;
+        margin-left: -0.75rem;
+        overflow: clip;
+    }
 }
 
 @each $key, $val in $colors {

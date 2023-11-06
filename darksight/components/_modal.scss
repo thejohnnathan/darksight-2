@@ -21,27 +21,30 @@
     padding: $base-padding;
     border-radius: $base-border-radius * 0.5;
     box-shadow: 0 1rem 1rem darken($base-background-color, 5);
-    max-width: 600px;
-    min-width: max-content;
+    max-width: 60vw;
     margin: 1rem auto;
     border: $base-border * 2 solid;
     border-left: $base-border * 5 solid transparent;
     border-color: $base-background-color;
+    align-items: center;
 
     & div {
         display: inline-flex;
         flex-flow: column nowrap;
+
         &.modal-icon {
             display: inline-block !important;
             margin: auto 1rem auto 0;
             text-align: center;
             font-size: $font-size-xxl;
             width: max-content;
+
             & i {
                 padding: 0;
                 margin: 0;
             }
         }
+
         &.modal-text {
             width: 100%;
         }
@@ -56,13 +59,7 @@
 
 .close {
     text-align: right;
-    clear: both;
     float: right;
-    top: -1rem;
-    right: 1rem;
     cursor: pointer;
     font-size: $font-size-xl;
-    margin: 0;
-    padding: 0;
 }
-

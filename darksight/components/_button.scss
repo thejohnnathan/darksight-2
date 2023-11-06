@@ -1,29 +1,48 @@
 @use 'sass:math';
 
-@mixin btn($bg-color: darken($base-background-color, 5)) {
+@mixin btn($bg-color: $base-background-color) {
     text-decoration: none;
     cursor: pointer;
     display: inline-flex;
     border: 0;
     padding: $base-padding 30px;
-    border-radius: $base-border-radius * 0.75;
+    border-radius: $base-border-radius * 0.25;
     background-color: $bg-color;
     align-content: center;
     align-items: center;
-    color: $base-text-color;
     border: $base-border solid $bg-color;
     transition: all 0.4s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1125rem;
 
     &[disabled] {
         cursor: not-allowed;
         background-color: $base-background-color;
         box-shadow: none;
         color: darken($base-text-color, 60);
-        border: $base-border solid darken($base-text-color, 80);
         pointer-events: none !important;
 
         &:hover {
             background-color: $base-background-color;
+        }
+    }
+
+    &.size-sm {
+        font-size: $font-size-sm;
+        padding: $base-padding;
+
+        & i {
+            font-size: $font-size-sm;
+        }
+    }
+
+    &.size-lg {
+        font-size: $font-size-lg;
+        padding: $base-padding 36px;
+
+        & i {
+            font-size: $font-size-lg;
         }
     }
 
@@ -50,6 +69,14 @@
     &:hover {
         background-color: lighten($bg-color, 10);
     }
+
+    &.contained {
+        box-shadow: $base-box-shadow;
+
+        &:hover {
+            box-shadow: 0 0.5rem 0.75rem darken($base-background-color, 5);
+        }
+    }
 }
 
 .btn {
@@ -59,21 +86,23 @@
 .btn-group {
     display: flex;
     flex-flow: row nowrap;
-    border-radius: $base-border-radius;
-    background: transparent;
+    border-radius: $base-border-radius * 0.25;
+    background: $base-background-color;
+    padding: 0;
+    margin: 0;
+    max-width: fit-content;
+    gap: 1px;
 
-    & .btn {
+    & * {
         display: inline-flex;
-        width: min-content;
         border-radius: 0 !important;
-        padding: $base-padding;
 
         &:first-child {
-            border-radius: $base-border-radius 0 0 $base-border-radius !important;
+            border-radius: $base-border-radius * 0.25 0 0 $base-border-radius * 0.25 !important;
         }
 
         &:last-child {
-            border-radius: 0 $base-border-radius $base-border-radius 0 !important;
+            border-radius: 0 $base-border-radius * 0.25 $base-border-radius * 0.25 0 !important;
         }
     }
 }
@@ -81,6 +110,7 @@
 @each $key, $val in $colors {
     .btn-#{$key} {
         @include btn($val);
+        color: $base-text-color;
 
         &:hover {
             background-color: lighten($val, 5) !important;
@@ -95,6 +125,19 @@
         &:hover {
             color: darken($val, 80);
             background-color: $val;
+        }
+
+        &[disabled] {
+            cursor: not-allowed;
+            background-color: $base-background-color;
+            box-shadow: none;
+            color: darken($base-text-color, 60);
+            border: $base-border solid darken($base-text-color, 80);
+            pointer-events: none !important;
+
+            &:hover {
+                background-color: $base-background-color;
+            }
         }
     }
 
