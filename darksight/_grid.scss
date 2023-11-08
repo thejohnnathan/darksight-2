@@ -21,6 +21,18 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     display: flex !important;
     flex-flow: row wrap;
     align-items: stretch;
+
+    &.g-1 {
+        gap: 1rem;
+    }
+
+    &.g-2 {
+        gap: 2rem;
+    }
+
+    &.g-3 {
+        gap: 3rem;
+    }
 }
 
 // grid gaps

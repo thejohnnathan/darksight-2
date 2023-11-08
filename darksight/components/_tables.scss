@@ -42,7 +42,7 @@
     .tbl-outlined-#{$key} {
         @include tbl;
         border-collapse: separate !important;
-        border: 1px solid darken($base-link-color, 40);
+        border: 1px solid $val;
 
         & th,
         td {

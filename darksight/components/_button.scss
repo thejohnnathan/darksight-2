@@ -13,8 +13,7 @@
     border: $base-border solid $bg-color;
     transition: all 0.4s ease;
     font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.1125rem;
+    letter-spacing: 0.0125rem;
 
     &[disabled] {
         cursor: not-allowed;

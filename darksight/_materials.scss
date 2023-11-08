@@ -4,6 +4,37 @@
     backdrop-filter: blur(8px);
 }
 
+.fractal {
+    background-image: url('../assets/fractal_bg.png');
+    background-size: 100%;
+    background-position: 100% 100%;
+}
+
+.bubbled {
+    background: 
+    radial-gradient(farthest-side, darken($base-background-color, 2) 90%, transparent) left bottom/8rem 8rem,
+    radial-gradient(farthest-side, lighten($base-background-color, 2) 90%, transparent) left center/5rem 5rem,
+    radial-gradient(farthest-side, lighten($base-background-color, 5) 90%, transparent) left top/6rem 6rem,
+    radial-gradient(farthest-side, lighten($base-background-color, 2) 90%, transparent) top center/3rem 3rem,
+    radial-gradient(farthest-side, lighten($base-background-color, 5) 90%, transparent) top right/5rem 5rem,
+    radial-gradient(farthest-side, lighten($base-background-color, 2) 90%, transparent) right bottom/8rem 8rem,
+    radial-gradient(farthest-side, darken($base-background-color, 2) 60%, transparent) right bottom/13rem 13rem;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.striped {
+    background: repeating-linear-gradient(
+        45deg,
+        $base-background-color,
+        $base-background-color 1rem,
+        darken($base-background-color, 2) 1rem,
+        darken($base-background-color, 2) 2rem
+    );
+}
+
 .placeholder {
     background-image: linear-gradient(90deg, transparent 0px, rgba(241, 245, 249, 0.2) 40px, transparent 80px);
     background-size: 300%;

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Darksight is a CSS Library by John Durtche built with NodeJS, Gulp, and SASS.">
+    <meta name="keywords"
+        content="Darksight, CSS Library, SASS, Gulp, SASS, Stylesheet, cascading, framework, css design, user interface, user experience, front end development, frontend">
+    <meta name="author" content="John Durtche">
+    <meta name="copyright" content="Copyright 2023 John Durtche. All Rights Reserved.">
+    <meta name="application-name" content="Darksight v2.0.2">
+    <meta name="theme-color" content="#171717">
+    <link href="/css/index.css" rel="stylesheet">
+    <title>Darksight Design</title>
+</head>
+
+<body>
+    <nav class="navbar text-white bg-neutral-900 bs-none">
+        <div class="container row">
+            <div class="d-f">
+                <h5>Darksight Designs</h5>
+            </div>
+            <div class="d-f justify-flex-end">
+                <ul class="d-i-f">
+                    <li class="mr-1">
+                        <a href="#" data-target="marketing" class="btn size-sm"
+                            aria-describedby="tooltip-right-about">Marketing</a>
+                    </li>
+                    <li class="mr-1">
+                        <a href="#" data-target="application" class="btn size-sm"
+                            aria-describedby="tooltip-right-about">Application UI</a>
+                    </li>
+                    <li class="mr-1">
+                        <a href="#" data-target="ecommerce" class="btn size-sm"
+                            aria-describedby="tooltip-right-about">Ecommerce</a>
+                    </li>
+                    <li class="mr-1">
+                        <a href="#" data-target="pricing" class="btn size-sm"
+                            aria-describedby="tooltip-right-about">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" data-target="faqs" class="btn size-sm"
+                            aria-describedby="tooltip-right-about">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-5">
+        <section class="hero-sm br-sm b-solid mb-2" id="marketing">
+            <header>
+                <h1 class="mt-3 font-xxl">Marketing</h1>
+            </header>
+            <p class="content mt-2 mb-4 o-70">Heroes, feature sections, newsletter sign up forms &mdash; everything you
+                need to build beautiful marketing websites.</p>
+        </section>
+        <hr class="mt-4 mb-4" />
+        <h3 class="mb-3">Hero Sections</h3>
+        <section class="hero-lg bg-neutral-800 br-none b-none mb-2 ta-center">
+            <header>
+                <h1 class="mt-3 font-xxl mr-1 ml-1">Data to <span class="bg-violet-900 pr-1 pl-1 br-sm">enrich</span>
+                    your online business</h1>
+            </header>
+            <p class="content mt-3 mb-4 pr-4 pl-4 o-70 mr-1 ml-1">Anim aute id magna aliqua ad ad non deserunt sunt. Qui
+                irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+            <button class="btn-violet-700 mr-2 text-hover-black mt-1" type="button">Get started</button><button
+                class="btn-neutral-800 mt-1" type="button">Learn more <i
+                    class="ml-1 bx bx-right-arrow-alt"></i></button>
+        </section>
+        <section class="hero-lg bg-neutral-950 br-none b-none mb-2">
+            <header>
+                <div class="d-i-b">
+                    <span class="badge-outlined-violet-900 text-violet-400 weight-bold">What's new</span>
+                    <a href="#" target="_blank"
+                        class="text-white weight-semi-bold text-hover-violet-400 ml-2 font-sm">Just shipped v1.0 <i
+                            class="bx bx-chevron-right"></i></a>
+                </div>
+                <h1 class="mt-3 font-xxl mr-1 ml-1">Deploy to the cloud with confidence</h1>
+            </header>
+            <p class="content mt-3 mb-4 o-70 mr-1 ml-1 mw-75">Anim aute id magna aliqua ad ad non deserunt sunt. Qui
+                irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+            <button class="btn-violet-700 mr-2 text-hover-black mt-1" type="button">Get started</button><button
+                class="btn-neutral-950 mt-1" type="button">Learn more <i
+                    class="ml-1 bx bx-right-arrow-alt"></i></button>
+        </section>
+        <section class="hero-lg bg-neutral-800 br-none b-none mb-2 justify-center row">
+            <div class="col-6-xl col-12-sm col-12-xs">
+                <header>
+                    <div class="col-6-xl col-12-sm col-12-xs">
+                        <span class="badge-outlined-violet-900 text-violet-400 weight-bold">What's new</span>
+                        <a href="#" target="_blank"
+                            class="text-white weight-semi-bold text-hover-violet-400 ml-2 font-sm">Just shipped v1.0 <i
+                                class="bx bx-chevron-right"></i></a>
+                        <h1 class="mt-3 font-xxl mr-1 ml-1">Supercharge your web applications</h1>
+                    </div>
+                </header>
+                <p class="content mt-3 mb-4 o-70 mr-1 ml-1">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
+                    qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+                <button class="btn-violet-700 mr-2 text-hover-black mt-1" type="button">Documentation</button><button
+                    class="btn-neutral-800 mt-1" type="button">View on GitHub <i
+                        class="ml-1 bx bx-right-arrow-alt"></i></button>
+            </div>
+            <div class="p-4 br striped col-6-xl col-12-sm col-12-xs mt-4 mb-4 ta-center">
+                <div class="bg-neutral-950 p-1 br-sm ta">
+                    <p>
+                        <code>&lt;section class="hero-lg bg-neutral-800 br-none b-none mb-2 justify-center row"&gt;</code>
+                    </p>
+                    <p class="pl-2"><code class="text-white o-70">/* hero content here */</code></p>
+                    <p>
+                        <code>&lt;/section&gt;</code>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="hero-lg bg-neutral-950 br-none b-none mb-2 justify-center row">
+            <div class="col-6-xl col-12-sm col-12-xs">
+                <header>
+                    <div class="col-6-xl col-12-sm col-12-xs">
+                        <span class="badge-outlined-violet-900 text-violet-400 weight-bold">What's new</span>
+                        <a href="#" target="_blank"
+                            class="text-white weight-semi-bold text-hover-violet-400 ml-2 font-sm">Just shipped v1.0 <i
+                                class="bx bx-chevron-right"></i></a>
+                        <h1 class="mt-3 font-xxl mr-1 ml-1">We're changing the way people connect.</h1>
+                    </div>
+                </header>
+                <p class="content mt-3 mb-3 o-70 mr-1 ml-1">Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
+                    quis cupidatat mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
+                    exercitation tempor. Sint aliqua anim nulla sunt mollit id pariatur in voluptate cillum.</p>
+                <button class="btn-violet-700 mr-2 text-hover-black mt-1" type="button">Get started</button><button
+                    class="btn-neutral-950 mt-1" type="button">Live demo <i
+                        class="ml-1 bx bx-right-arrow-alt"></i></button>
+            </div>
+            <div class="col-6-xl col-12-sm col-12-xs mt-4 justify-center">
+                <div class="row g-2 justify-center">
+                    <div class="bg-neutral-950 p-1 br-sm col-12-xs col-3-sm col-3-xl striped e-3 center d-f"
+                        style="height:14rem;">
+                        <i class="bx bx-headphone font-xxl"></i>
+                    </div>
+                    <div class="bg-neutral-950 p-1 br-sm col-12-xs col-5-sm col-5-xl striped mt-4 e-3 center d-f"
+                        style="height:200px;">
+                        <i class="bx bx-envelope font-xxl text-violet-400"></i>
+                    </div>
+                </div>
+                <div class="row g-2 justify-center">
+                    <div class="bg-neutral-950 p-1 br-sm col-12-xs col-3-sm col-3-xl striped mt-0 mb-4 e-3 center d-f"
+                        style="height:200px;">
+                        <i class="bx bx-comment font-xxl text-violet-400"></i>
+                    </div>
+                    <div class="bg-neutral-950 p-1 br-sm col-12-xs col-5-sm col-5-xl striped mt-3 e-3 center d-f"
+                        style="height:100px;">
+                        <i class="bx bx-phone-call font-xxl"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="mt-4 mb-4" />
+        <h3 class="mb-3">Feature Sections</h3>
+        <section class="hero-lg bg-neutral-800 br-none b-none mb-2">
+            <header>
+                <p class="text-bold font-lg text-violet-400">Deploy faster</p>
+                <h1 class="mt-1 font-xxl">A better workflow</h1>
+            </header>
+            <p class="content mt-2 mb-4 o-70">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+            <div class="row br-none b-none g-2 justify-center">
+                <div class="card br-none b-none e-none col-12-xs col-12-sm col-3-xl">
+                    <div class="card_title d-i-f">
+                        <i class="bx bx-cloud-upload text-violet-400 font-xl"></i>
+                        <div class="card_text">
+                            <p>
+                                <span class="weight-bold">Push to deploy.</span> <span class="o-70">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                                    perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card br-none b-none e-none col-12-xs col-12-sm col-3-xl">
+                    <div class="card_title d-i-f">
+                        <i class="bx bx-lock text-violet-400 font-xl"></i>
+                        <div class="card_text">
+                            <p>
+                                <span class="weight-bold">SSL certificates.</span> <span class="o-70">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                                    perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card br-none b-none e-none col-12-xs col-12-sm col-3-xl">
+                    <div class="card_title d-i-f">
+                        <i class="bx bx-server text-violet-400 font-xl"></i>
+                        <div class="card_text">
+                            <p>
+                                <span class="weight-bold">Database backups.</span> <span class="o-70">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                                    perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row br-none b-none g-2 justify-center mt-2">
+                <div class="card e-none b-none striped d-f col-12-xs" style="height: 200px">&nbsp;</div>
+            </div>
+        </section>
+        <section class="hero-lg bg-neutral-950 br-none b-none mb-2">
+            <header>
+                <p class="text-bold font-lg text-violet-400">Deploy faster</p>
+                <h1 class="mt-1 font-xxl">Everything you need to deploy your app</h1>
+            </header>
+            <p class="content mt-2 mb-4 o-70">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+            <div class="row br-none b-none g-2 justify-center">
+                <div class="card b-solid e-none col-12-xs col-12-sm col-4-xl">
+                    <div class="card_title d-i-f">
+                        <i class="bx bx-cloud-upload font-xl p-1 bg-violet-700 br-sm"></i>
+                        <div class="card_text">
+                            <p>
+                                <span class="weight-bold">Push to deploy</span>
+                                <br /><br /><span class="o-70">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                                    perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card b-none e-none col-12-xs col-12-sm col-4-xl">
+                    <div class="card_title d-i-f">
+                        <i class="bx bx-lock font-xl p-1 bg-violet-700 br-sm"></i>
+                        <div class="card_text">
+                            <p>
+                                <span class="weight-bold">SSL certificates</span>
+                                <br /><br /><span class="o-70">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                                    perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card b-none e-none col-12-xs col-12-sm col-4-xl">
+                    <div class="card_title d-i-f">
+                        <i class="bx bx-refresh font-xl p-1 bg-violet-700 br-sm"></i>
+                        <div class="card_text">
+                            <p>
+                                <span class="weight-bold">Simple queues</span>
+                                <br /><br /><span class="o-70">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                                    perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card b-solid e-none col-12-xs col-12-sm col-4-xl">
+                    <div class="card_title d-i-f">
+                        <i class="bx bx-fingerprint font-xl p-1 bg-violet-700 br-sm"></i>
+                        <div class="card_text">
+                            <p>
+                                <span class="weight-bold">Advanced security</span>
+                                <br /><br /><span class="o-70">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                                    perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero-lg bg-neutral-800 br-none b-none mb-2">
+            <header>
+                <p class="text-bold font-lg text-violet-400">Deploy faster</p>
+                <h1 class="mt-1 font-xxl">Everything you need to deploy your app</h1>
+            </header>
+            <p class="content mt-2 mb-4 o-70">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+            <div class="row br-none b-none g-2 justify-center">
+                <div class="card b-none e-none col-12-xs col-12-sm col-12-xl mw-75 bg-neutral-900">
+                    <div class="card_title d-i-f">
+                        <i class="bx bx-cloud-upload font-xl text-violet-400"></i>
+                        <span class="weight-bold ml-1">Push to deploy</span>
+                    </div>
+                    <div class="card_text">
+                        <p class="o-70">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                            perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                        </p>
+                    </div>
+                    <div class="card_footer">
+                        <a href="#" class="text-violet-400 text-hover-violet-500 weight-semibold">Learn more <i
+                                class="bx bx-right-arrow-alt"></i></a>
+                    </div>
+                </div>
+                <div class="card b-none e-none col-12-xs col-12-sm col-12-xl mw-75 bg-neutral-900">
+                    <div class="card_title d-i-f">
+                        <i class="bx bx-lock font-xl text-violet-400"></i>
+                        <span class="weight-bold ml-1">SSL certificates</span>
+                    </div>
+                    <div class="card_text">
+                        <p class="o-70">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
+                            suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                        </p>
+                    </div>
+                    <div class="card_footer">
+                        <a href="#" class="text-violet-400 text-hover-violet-500 weight-semibold">Learn more <i
+                                class="bx bx-right-arrow-alt"></i></a>
+                    </div>
+                </div>
+                <div class="card b-none e-none col-12-xs col-12-sm col-12-xl mw-75 bg-neutral-900">
+                    <div class="card_title d-i-f">
+                        <i class="bx bx-refresh font-xl text-violet-400"></i>
+                        <span class="weight-bold ml-1">Simple queues</span>
+                    </div>
+                    <div class="card_text">
+                        <p class="o-70">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
+                            suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                        </p>
+                    </div>
+                    <div class="card_footer">
+                        <a href="#" class="text-violet-400 text-hover-violet-500 weight-semibold">Learn more <i
+                                class="bx bx-right-arrow-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero-lg bg-neutral-950 br-none b-none mb-3">
+            <header>
+                <p class="text-bold font-lg text-violet-400">Deploy faster</p>
+                <h1 class="mt-1 font-xxl">A better workflow</h1>
+            </header>
+            <p class="content mt-3 mb-4 o-70">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                perferendis
+                suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+            <button class="btn-violet-700 text-hover-black mt-1" type="button">Get started</button>
+            <blockquote class="mt-4 mb-2">
+                <p class="pr-3 pl-3 o-60">"Vel ultricies morbi odio facilist ultrices accumsan donec lacus purus. Lectus
+                    nibh ullamcorper ac dictum justo in euismod. Risus aenean ut elit massa. In amet aliquet eget cras.
+                    Sem volutpat enim tristique."</p>
+                <cite class="pl-3 pr-3 mt-1"><span class="avatar br-circle has-image size-sm mr-2">&nbsp;</span><span
+                        class="weight-bold">John Durtche</span><span class="o-60">&nbsp;&mdash;&nbsp;Front-End
+                        Developer</span></cite>
+            </blockquote>
+            <div class="row br-none b-none g-2 justify-center mt-4">
+                <div class="card e-none b-none striped d-f col-12-xs" style="height: 200px">&nbsp;</div>
+            </div>
+        </section>
+        <hr class="mt-4 mb-4" />
+        <h3 class="mb-3">CTA Sections</h3>
+        <section class="hero-lg bg-neutral-950 br-none b-none mb-2 justify-center row">
+            <div class="col-6-xl col-12-sm col-12-xs mt-4 justify-center">
+                <div class="row g-2 justify-center">
+                    <div class="bg-neutral-950 p-1 br-sm col-12-xs col-6-sm col-6-xl fractal e-3 center d-f"
+                        style="height:24rem;">
+                        <i class="bx bx-group bg-violet-900 font-xxl p-1 br-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6-xl col-12-sm col-12-xs">
+                <header>
+                    <div class="col-12-xl col-12-sm col-12-xs">
+                        <h1 class="mt-3 font-xxl">Join our team</h1>
+                    </div>
+                </header>
+                <p class="content mt-3 mb-3 o-70">Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
+                    quis cupidatat mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
+                    exercitation tempor. Sint aliqua anim nulla sunt mollit id pariatur in voluptate cillum.</p>
+                <ul class="bx-ul mb-3 ml-2">
+                    <li class="mb-1"><i class="bx bx-check-circle"></i> Competitive salaries</li>
+                    <li class="mb-1"><i class="bx bx-check-circle"></i> Flexible work hours</li>
+                    <li class="mb-1"><i class="bx bx-check-circle"></i> 30 days of paid vacation</li>
+                    <li class="mb-1"><i class="bx bx-check-circle"></i> Annual team retreats</li>
+                    <li class="mb-1"><i class="bx bx-check-circle"></i> Benefits for you and your family</li>
+                    <li><i class="bx bx-check-circle"></i> A great work environment</li>
+                </ul>
+                <a href="#" class="text-violet-400 text-hover-violet-500 mt-1">See our job postings <i
+                        class="ml-1 bx bx-right-arrow-alt"></i></a>
+            </div>
+        </section>
+        <section class="hero-lg bg-neutral-800 br-none b-none mb-2 justify-center row">
+            <div class="col-6-xl col-12-sm col-12-xs">
+                <header>
+                    <div class="col-12-xl col-12-sm col-12-xs">
+                        <h1 class="mt-3 font-xxl">Our people</h1>
+                    </div>
+                </header>
+                <p class="content mt-3 mb-2 o-80 font-lg">Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
+                    quis cupidatat mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
+                    exercitation tempor. Sint aliqua anim nulla sunt mollit id pariatur in voluptate cillum.</p>
+                <p class="content mt-3 mb-4 o-70">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+                    impedit perferendis
+                    suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                <button class="btn-violet-700 mt-1 has-icon-right" type="button">Join our team <i
+                        class="ml-1 bx bx-right-arrow-alt"></i></button>
+            </div>
+            <div class="col-6-xl col-12-sm col-12-xs mt-4 justify-center">
+                <div class="row g-2 justify-center">
+                    <div class="bg-neutral-950 p-1 br-sm col-12-xs col-3-sm col-3-xl striped e-3 center d-f"
+                        style="height:14rem;">
+                        <i class="bx bx-headphone font-xxl"></i>
+                    </div>
+                    <div class="bg-neutral-950 p-1 br-sm col-12-xs col-5-sm col-5-xl striped mt-4 e-3 center d-f"
+                        style="height:200px;">
+                        <i class="bx bx-envelope font-xxl text-violet-400"></i>
+                    </div>
+                </div>
+                <div class="row g-2 justify-center">
+                    <div class="bg-neutral-950 p-1 br-sm col-12-xs col-3-sm col-3-xl striped mt-0 mb-4 e-3 center d-f"
+                        style="height:200px;">
+                        <i class="bx bx-comment font-xxl text-violet-400"></i>
+                    </div>
+                    <div class="bg-neutral-950 p-1 br-sm col-12-xs col-5-sm col-5-xl striped mt-3 e-3 center d-f"
+                        style="height:100px;">
+                        <i class="bx bx-phone-call font-xxl"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="mt-4 mb-4" />
+        <h3 class="mb-3">Pricing Sections</h3>
+        <section class="hero-lg bg-neutral-800 br-none b-none mb-2">
+            <header class="ta-center">
+                <p class="text-bold font-lg text-violet-400">Pricing</p>
+                <h1 class="mt-1 font-xxl">Pricing plans for teams of all sizes</h1>
+            </header>
+            <p class="content mt-3 mb-4 o-70">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                perferendis
+                suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+            <div class="row g-2 justify-center">
+                <div class="card col-12-xs col-12-sm col-3-xl e-1">
+                    <div class="card_title">
+                        <h6>Freelancer</h6>
+                    </div>
+                    <div class="card_text">
+                        <p class="o-70">The essentials to provide your best work for clients.</p>
+                        <br /><br />
+                        <p>
+                            <span class="font-xxl weight-bold">&dollar;24</span>&nbsp;/month
+                        </p>
+                        <ul class="mt-3 bx-ul">
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> 5 products</li>
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> Up to 1,000 subscribers
+                            </li>
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> Basic analytics</li>
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> 48-hour support response
+                                time</li>
+                        </ul>
+                    </div>
+                    <div class="card_footer justify-center mt-3">
+                        <button class="mt-3 btn-outlined-violet-700">Buy plan</button>
+                    </div>
+                </div>
+                <div class="card col-12-xs col-12-sm col-3-xl e-5 bg-violet-950 b-none">
+                    <div class="card_title">
+                        <h6>Startup</h6>
+                        <div class="badge-violet-700 text-white weight-bold">Most popular</div>
+                    </div>
+                    <div class="card_text">
+                        <p class="o-70">A plan that scales with your rapidly growing business.</p>
+                        <br /><br />
+                        <p>
+                            <span class="font-xxl weight-bold">&dollar;32</span>&nbsp;/month
+                        </p>
+                        <ul class="mt-3 bx-ul">
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> 25 products</li>
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> Up to 10,000 subscribers
+                            </li>
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> Advanced analytics</li>
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> 24-hour support response
+                                time</li>
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> Marketing automations</li>
+                        </ul>
+                    </div>
+                    <div class="card_footer justify-center">
+                        <button class="mt-3 btn-outlined-violet-700">Buy plan</button>
+                    </div>
+                </div>
+                <div class="card col-12-xs col-12-sm col-3-xl e-1">
+                    <div class="card_title">
+                        <h6>Enterprise</h6>
+                    </div>
+                    <div class="card_text">
+                        <p class="o-70">Dedicated support and infrastructure for your company.</p>
+                        <br /><br />
+                        <p>
+                            <span class="font-xxl weight-bold">&dollar;48</span>&nbsp;/month
+                        </p>
+                        <ul class="mt-3 bx-ul">
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> Unlimited products</li>
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> Unlimited subscribers</li>
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> Advanced analytics</li>
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> 1-hour, dedicated support
+                                response time</li>
+                            <li class="ml-0 mb-1"><i class="bx text-violet-400 bx-check"></i> Marketing automations</li>
+                        </ul>
+                    </div>
+                    <div class="card_footer justify-center">
+                        <button class="mt-3 btn-outlined-violet-700">Buy plan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="row bg-neutral-950 justify-center p-2 text-neutral-600 font-sm">
+            <p>Copyright &copy;2023 John Durtche. All Rights Reserved.</p>
+        </footer>
+    </main>
+    <script src="/js/events.js" type="text/javascript"></script>
+</body>
+
+</html>
