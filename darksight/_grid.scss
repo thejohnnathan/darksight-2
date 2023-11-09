@@ -7,6 +7,22 @@ $grid-gaps: (
     "2": 20px,
     "3": 30px,
 );
+$tile-values: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+$gap-values: (
+    "1": 1rem,
+    "2": 2rem,
+    "3": 3rem,
+    "4": 4rem,
+    "5": 5rem,
+    "6": 6rem,
+    "7": 7rem,
+    "8": 8rem,
+    "9": 9rem,
+    "10": 10rem,
+    "11": 11rem,
+    "12": 12rem,
+);
+
 $layout-values: flex-start, flex-end, center, space-between, space-around;
 
 // base layout classes
@@ -17,29 +33,53 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     padding: 0 20px;
     box-sizing: border-box;
 }
+
 .row {
     display: flex !important;
     flex-flow: row wrap;
     align-items: stretch;
+}
 
-    &.g-1 {
-        gap: 1rem;
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    gap: 1rem;
+    width: 100%;
+
+    & .tile {
+        width: 100%;
+        display: inline-grid;
+
+        &>* {
+            margin: $base-margin;
+        }
+    }
+}
+
+// tile layouts with cols and rows
+@each $val in $tile-values {
+    .cols-#{$val} {
+        grid-column: span $val;
     }
 
-    &.g-2 {
-        gap: 2rem;
+    .rows-#{$val} {
+        grid-row: span $val;
     }
+}
 
-    &.g-3 {
-        gap: 3rem;
+// tile gaps
+@each $key, $val in $gap-values {
+    .g-#{$key} {
+        gap: $val !important;
     }
 }
 
 // grid gaps
 @each $key, $val in $grid-gaps {
-    .gap-#{$key} > * {
+    .gap-#{$key}>* {
         padding: $val;
     }
+
     .gap-#{$key} {
         margin-left: -$val;
         margin-right: -$val;

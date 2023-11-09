@@ -464,6 +464,10 @@
   content: "\ee85";
 }
 
+.bxs-star:before {
+  content: "\eeb8";
+}
+
 .bxs-wrench:before {
   content: "\ef05";
 }
@@ -745,8 +749,51 @@ blockquote cite {
   flex-flow: row wrap;
   align-items: stretch;
 }
-.row.g-2 {
-  gap: 2rem;
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+.tiles .tile {
+  width: 100%;
+  display: inline-grid;
+}
+.tiles .tile > * {
+  margin: 0.75rem;
+}
+
+.cols-2 {
+  grid-column: span 2;
+}
+
+.rows-2 {
+  grid-row: span 2;
+}
+
+.cols-3 {
+  grid-column: span 3;
+}
+
+.rows-3 {
+  grid-row: span 3;
+}
+
+.cols-4 {
+  grid-column: span 4;
+}
+
+.cols-5 {
+  grid-column: span 5;
+}
+
+.g-1 {
+  gap: 1rem !important;
+}
+
+.g-2 {
+  gap: 2rem !important;
 }
 
 .gap-1 > * {
@@ -1169,7 +1216,7 @@ blockquote cite {
 .vs-card .card_title h4,
 .vs-card .card_title h5,
 .vs-card .card_title h6 {
-  line-height: 1.1rem;
+  line-height: 1.5rem;
   margin: 0;
 }
 .vs-card .card_interactions {
@@ -1652,6 +1699,71 @@ blockquote cite {
 }
 .btn-outlined-emerald-500[disabled]:hover {
   background-color: hsl(0, 0%, 9%);
+}
+
+.btn-emerald-700 {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  border: 0;
+  padding: 0.75rem 30px;
+  border-radius: 4px;
+  background-color: hsl(163, 94%, 24%);
+  align-content: center;
+  align-items: center;
+  border: 1px solid hsl(163, 94%, 24%);
+  transition: all 0.4s ease;
+  font-weight: 500;
+  letter-spacing: 0.0125rem;
+  color: hsl(0, 0%, 96%);
+}
+.btn-emerald-700[disabled] {
+  cursor: not-allowed;
+  background-color: hsl(0, 0%, 9%);
+  box-shadow: none;
+  color: #5c5c5c;
+  pointer-events: none !important;
+}
+.btn-emerald-700[disabled]:hover {
+  background-color: hsl(0, 0%, 9%);
+}
+.btn-emerald-700.size-sm {
+  font-size: 12px;
+  padding: 0.75rem;
+}
+.btn-emerald-700.size-sm i {
+  font-size: 12px;
+}
+.btn-emerald-700.size-lg {
+  font-size: 24px;
+  padding: 0.75rem 36px;
+}
+.btn-emerald-700.size-lg i {
+  font-size: 24px;
+}
+.btn-emerald-700.has-icon-left i {
+  margin-right: 1rem !important;
+}
+.btn-emerald-700.has-icon-right i {
+  margin-left: 1rem !important;
+}
+.btn-emerald-700:active, .btn-emerald-700:focus {
+  box-shadow: none;
+  background-color: #024532;
+  text-decoration: none !important;
+  border: 1px solid hsl(0, 0%, 96%);
+}
+.btn-emerald-700:hover {
+  background-color: #05a87a;
+}
+.btn-emerald-700.contained {
+  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+}
+.btn-emerald-700.contained:hover {
+  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+}
+.btn-emerald-700:hover {
+  background-color: #048f68 !important;
 }
 
 .btn-complement-emerald-700 {
@@ -2327,6 +2439,7 @@ form {
 
 input[type=text],
 input[type=password],
+input[type=email],
 input[type=time],
 input[type=month],
 input[type=color],
@@ -2345,6 +2458,7 @@ input[type=range] {
 
 input[type=text]:focus,
 input[type=password]:focus,
+input[type=email]:focus,
 input[type=time]:focus,
 input[type=month]:focus,
 input[type=color]:focus,
@@ -2702,6 +2816,10 @@ input[type=radio]:checked:disabled {
 
 .e-none {
   box-shadow: none;
+}
+
+.p-0 {
+  padding: 0;
 }
 
 .p-1 {
