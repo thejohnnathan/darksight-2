@@ -991,7 +991,7 @@
             <article>
                 <h3 class="mb-4 weight-light text-emerald-400">Taskbar</h3>
                 <div class="row gap-2 justify-center">
-                    <div class="taskbar">
+                    <div class="taskbar g-1">
                         <a href="#" class="task-item">Item</a>
                         <a class="task-item">Item</a>
                         <a href="#" class="task-item">Item</a>
@@ -1000,7 +1000,7 @@
                     </div>
                 </div>
                 <div class="row gap-2 justify-center">
-                    <div class="taskbar mt-2">
+                    <div class="taskbar mt-2 g-1">
                         <a href="#" class="task-item"><i class="bx bx-info-circle mr-1"></i> About</a>
                         <a class="task-item"><i class="bx bx-text mr-1"></i> Type</a>
                         <a href="#" class="task-item"><i class="bx bx-grid mr-1"></i> Grid</a>
@@ -1012,7 +1012,7 @@
                     </div>
                 </div>
                 <div class="row gap-2 justify-center">
-                    <div class="taskbar mt-2 font-lg">
+                    <div class="taskbar mt-2 font-lg g-1">
                         <a href="#" class="task-item"><i class="bx bx-info-circle"></i></a>
                         <a class="task-item"><i class="bx bx-text"></i></a>
                         <a href="#" class="task-item"><i class="bx bx-grid"></i></a>
@@ -1025,19 +1025,20 @@
                 </div>
             </article>
             <article>
-                <h3 class="mb-4 weight-light text-emerald-400">Sidebar</h3>
+                <h3 class="mb-4 weight-light text-emerald-400">Sidebar <sup
+                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
                 <div class="row justify-center">
                     <div class="sidebar" id="sidebar">
                         <nav class="mb-3">
                             <li>
-                                <div class="badge-emerald-500 text-neutral-950 weight-bold d-i-b mb-2">
-                                    .is-fixed-left</div>
-                                <button class="btn-outlined-emerald-500 p-1 br-circle toggler" id="toggleButton"><i
-                                        class="bx bxs-chevrons-left"></i></button>
+                                <a href="#">
+                                    <span class="avatar size-sm bg-animated-gradient">&nbsp;</span>
+                                    <span class="d-i-f weight-bold">Darksight UI</span>
+                                    <i class="bx bx-chevron-right bx-sm bg-neutral-800 br-sm"></i></a>
                             </li>
-                            <li>
-                                <h4>Sidebar Left</h4>
-                            </li>
+                            <hr class="mb-2 mt-1" />
+                            <li class="caption">MAIN</li>
+                            <br />
                             <li>
                                 <a href="#">Item One</a>
                             </li>
@@ -1056,57 +1057,50 @@
                             <li>
                                 <a href="#">Item Six</a>
                             </li>
+                            <li>
+                                <a href="#">Item Seven</a>
+                            </li>
+                            <li>
+                                <a href="#">Item Eight</a>
+                            </li>
                         </nav>
-                        <hr class="mt-4" />
-                        <p>&nbsp;</p>
                     </div>
-                    <div class="sidebar ml-2 bg-emerald-900 pb-2 b-none">
+                    <div class="sidebar ml-2 bg-emerald-900 b-none is-mini">
                         <nav class="mb-3">
                             <li>
-                                <div class="badge-emerald-500 text-neutral-950 weight-bold d-i-b mb-2">
-                                    .is-fixed-right</div>
-                                <button class="btn-outlined-emerald-500 p-1 br-circle toggler" id="toggleButtonRight"><i
-                                        class="bx bxs-chevrons-right"></i></button>
+                                <a href="#">
+                                    <span class="avatar size-sm has-image">&nbsp;</span>
+                                    <span class="d-i-f weight-bold">Darksight UI</span>
+                                    <i class="bx bx-chevron-right bx-sm bg-neutral-800 br-sm"></i></a>
+                            </li>
+                            <hr class="mb-2 mt-1" />
+                            <li class="caption text-white justify-center">MAIN</li>
+                            <br />
+                            <li>
+                                <a href="#"><i class="bx bx-info-circle mr-1"></i><span>About</span></a>
                             </li>
                             <li>
-                                <h4>Sidebar Right</h4>
+                                <a href="#"><i class="bx bx-text mr-1"></i><span>Typography</span></a>
                             </li>
                             <li>
-                                <a href="#"><i class="bx bx-info-circle mr-1"></i> About</a>
+                                <a href="#"><i class="bx bx-grid mr-1"></i><span>Grid System</span></a>
                             </li>
                             <li>
-                                <a href="#"><i class="bx bx-text mr-1"></i> Typography</a>
+                                <a href="#"><i class="bx bx-palette mr-1"></i><span>Color Palette</span></a>
                             </li>
                             <li>
-                                <a href="#"><i class="bx bx-grid mr-1"></i>Grid System</a>
+                                <a href="#"><i class="bx bxs-cube mr-1"></i><span>Icons</span></a>
                             </li>
                             <li>
-                                <a href="#"><i class="bx bx-palette mr-1"></i>Color Palette</a>
+                                <a href="#"><i class="bx bxs-component mr-1"></i><span>Components</span></a>
                             </li>
                             <li>
-                                <a href="#"><i class="bx bxs-cube mr-1"></i>Icons</a>
+                                <a href="#"><i class="bx bxs-wrench mr-1"></i><span>Utilities</span></a>
                             </li>
                             <li>
-                                <a href="#"><i class="bx bxs-component mr-1"></i>Components</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="bx bxs-wrench mr-1"></i>Utilities</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="bx bxs-calendar-edit mr-1"></i>Release Notes</a>
+                                <a href="#"><i class="bx bxs-calendar-edit mr-1"></i><span>Release Notes</span></a>
                             </li>
                         </nav>
-                        <hr />
-                        <div class="card bg-emerald-600 e-none m-2 b-none">
-                            <header class="card_title">
-                                <h5>Size</h5>
-                            </header>
-                            <div class="card_text">
-                                <p>The <code>.sidebar</code> component has a set width of
-                                    264px.
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </article>
@@ -1736,6 +1730,25 @@
                     <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.0.2</div>
                 </header>
                 <div class="card_text mb-2">
+                    <h6 class="mt-1 mb-2 text-emerald-400 weight-light">November 11th, 2023</h6>
+                    <ul class="bx-ul">
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Redesigned the Navbar component for improved UX and included a new <code>.is-mini</code> class for a mobile, icon-only option.
+                        </li>
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> New <code>.bg-animated-gradient</code> and accompanying animation added to the <code>variables.scss</code> file.
+                        </li>
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> New page sections added to the <code>design.html</code> page (hereafter, called Darksigh UI) and included an <code>.is-fixed-left</code> Navbar on the page.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-2 card">
+                <header class="card_title">
+                    <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.0.2</div>
+                </header>
+                <div class="card_text mb-2">
                     <h6 class="mt-1 mb-2 text-emerald-400 weight-light">November 9th, 2023</h6>
                     <ul class="bx-ul">
                         <li>
@@ -1745,7 +1758,9 @@
                             (<code>.gap-4</code>, etc.) to allow row and column expansion.
                         </li>
                         <li>
-                            <i class="bx bx-plus bx-fw text-emerald-400"></i> New <code>design.html</code> file included in the project to showcase tailwindCSS-esque UI web design components for various web projects like marketing and ecommerce.
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> New <code>design.html</code> file included
+                            in the project to showcase tailwindCSS-esque UI web design components for various web
+                            projects like marketing and ecommerce.
                         </li>
                     </ul>
                 </div>

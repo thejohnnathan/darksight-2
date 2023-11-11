@@ -271,6 +271,10 @@
   font-size: 1rem !important;
 }
 
+.bx-sm {
+  font-size: 1.55rem !important;
+}
+
 .bx-fw {
   font-size: 1.2857142857em;
   line-height: 0.8em;
@@ -492,14 +496,6 @@
   content: "\ed03";
 }
 
-.bxs-chevrons-left:before {
-  content: "\ed3f";
-}
-
-.bxs-chevrons-right:before {
-  content: "\ed40";
-}
-
 .bxs-component:before {
   content: "\ed61";
 }
@@ -534,6 +530,24 @@
 
 .bg-gradient {
   background: linear-gradient(135deg, hsl(160, 84%, 39%) 25%, hsl(175, 77%, 26%) 75%, hsl(196, 64%, 24%) 100%);
+}
+
+.bg-animated-gradient {
+  background: linear-gradient(135deg, hsl(160, 84%, 39%) 25%, hsl(175, 77%, 26%) 75%, hsl(196, 64%, 24%) 100%);
+  background-size: 400% 400%;
+  animation: animate-background 10s infinite ease-in-out;
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -2279,20 +2293,39 @@ blockquote cite {
   padding: 0;
   align-content: center;
   overflow-y: auto;
+  height: calc(100vh - 2rem);
 }
-.sidebar button.toggler {
-  align-self: right;
+.sidebar::-webkit-scrollbar {
+  width: 3px;
+  height: 1em;
+  display: none;
+  background-color: transparent;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: hsl(158, 64%, 52%);
+  display: none;
+  border: 2px solid transparent;
+  border-radius: 16px;
 }
 .sidebar.is-fixed-left {
   position: fixed !important;
   top: 0;
   left: 0;
 }
-.sidebar.is-fixed-right {
-  position: fixed !important;
-  top: 0;
-  right: 0;
-  bottom: 0;
+.sidebar.is-mini {
+  width: 6rem;
+  max-width: 6rem !important;
+}
+.sidebar.is-mini li * {
+  place-content: center;
+}
+.sidebar.is-mini li a span {
+  display: none;
+}
+.sidebar.is-mini li a i {
+  margin-right: 0;
+  padding-right: 0;
+  justify-self: center !important;
 }
 .sidebar nav {
   display: flex;
@@ -2311,6 +2344,7 @@ blockquote cite {
   position: relative;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
   transition: all 0.4s ease-in-out;
   align-items: center;
   height: 3rem;
@@ -2323,6 +2357,18 @@ blockquote cite {
 }
 .sidebar nav li a:hover {
   background-color: #0b3224;
+}
+.sidebar nav li a:hover::before {
+  content: "";
+  position: absolute;
+  left: calc(-1rem - 1px);
+  width: 3px;
+  background-color: hsl(158, 64%, 52%);
+  border: 2px solid;
+  border-left-color: hsl(158, 64%, 52%);
+  height: 2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 .sidebar nav li a:active, .sidebar nav li a:focus {
   background-color: #0a0a0a;
@@ -2772,10 +2818,10 @@ input[type=radio]:checked:disabled {
 }
 
 .placeholder {
-  background-image: linear-gradient(90deg, transparent 0px, rgba(241, 245, 249, 0.2) 40px, transparent 80px);
-  background-size: 300%;
+  background-image: linear-gradient(90deg, transparent 0px, rgba(241, 245, 249, 0.1) 40px, transparent 80px);
+  background-size: 200%;
   background-position: 100% 0;
-  animation: shimmer 1.5s infinite;
+  animation: shimmer 1.5s infinite ease-in-out;
 }
 
 @keyframes shimmer {
@@ -2864,16 +2910,8 @@ input[type=radio]:checked:disabled {
   padding-top: 0.75rem;
 }
 
-.pb-2 {
-  padding-bottom: 1.5rem;
-}
-
 .m-1 {
   margin: 0.75rem;
-}
-
-.m-2 {
-  margin: 1.5rem;
 }
 
 .ml-0 {
