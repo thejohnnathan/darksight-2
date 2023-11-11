@@ -280,6 +280,50 @@
   vertical-align: middle;
 }
 
+.bxl-css3:before {
+  content: "\e91e";
+}
+
+.bxl-discord:before {
+  content: "\e924";
+}
+
+.bxl-github:before {
+  content: "\e93a";
+}
+
+.bxl-html5:before {
+  content: "\e940";
+}
+
+.bxl-javascript:before {
+  content: "\e946";
+}
+
+.bxl-linkedin:before {
+  content: "\e94d";
+}
+
+.bxl-sass:before {
+  content: "\e96c";
+}
+
+.bxl-tailwind-css:before {
+  content: "\e97a";
+}
+
+.bxl-twitter:before {
+  content: "\e982";
+}
+
+.bxl-visual-studio:before {
+  content: "\e987";
+}
+
+.bxl-vuejs:before {
+  content: "\e989";
+}
+
 .bx-expand-horizontal:before {
   content: "\e997";
 }
@@ -376,6 +420,10 @@
   content: "\eba9";
 }
 
+.bx-phone:before {
+  content: "\ebb2";
+}
+
 .bx-phone-call:before {
   content: "\ebb3";
 }
@@ -434,6 +482,10 @@
 
 .bx-x-circle:before {
   content: "\ec8e";
+}
+
+.bxs-business:before {
+  content: "\ecfb";
 }
 
 .bxs-calendar-edit:before {
@@ -524,6 +576,9 @@ body {
   background-color: hsl(0, 0%, 9%);
   color: hsl(0, 0%, 96%);
   overflow-x: hidden;
+}
+body.has-left-sidebar {
+  margin-left: calc(265px + 1rem) !important;
 }
 
 main {
@@ -2220,10 +2275,10 @@ blockquote cite {
   border-radius: 16px;
   width: 264px;
   max-width: 264px !important;
-  height: 100vh;
   z-index: 99 !important;
   padding: 0;
   align-content: center;
+  overflow-y: auto;
 }
 .sidebar button.toggler {
   align-self: right;
@@ -2232,7 +2287,6 @@ blockquote cite {
   position: fixed !important;
   top: 0;
   left: 0;
-  bottom: 0;
 }
 .sidebar.is-fixed-right {
   position: fixed !important;

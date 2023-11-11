@@ -15,48 +15,59 @@
     <title>Darksight UI</title>
 </head>
 
-<body>
-    <nav class="navbar text-white bg-neutral-900 bs-none">
-        <div class="container row">
-            <div class="d-f">
-                <h5>Darksight UI</h5>
-            </div>
-            <div class="d-f justify-flex-end">
-                <ul class="d-i-f">
-                    <li class="mr-1">
-                        <a href="#" data-target="marketing" class="btn size-sm"
-                            aria-describedby="tooltip-right-about">Marketing</a>
-                    </li>
-                    <li class="mr-1">
-                        <a href="#" data-target="application" class="btn size-sm"
-                            aria-describedby="tooltip-right-about">Application UI</a>
-                    </li>
-                    <li class="mr-1">
-                        <a href="#" data-target="ecommerce" class="btn size-sm"
-                            aria-describedby="tooltip-right-about">Ecommerce</a>
-                    </li>
-                    <li class="mr-1">
-                        <a href="#" data-target="pricing" class="btn size-sm"
-                            aria-describedby="tooltip-right-about">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="#" data-target="faqs" class="btn size-sm"
-                            aria-describedby="tooltip-right-about">FAQs</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main class="container mt-5">
-        <section class="hero-sm br-sm b-solid mb-2" id="marketing">
+<body class="has-left-sidebar">
+    <aside class="sidebar is-fixed-left m-1 glass" id="sidebar">
+        <nav class="mb-3">
+            <li>
+                <p class="mb-1 ml-1 subtitle">Page Sections</p>
+            </li>
+            <hr class="mb-1" />
+            <li>
+                <a href="#hero">Hero</a>
+            </li>
+            <li>
+                <a href="#feature">Feature</a>
+            </li>
+            <li>
+                <a href="#cta">CTA</a>
+            </li>
+            <li>
+                <a href="#pricing">Pricing</a>
+            </li>
+            <li>
+                <a href="#newsletter">Newsletter</a>
+            </li>
+            <li>
+                <a href="#stats">Stats</a>
+            </li>
+            <li>
+                <a href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+                <a href="#blog">Blog</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#team">Team</a>
+            </li>
+            <li>
+                <a href="#logocloud" class="mb-3">Logo Cloud</a>
+            </li>
+        </nav>
+        <p class="mt-3">&nbsp;</p>
+    </aside>
+    <main class="mt-1 container">
+        <section class="hero-sm br-sm b-solid mb-2 bg-gradient" id="ui">
             <header>
-                <h1 class="mt-3 font-xxl">Marketing</h1>
+                <h1 class="mt-3 font-xxl">Darksight UI</h1>
             </header>
-            <p class="content mt-2 mb-4 o-70">Heroes, feature sections, newsletter sign up forms &mdash; everything you
-                need to build beautiful marketing websites.</p>
+            <p class="content mt-2 mb-4 o-70 font-lg">Heroes, feature sections, newsletter sign up forms &mdash; everything you
+                need to build beautiful websites.</p>
         </section>
         <hr class="mt-4 mb-4" />
-        <h3 class="mb-3">Hero Sections</h3>
+        <h3 class="mb-3" id="hero">Hero Sections</h3>
         <section class="hero-lg bg-neutral-800 br-none b-none mb-2 ta-center">
             <header>
                 <h1 class="mt-3 font-xxl mr-1 ml-1">Data to <span class="bg-emerald-900 pr-1 pl-1 br-sm">enrich</span>
@@ -155,7 +166,7 @@
             </div>
         </section>
         <hr class="mt-4 mb-4" />
-        <h3 class="mb-3">Feature Sections</h3>
+        <h3 class="mb-3" id="feature">Feature Sections</h3>
         <section class="hero-lg bg-neutral-800 br-none b-none mb-2">
             <header>
                 <p class="text-bold font-lg text-emerald-400">Deploy faster</p>
@@ -353,7 +364,7 @@
             </div>
         </section>
         <hr class="mt-4 mb-4" />
-        <h3 class="mb-3">CTA Sections</h3>
+        <h3 class="mb-3" id="cta">CTA Sections</h3>
         <section class="hero-lg bg-neutral-950 br-none b-none mb-2 justify-center row">
             <div class="col-6-xl col-12-sm col-12-xs mt-4 justify-center">
                 <div class="row g-2 justify-center">
@@ -424,7 +435,7 @@
             </div>
         </section>
         <hr class="mt-4 mb-4" />
-        <h3 class="mb-3">Pricing Sections</h3>
+        <h3 class="mb-3" id="pricing">Pricing Sections</h3>
         <section class="hero-lg bg-neutral-800 br-none b-none mb-2">
             <header class="ta-center">
                 <p class="text-bold font-lg text-emerald-400">Pricing</p>
@@ -511,7 +522,7 @@
             </div>
         </section>
         <hr class="mt-4 mb-4" />
-        <h3 class="mb-3">Newsletter Sections</h3>
+        <h3 class="mb-3" id="newsletter">Newsletter Sections</h3>
         <section class="hero-lg bg-neutral-950 br-none b-none mb-2">
             <header>
                 <h1 class="mt-1 font-xxl">Want product news and updates? Sign up for our newsletter.</h1>
@@ -542,7 +553,7 @@
             </p>
         </section>
         <hr class="mt-4 mb-4" />
-        <h3 class="mb-3">Stats Sections</h3>
+        <h3 class="mb-3" id="stats">Stats Sections</h3>
         <section class="hero-lg bg-neutral-800 br-none b-none mb-2">
             <header class="ta-center">
                 <h1 class="mt-1 font-xxl">Trusted by creators worldwide</h1>
@@ -602,7 +613,7 @@
             </div>
         </section>
         <hr class="mt-4 mb-4" />
-        <h3 class="mb-3">Testimonials Sections</h3>
+        <h3 class="mb-3" id="testimonials">Testimonials Sections</h3>
         <section class="hero-md bg-neutral-950 br-none b-none mb-2">
             <div class="content ta-center">
                 <div class="justify-center font-xl mb-3"><i class="bx bxs-star mr-1"></i><i
@@ -646,7 +657,7 @@
             </div>
         </section>
         <hr class="mt-4 mb-4" />
-        <h3 class="mb-3">Blog Sections</h3>
+        <h3 class="mb-3" id="blog">Blog Sections</h3>
         <section class="hero-lg bg-neutral-950 br-none b-none mb-2">
             <header class="ta-center">
                 <h1>From the blog</h1>
@@ -802,12 +813,12 @@
             </div>
         </section>
         <hr class="mt-4 mb-4" />
-        <h3 class="mb-3">Contact Sections</h3>
+        <h3 class="mb-3" id="contact">Contact Sections</h3>
         <section class="hero-lg fractal br-none b-none mb-2 ta-center">
             <header>
                 <h1 class="mt-1 font-xxl">Contact sales</h1>
             </header>
-            <p class="content 0-70 mt-2">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p>
+            <p class="content o-70 mt-2">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p>
             <form class="b-none mt-4 bg-neutral-900 mw-50">
                 <fieldset class="justify-flex-start b-none">
                     <label for="firstName" class="weight-bold">First name</label>
@@ -834,7 +845,7 @@
                     <header>
                         <h1 class="mt-1 font-xxl">Get in touch</h1>
                     </header>
-                    <p class="content 0-70 mt-2 mb-3">Quam nunc nunc eu sed. Sed rhoncus quis ultiricies ac
+                    <p class="content o-70 mt-2 mb-3">Quam nunc nunc eu sed. Sed rhoncus quis ultiricies ac
                         pelletntesque.</p>
                     <div class="vs-card type-h mb-2">
                         <div class="card_img">
@@ -909,7 +920,7 @@
                     <header>
                         <h1 class="mt-1 font-xxl">Locations</h1>
                     </header>
-                    <p class="content 0-70 mt-2 mb-3">Consequat sum cilium cillum elit sint. Qui occaecat nisi in ipsum
+                    <p class="content o-70 mt-2 mb-3">Consequat sum cilium cillum elit sint. Qui occaecat nisi in ipsum
                         commodo.</p>
                     <div class="vs-card type-h mb-2">
                         <div class="card_img">
@@ -980,6 +991,220 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="hero-lg bg-neutral-950 br-none b-none mb-2">
+            <div class="row gap-2">
+                <div class="col-12-xs col-12-sm col-6-xl">
+                    <header>
+                        <h1 class="mt-1 font-xxl">Get in touch</h1>
+                    </header>
+                    <p class="content o-70 mt-2 font-lg">Proin valutpat consequat porttitor cras nullam gravid at. Orci
+                        molestie a eu arcu. Sed ut tincidunt integer elemntum id sem. Arcu sed malesuada et magna.</p>
+                    <ul class="mt-3 bx-ul font-lg">
+                        <li class="mb-2"><i class="bx bxs-business"></i> 545 Mavis Island<br />Chicago, IL 99191</li>
+                        <li class="mb-2"><i class="bx bx-phone"></i> +1 (555) 234 - 5678</li>
+                        <li class="mb-2"><i class="bx bx-envelope"></i> <a href="#">hello@example.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-12-xs col-12-sm col-6-xl">
+                    <form class="b-none bg-neutral-900">
+                        <fieldset class="justify-flex-start b-none">
+                            <label for="firstName" class="weight-bold">First name</label>
+                            <input type="text" id="firstName" autocomplete="Your Name" />
+                            <label for="lastName" class="weight-bold">Last name</label>
+                            <input type="text" id="lastName" autocomplete="Your Name" />
+                            <label for="company" class="weight-bold">Company</label>
+                            <input type="text" id="company" autocomplete="Your Company" />
+                            <label for="email" class="weight-bold">Email</label>
+                            <input type="email" id="email" autocomplete="Enter your email" />
+                            <label for="phone" class="weight-bold">Phone number</label>
+                            <input type="number" id="phone" autocomplete="Enter your phone number" />
+                            <label for="message" class="weight-bold">Message</label>
+                            <textarea id="message" autocomplete="Enter your message"></textarea>
+                            <button type="submit" class="btn-emerald-700 mt-3">Send message</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <hr class="mt-4 mb-4" />
+        <h3 class="mb-3" id="team">Team Sections</h3>
+        <section class="hero-lg bg-neutral-800 br-none b-none mb-2">
+            <header class="ta-center">
+                <h1>Meet our team</h1>
+                <p class="content o-70 mt-2 mb-4 font-lg">We're a dynamic group of individuals who are passionate about
+                    what we do.</p>
+            </header>
+            <div class="row g-2 mb-3 justify-center">
+                <div class="tile bg-neutral-950 br p-2 ta-center">
+                    <span class="avatar size-lg br-circle bg-neutral-900 mb-2">LK</span>
+                    <h6>Leonard Krasner</h6>
+                    <p class="o-70 mb-2">Senior Designer</p>
+                    <footer>
+                        <i class="bx bxl-twitter mr-2"></i><i class="bx bxl-linkedin"></i>
+                    </footer>
+                </div>
+                <div class="tile bg-neutral-950 br p-2 ta-center">
+                    <span class="avatar size-lg br-circle bg-neutral-900 mb-2">FM</span>
+                    <h6>Floyd Miles</h6>
+                    <p class="o-70 mb-2">Principal Designer</p>
+                    <footer>
+                        <i class="bx bxl-twitter mr-2"></i><i class="bx bxl-linkedin"></i>
+                    </footer>
+                </div>
+                <div class="tile bg-neutral-950 br ta-center p-2">
+                    <span class="avatar size-lg br-circle bg-neutral-900 mb-2">ES</span>
+                    <h6>Emily Selman</h6>
+                    <p class="o-70 mb-2">VP, User Experience</p>
+                    <footer>
+                        <i class="bx bxl-twitter mr-2"></i><i class="bx bxl-linkedin"></i>
+                    </footer>
+                </div>
+                <div class="tile bg-neutral-950 br ta-center p-2">
+                    <span class="avatar size-lg br-circle bg-neutral-900 mb-2">KW</span>
+                    <h6>Kristin Watson</h6>
+                    <p class="o-70 mb-2">VP, Human Resources</p>
+                    <footer>
+                        <i class="bx bxl-twitter mr-2"></i><i class="bx bxl-linkedin"></i>
+                    </footer>
+                </div>
+                <div class="tile bg-neutral-950 br ta-center p-2">
+                    <span class="avatar size-lg br-circle bg-neutral-900 mb-2">ED</span>
+                    <h6>Emma Dorsey</h6>
+                    <p class="o-70 mb-2">Senior Developer</p>
+                    <footer>
+                        <i class="bx bxl-twitter mr-2"></i><i class="bx bxl-linkedin"></i>
+                    </footer>
+                </div>
+                <div class="tile bg-neutral-950 br ta-center p-2">
+                    <span class="avatar size-lg br-circle bg-neutral-900 mb-2">EB</span>
+                    <h6>Alicia Bell</h6>
+                    <p class="o-70 mb-2">Junior Copyrighter</p>
+                    <footer>
+                        <i class="bx bxl-twitter mr-2"></i><i class="bx bxl-linkedin"></i>
+                    </footer>
+                </div>
+        </section>
+        <section class="hero-lg fractal br-none b-none mb-2">
+            <header class="ta-center">
+                <h1>Our team</h1>
+                <p class="content o-70 mt-2 mb-4 font-lg">We're a dynamic group of individuals who are passionate about
+                    what we do and dedicated to delivering the best results for our clients.</p>
+            </header>
+            <div class="row justify-center mt-2 g-2">
+                <div class="vs-card type-h bg-neutral-900">
+                    <div class="card_img">
+                        <img src="https://placebeard.it/600x400" alt="" />
+                    </div>
+                    <div class="card_title">
+                        <h5>Emma Dorsey</h5>
+                        <p class="subtitle">Senior Developer</p>
+                        <div class="card_text">
+                            <p>Praesentium iure error aliquoam voluptas ut libero. Commodi placeat sit iure nulia
+                                officiis. Ut ex sit repellat tempora. Qui est accusemus exercitationem natus voluptas.
+                                Officiis velit eos ducimus.</p>
+                            <div class="card_footer mt-2 font-lg">
+                                <i class="bx bxl-twitter mr-2"></i><i class="bx bxl-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vs-card type-h bg-neutral-900">
+                    <div class="card_img">
+                        <img src="https://placebeard.it/600x400" alt="" />
+                    </div>
+                    <div class="card_title">
+                        <h5>Alicia Bell</h5>
+                        <p class="subtitle">Junior Copyrighter</p>
+                        <div class="card_text">
+                            <p>Praesentium iure error aliquoam voluptas ut libero. Commodi placeat sit iure nulia
+                                officiis. Ut ex sit repellat tempora. Qui est accusemus exercitationem natus voluptas.
+                                Officiis velit eos ducimus.</p>
+                            <div class="card_footer mt-2 font-lg">
+                                <i class="bx bxl-twitter mr-2"></i><i class="bx bxl-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-center mt-2 g-2">
+                <div class="vs-card type-h bg-neutral-900">
+                    <div class="card_img">
+                        <img src="https://placebeard.it/600x400" alt="" />
+                    </div>
+                    <div class="card_title">
+                        <h5>Jennifer Wilson</h5>
+                        <p class="subtitle">Studio Artist</p>
+                        <div class="card_text">
+                            <p>Praesentium iure error aliquoam voluptas ut libero. Commodi placeat sit iure nulia
+                                officiis. Ut ex sit repellat tempora. Qui est accusemus exercitationem natus voluptas.
+                                Officiis velit eos ducimus.</p>
+                            <div class="card_footer mt-2 font-lg">
+                                <i class="bx bxl-twitter mr-2"></i><i class="bx bxl-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vs-card type-h bg-neutral-900">
+                    <div class="card_img">
+                        <img src="https://placebeard.it/600x400" alt="" />
+                    </div>
+                    <div class="card_title">
+                        <h5>Anna Roberts</h5>
+                        <p class="subtitle">Parnter, Creative</p>
+                        <div class="card_text">
+                            <p>Praesentium iure error aliquoam voluptas ut libero. Commodi placeat sit iure nulia
+                                officiis. Ut ex sit repellat tempora. Qui est accusemus exercitationem natus voluptas.
+                                Officiis velit eos ducimus.</p>
+                            <div class="card_footer mt-2 font-lg">
+                                <i class="bx bxl-twitter mr-2"></i><i class="bx bxl-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="mt-4 mb-4" />
+        <h3 class="mb-3" id="logocloud">Logo Cloud Sections</h3>
+        <section class="hero-lg bg-neutral-800 br-none b-none mb-2 ta-center">
+            <header>
+                <h1>Trusted by the most innovative teams</h1>
+                <p class="content o-70 mt-2 mb-4 font-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+                    egestas tempur tellur etiam sed. Quam a scelerisque amet ullamcoprer eu enim et fermentum, augue.
+                </p>
+                <button class="btn-emerald-700 mr-2">Create account</button><button class="btn has-icon-right">Contact
+                    us <i class="bx bx-right-arrow-alt"></i></button>
+            </header>
+            <div class="row g-1 justify-center mt-4">
+                <div class="tile bg-neutral-700 ta-center card e-none">
+                    <i class="bx bxl-sass font-xxl"></i>
+                </div>
+                <div class="tile bg-neutral-700 ta-center card e-none">
+                    <i class="bx bxl-css3 font-xxl"></i>
+                </div>
+                <div class="tile bg-neutral-700 ta-center card e-none">
+                    <i class="bx bxl-javascript font-xxl"></i>
+                </div>
+                <div class="tile bg-neutral-700 ta-center card e-none">
+                    <i class="bx bxl-html5 font-xxl"></i>
+                </div>
+                <div class="tile bg-neutral-700 ta-center card e-none">
+                    <i class="bx bxl-tailwind-css font-xxl"></i>
+                </div>
+                <div class="tile bg-neutral-700 ta-center card e-none">
+                    <i class="bx bxl-vuejs font-xxl"></i>
+                </div>
+                <div class="tile bg-neutral-700 ta-center card e-none">
+                    <i class="bx bxl-visual-studio font-xxl"></i>
+                </div>
+                <div class="tile bg-neutral-700 ta-center card e-none">
+                    <i class="bx bxl-github font-xxl"></i>
+                </div>
+                <div class="tile bg-neutral-700 ta-center card e-none">
+                    <i class="bx bxl-discord font-xxl"></i>
+                </div>
+
             </div>
         </section>
 

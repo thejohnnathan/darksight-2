@@ -38,6 +38,10 @@ body {
   background-color: $base-background-color;
   color: $base-text-color;
   overflow-x: hidden;
+
+  &.has-left-sidebar {
+    margin-left: calc(265px + 1rem) !important;
+  }
 }
 
 main {

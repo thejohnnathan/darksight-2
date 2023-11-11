@@ -6,10 +6,10 @@
     border-radius: $base-border-radius;
     width: 264px;
     max-width: 264px !important;
-    height: 100vh;
     z-index: 99 !important;
     padding: 0;
     align-content: center;
+    overflow-y: auto;
 
     & button.toggler {
         align-self: right;
@@ -23,7 +23,6 @@
         position: fixed !important;
         top: 0;
         left: 0;
-        bottom: 0;
     }
 
     &.is-fixed-right {
