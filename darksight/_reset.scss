@@ -271,12 +271,29 @@ textarea {
   font: inherit;
 }
 
-details {
-  display: block;
-}
-
 summary {
   display: list-item;
+  cursor: pointer;
+  align-items: center;
+  flex-flow: space-between;
+  transition: all 0.8s ease-in-out;
+
+  &::marker {
+    color: $base-link-color;
+    content: '+';
+    font-size: $base-font-size * 1.5;
+  }
+}
+
+details {
+  display: block;
+  transition: all 0.8s ease-in-out;
+
+  &[open] {
+    & summary::marker {
+      content: '-' !important;
+    }
+  }
 }
 
 template {

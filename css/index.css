@@ -292,12 +292,20 @@
   content: "\e924";
 }
 
+.bxl-facebook:before {
+  content: "\e92f";
+}
+
 .bxl-github:before {
   content: "\e93a";
 }
 
 .bxl-html5:before {
   content: "\e940";
+}
+
+.bxl-instagram:before {
+  content: "\e942";
 }
 
 .bxl-javascript:before {
@@ -326,6 +334,10 @@
 
 .bxl-vuejs:before {
   content: "\e989";
+}
+
+.bxl-youtube:before {
+  content: "\e992";
 }
 
 .bx-expand-horizontal:before {
@@ -781,6 +793,27 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
+}
+
+summary {
+  display: list-item;
+  cursor: pointer;
+  align-items: center;
+  flex-flow: space-between;
+  transition: all 0.8s ease-in-out;
+}
+summary::marker {
+  color: hsl(158, 64%, 52%);
+  content: "+";
+  font-size: 24px;
+}
+
+details {
+  display: block;
+  transition: all 0.8s ease-in-out;
+}
+details[open] summary::marker {
+  content: "-" !important;
 }
 
 .caption {
@@ -2926,6 +2959,10 @@ input[type=radio]:checked:disabled {
   margin-left: 1.5rem;
 }
 
+.ml-3 {
+  margin-left: 3rem;
+}
+
 .mr-0 {
   margin-right: 0;
 }
@@ -2936,6 +2973,10 @@ input[type=radio]:checked:disabled {
 
 .mr-2 {
   margin-right: 1.5rem;
+}
+
+.mr-3 {
+  margin-right: 3rem;
 }
 
 .mt-0 {
@@ -2992,6 +3033,10 @@ input[type=radio]:checked:disabled {
 
 .o-80 {
   opacity: 0.8;
+}
+
+.o-100 {
+  opacity: 1;
 }
 
 .br {
