@@ -1,8 +1,8 @@
 /*
-* DARKSIGHT v2.0.1 < ~ .~)>
+* DARKSIGHT v2.0.2 < ~ .~)>
 * @thejohnnathan
 * MIT license
-* last updated 20231007
+* last updated 20231113
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @font-face {
@@ -414,6 +414,10 @@
 
 .bx-info-circle:before {
   content: "\eb21";
+}
+
+.bx-left-arrow-alt:before {
+  content: "\eb33";
 }
 
 .bx-link-external:before {

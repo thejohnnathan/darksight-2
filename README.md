@@ -1,5 +1,6 @@
 # DARKSIGHT
->v2.0.1
+>v2.0.2
+[![Build Status](https://github.com/thejohnnathan/darksight-2.git)]
 
 A dark-themed, CSS library composed of a series of re-usable, responsive, material design components.
 Created for [Vue.js][vue], developed in Gulp, styled with SASS, and lovingly crafted by Front-End Developer [John Durtche][email].
@@ -23,7 +24,7 @@ Using the library is now as easy as downloading one CSS file, and adding the fol
 ```
 ## Development
 
-You can clone this version (2.0.1) of Darksight or build your own. You'll need to install NodeJS and use the following dependencies:
+You can clone this version (2.0.2) of Darksight or build your own. You'll need to install NodeJS and use the following dependencies:
 
 ```sh
 npm install boxicons --save
@@ -34,7 +35,7 @@ npx gulp
 
 Want to contribute? Great!
 
-John Durtche uses Vue + Vite + SASS for the fastest development.
+John Durtche uses Gulp + SASS for the fastest development but recommends Vue + Vite for builds.
 
 If you have comments, suggestions, bugs, or anything to report, you can contact John directly by [email].
 
