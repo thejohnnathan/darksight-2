@@ -1,8 +1,8 @@
 /*
-* DARKSIGHT v2.0.1 < ~ .~)>
+* DARKSIGHT v2.0.2 < ~ .~)>
 * @thejohnnathan
 * MIT license
-* last updated 20231007
+* last updated 20231113
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @font-face {
@@ -1129,10 +1129,6 @@ blockquote cite {
 
 .bg-emerald-400 {
   background-color: hsl(158, 64%, 52%);
-}
-
-.border-emerald-400 {
-  border-color: hsl(158, 64%, 52%) !important;
 }
 
 .text-emerald-500 {
