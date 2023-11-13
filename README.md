@@ -1,6 +1,5 @@
 # DARKSIGHT
 >v2.0.2
-[![Build Status](https://github.com/thejohnnathan/darksight-2.git)]
 
 A dark-themed, CSS library composed of a series of re-usable, responsive, material design components.
 Created for [Vue.js][vue], developed in Gulp, styled with SASS, and lovingly crafted by Front-End Developer [John Durtche][email].
