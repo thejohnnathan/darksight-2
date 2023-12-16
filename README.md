@@ -16,11 +16,14 @@ These three principles of compact, powerful, and simple make Darksight unique.
 
 ## Installation
 
-Using the library is now as easy as downloading one CSS file, and adding the following line of code into the top of your &lt;head&gt; element:
+Using the library in your HTML is as easy as adding the following line of code into the top of your HTML &lt;head&gt; element:
 
 ```sh
-<link rel="stylesheet" type="text/css" src="darksight.css" />
+<link href="/css/index.css" rel="stylesheet">
 ```
+
+<b>Note:</b> This is the default path where Gulp exports only the CSS styles from the library that you have included in your HTML files!
+
 ## Development
 
 You can clone this version (2.1) of Darksight or build your own. You'll need to install NodeJS and use the following dependencies:
