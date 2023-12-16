@@ -556,11 +556,11 @@
   }
 }
 .bg-gradient {
-  background: linear-gradient(135deg, hsl(160, 84%, 39%) 25%, hsl(175, 77%, 26%) 75%, hsl(196, 64%, 24%) 100%);
+  background: linear-gradient(135deg, hsl(330, 81%, 60%) 25%, hsl(335, 78%, 42%) 75%, hsl(336, 69%, 30%) 100%);
 }
 
 .bg-animated-gradient {
-  background: linear-gradient(135deg, hsl(160, 84%, 39%) 25%, hsl(175, 77%, 26%) 75%, hsl(196, 64%, 24%) 100%);
+  background: linear-gradient(135deg, hsl(330, 81%, 60%) 25%, hsl(335, 78%, 42%) 75%, hsl(336, 69%, 30%) 100%);
   background-size: 400% 400%;
   animation: animate-background 10s infinite ease-in-out;
 }
@@ -589,7 +589,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: hsl(158, 64%, 52%);
+  background-color: hsl(329, 86%, 70%);
   border: 2px solid transparent;
   border-radius: 16px;
 }
@@ -602,8 +602,8 @@ html {
 body {
   font-family: "Inter", "Avenir", Helvetica, Arial, sans-serif;
   margin: 0;
-  background-color: hsl(0, 0%, 9%);
-  color: hsl(0, 0%, 96%);
+  background-color: hsl(336, 69%, 30%);
+  color: hsl(326, 78%, 95%);
   overflow-x: hidden;
 }
 body.has-left-sidebar {
@@ -669,7 +669,7 @@ hr {
   height: 1px;
   border: 0;
   overflow: visible;
-  border-top: 1px solid #242424 !important;
+  border-top: 1px solid #971c4d !important;
 }
 
 p {
@@ -683,12 +683,12 @@ pre {
 
 a {
   background-color: transparent;
-  color: hsl(158, 64%, 52%);
+  color: hsl(329, 86%, 70%);
   text-decoration: none;
   transition: all 0.4s ease;
 }
 a:hover {
-  color: #27b07d;
+  color: #f1419c;
 }
 a:active, a:focus {
   text-decoration: underline !important;
@@ -702,8 +702,8 @@ li {
 code {
   font-family: monospace, monospace;
   font-size: 1em;
-  background-color: hsl(0, 0%, 4%);
-  color: hsl(158, 64%, 52%);
+  background-color: hsl(336, 84%, 17%);
+  color: hsl(329, 86%, 70%);
 }
 
 sub,
@@ -806,7 +806,7 @@ summary {
   transition: all 0.8s ease-in-out;
 }
 summary::marker {
-  color: hsl(158, 64%, 52%);
+  color: hsl(329, 86%, 70%);
   content: "+";
   font-size: 24px;
 }
@@ -823,7 +823,7 @@ details[open] summary::marker {
   font-size: 75%;
   font-weight: 300;
   letter-spacing: 0.125rem;
-  color: #8f8f8f;
+  color: #e63398;
 }
 
 figcaption {
@@ -840,7 +840,7 @@ figcaption {
 blockquote {
   display: flex;
   flex-flow: row wrap;
-  border-left: 2px solid #4a4a4a;
+  border-left: 2px solid #d7286e;
   justify-content: space-between;
 }
 blockquote cite {
@@ -1251,9 +1251,9 @@ blockquote cite {
 }
 
 .hero {
-  color: hsl(0, 0%, 96%);
+  color: hsl(326, 78%, 95%);
   display: block;
-  padding: 6rem, 3rem;
+  padding: 8rem, 4rem;
   border-radius: 16px;
   min-height: 16rem;
   width: 100%;
@@ -1262,36 +1262,36 @@ blockquote cite {
 }
 .hero header {
   font-size: 32px;
-  padding: 1.5rem;
+  padding: 2rem;
   font-weight: bold;
 }
 .hero .content {
   font-size: 24px;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 .hero footer {
   font-size: 16px;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 .hero-sm {
-  padding: 1.125rem 3rem;
+  padding: 1.5rem 4rem;
   min-height: 10rem;
 }
 .hero-md {
-  padding: 3rem 3rem;
+  padding: 4rem 4rem;
   min-height: 15rem;
 }
 .hero-lg {
-  padding: 6rem 3rem;
+  padding: 8rem 4rem;
   min-height: 20rem;
 }
 
 .card {
-  color: hsl(0, 0%, 96%);
+  color: hsl(326, 78%, 95%);
   display: block;
-  padding: 1.5rem;
+  padding: 2rem;
   border: 1px solid hsl(0, 0%, 15%);
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
   border-radius: 8px;
   overflow: auto;
 }
@@ -1307,8 +1307,8 @@ blockquote cite {
   margin-right: 0.5rem;
 }
 .card .card_text {
-  padding: 1.5rem 0;
-  padding-bottom: 2.25rem;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
 }
 .card .card_text p {
   font-size: inherit;
@@ -1323,10 +1323,10 @@ blockquote cite {
 }
 
 .vs-card {
-  color: hsl(0, 0%, 96%);
+  color: hsl(326, 78%, 95%);
   width: 100%;
   max-width: 350px;
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
   border-radius: 16px;
   transition: all 0.25s ease;
   cursor: pointer;
@@ -1340,8 +1340,8 @@ blockquote cite {
 }
 .vs-card .card_text {
   font-size: 0.85rem;
-  padding: 1.5rem;
-  padding-bottom: 2.25rem;
+  padding: 2rem;
+  padding-bottom: 3rem;
 }
 .vs-card .card_text p {
   font-size: inherit;
@@ -1349,7 +1349,7 @@ blockquote cite {
   opacity: 0.8;
 }
 .vs-card .card_title {
-  padding: 1.5rem 1.5rem 0 1.5rem;
+  padding: 2rem 2rem 0 2rem;
 }
 .vs-card .card_title h4,
 .vs-card .card_title h5,
@@ -1391,7 +1391,7 @@ blockquote cite {
 }
 .vs-card.type-h:hover {
   transform: scale(1.04);
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .vs-card.type-h .card_img {
   width: 200px;
@@ -1400,7 +1400,7 @@ blockquote cite {
   min-width: 200px;
 }
 .vs-card.type-h .card_text {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
 }
 .vs-card.type-h .card_title {
   margin-left: 0;
@@ -1411,36 +1411,36 @@ blockquote cite {
   cursor: pointer;
   display: inline-flex;
   border: 0;
-  padding: 0.75rem 30px;
+  padding: 1rem 30px;
   border-radius: 4px;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   align-content: center;
   align-items: center;
-  border: 1px solid hsl(0, 0%, 9%);
+  border: 1px solid hsl(336, 69%, 30%);
   transition: all 0.4s ease;
   font-weight: 500;
   letter-spacing: 0.0125rem;
 }
 .btn[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
+  color: #9f1463;
   pointer-events: none !important;
 }
 .btn[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 .btn.size-sm {
   font-size: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .btn.size-sm i {
   font-size: 12px;
 }
 .btn.size-lg {
   font-size: 24px;
-  padding: 0.75rem 36px;
+  padding: 1rem 36px;
 }
 .btn.size-lg i {
   font-size: 24px;
@@ -1453,25 +1453,25 @@ blockquote cite {
 }
 .btn:active, .btn:focus {
   box-shadow: none;
-  background-color: black;
+  background-color: #56102c;
   text-decoration: none !important;
-  border: 1px solid hsl(0, 0%, 96%);
+  border: 1px solid hsl(326, 78%, 95%);
 }
 .btn:hover {
-  background-color: #303030;
+  background-color: #ac2058;
 }
 .btn.contained {
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .btn.contained:hover {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 
 .btn-group {
   display: flex;
   flex-flow: row nowrap;
   border-radius: 4px;
-  background: hsl(0, 0%, 9%);
+  background: hsl(336, 69%, 30%);
   padding: 0;
   margin: 0;
   max-width: fit-content;
@@ -1493,7 +1493,7 @@ blockquote cite {
   cursor: pointer;
   display: inline-flex;
   border: 0;
-  padding: 0.75rem 30px;
+  padding: 1rem 30px;
   border-radius: 4px;
   background-color: hsl(0, 0%, 15%);
   align-content: center;
@@ -1502,28 +1502,28 @@ blockquote cite {
   transition: all 0.4s ease;
   font-weight: 500;
   letter-spacing: 0.0125rem;
-  color: hsl(0, 0%, 96%);
+  color: hsl(326, 78%, 95%);
 }
 .btn-neutral-800[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
+  color: #9f1463;
   pointer-events: none !important;
 }
 .btn-neutral-800[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 .btn-neutral-800.size-sm {
   font-size: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .btn-neutral-800.size-sm i {
   font-size: 12px;
 }
 .btn-neutral-800.size-lg {
   font-size: 24px;
-  padding: 0.75rem 36px;
+  padding: 1rem 36px;
 }
 .btn-neutral-800.size-lg i {
   font-size: 24px;
@@ -1538,16 +1538,16 @@ blockquote cite {
   box-shadow: none;
   background-color: #0d0d0d;
   text-decoration: none !important;
-  border: 1px solid hsl(0, 0%, 96%);
+  border: 1px solid hsl(326, 78%, 95%);
 }
 .btn-neutral-800:hover {
   background-color: #404040;
 }
 .btn-neutral-800.contained {
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .btn-neutral-800.contained:hover {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 .btn-neutral-800:hover {
   background-color: #333333 !important;
@@ -1558,7 +1558,7 @@ blockquote cite {
   cursor: pointer;
   display: inline-flex;
   border: 0;
-  padding: 0.75rem 30px;
+  padding: 1rem 30px;
   border-radius: 4px;
   background-color: hsl(0, 0%, 4%);
   align-content: center;
@@ -1567,28 +1567,28 @@ blockquote cite {
   transition: all 0.4s ease;
   font-weight: 500;
   letter-spacing: 0.0125rem;
-  color: hsl(0, 0%, 96%);
+  color: hsl(326, 78%, 95%);
 }
 .btn-neutral-950[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
+  color: #9f1463;
   pointer-events: none !important;
 }
 .btn-neutral-950[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 .btn-neutral-950.size-sm {
   font-size: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .btn-neutral-950.size-sm i {
   font-size: 12px;
 }
 .btn-neutral-950.size-lg {
   font-size: 24px;
-  padding: 0.75rem 36px;
+  padding: 1rem 36px;
 }
 .btn-neutral-950.size-lg i {
   font-size: 24px;
@@ -1603,16 +1603,16 @@ blockquote cite {
   box-shadow: none;
   background-color: black;
   text-decoration: none !important;
-  border: 1px solid hsl(0, 0%, 96%);
+  border: 1px solid hsl(326, 78%, 95%);
 }
 .btn-neutral-950:hover {
   background-color: #242424;
 }
 .btn-neutral-950.contained {
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .btn-neutral-950.contained:hover {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 .btn-neutral-950:hover {
   background-color: #171717 !important;
@@ -1623,12 +1623,12 @@ blockquote cite {
   cursor: pointer;
   display: inline-flex;
   border: 0;
-  padding: 0.75rem 30px;
+  padding: 1rem 30px;
   border-radius: 4px;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   align-content: center;
   align-items: center;
-  border: 1px solid hsl(0, 0%, 9%);
+  border: 1px solid hsl(336, 69%, 30%);
   transition: all 0.4s ease;
   font-weight: 500;
   letter-spacing: 0.0125rem;
@@ -1637,24 +1637,24 @@ blockquote cite {
 }
 .btn-outlined-red-500[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
+  color: #9f1463;
   pointer-events: none !important;
 }
 .btn-outlined-red-500[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 .btn-outlined-red-500.size-sm {
   font-size: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .btn-outlined-red-500.size-sm i {
   font-size: 12px;
 }
 .btn-outlined-red-500.size-lg {
   font-size: 24px;
-  padding: 0.75rem 36px;
+  padding: 1rem 36px;
 }
 .btn-outlined-red-500.size-lg i {
   font-size: 24px;
@@ -1667,18 +1667,18 @@ blockquote cite {
 }
 .btn-outlined-red-500:active, .btn-outlined-red-500:focus {
   box-shadow: none;
-  background-color: black;
+  background-color: #56102c;
   text-decoration: none !important;
-  border: 1px solid hsl(0, 0%, 96%);
+  border: 1px solid hsl(326, 78%, 95%);
 }
 .btn-outlined-red-500:hover {
-  background-color: #303030;
+  background-color: #ac2058;
 }
 .btn-outlined-red-500.contained {
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .btn-outlined-red-500.contained:hover {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 .btn-outlined-red-500:hover {
   color: black;
@@ -1686,14 +1686,14 @@ blockquote cite {
 }
 .btn-outlined-red-500[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
-  border: 1px solid #292929;
+  color: #9f1463;
+  border: 1px solid #44082a;
   pointer-events: none !important;
 }
 .btn-outlined-red-500[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 
 .btn-emerald-500 {
@@ -1701,7 +1701,7 @@ blockquote cite {
   cursor: pointer;
   display: inline-flex;
   border: 0;
-  padding: 0.75rem 30px;
+  padding: 1rem 30px;
   border-radius: 4px;
   background-color: hsl(160, 84%, 39%);
   align-content: center;
@@ -1710,28 +1710,28 @@ blockquote cite {
   transition: all 0.4s ease;
   font-weight: 500;
   letter-spacing: 0.0125rem;
-  color: hsl(0, 0%, 96%);
+  color: hsl(326, 78%, 95%);
 }
 .btn-emerald-500[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
+  color: #9f1463;
   pointer-events: none !important;
 }
 .btn-emerald-500[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 .btn-emerald-500.size-sm {
   font-size: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .btn-emerald-500.size-sm i {
   font-size: 12px;
 }
 .btn-emerald-500.size-lg {
   font-size: 24px;
-  padding: 0.75rem 36px;
+  padding: 1rem 36px;
 }
 .btn-emerald-500.size-lg i {
   font-size: 24px;
@@ -1746,16 +1746,16 @@ blockquote cite {
   box-shadow: none;
   background-color: #0c885f;
   text-decoration: none !important;
-  border: 1px solid hsl(0, 0%, 96%);
+  border: 1px solid hsl(326, 78%, 95%);
 }
 .btn-emerald-500:hover {
   background-color: #14e6a0;
 }
 .btn-emerald-500.contained {
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .btn-emerald-500.contained:hover {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 .btn-emerald-500:hover {
   background-color: #12ce90 !important;
@@ -1766,12 +1766,12 @@ blockquote cite {
   cursor: pointer;
   display: inline-flex;
   border: 0;
-  padding: 0.75rem 30px;
+  padding: 1rem 30px;
   border-radius: 4px;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   align-content: center;
   align-items: center;
-  border: 1px solid hsl(0, 0%, 9%);
+  border: 1px solid hsl(336, 69%, 30%);
   transition: all 0.4s ease;
   font-weight: 500;
   letter-spacing: 0.0125rem;
@@ -1780,24 +1780,24 @@ blockquote cite {
 }
 .btn-outlined-emerald-500[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
+  color: #9f1463;
   pointer-events: none !important;
 }
 .btn-outlined-emerald-500[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 .btn-outlined-emerald-500.size-sm {
   font-size: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .btn-outlined-emerald-500.size-sm i {
   font-size: 12px;
 }
 .btn-outlined-emerald-500.size-lg {
   font-size: 24px;
-  padding: 0.75rem 36px;
+  padding: 1rem 36px;
 }
 .btn-outlined-emerald-500.size-lg i {
   font-size: 24px;
@@ -1810,18 +1810,18 @@ blockquote cite {
 }
 .btn-outlined-emerald-500:active, .btn-outlined-emerald-500:focus {
   box-shadow: none;
-  background-color: black;
+  background-color: #56102c;
   text-decoration: none !important;
-  border: 1px solid hsl(0, 0%, 96%);
+  border: 1px solid hsl(326, 78%, 95%);
 }
 .btn-outlined-emerald-500:hover {
-  background-color: #303030;
+  background-color: #ac2058;
 }
 .btn-outlined-emerald-500.contained {
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .btn-outlined-emerald-500.contained:hover {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 .btn-outlined-emerald-500:hover {
   color: black;
@@ -1829,14 +1829,14 @@ blockquote cite {
 }
 .btn-outlined-emerald-500[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
-  border: 1px solid #292929;
+  color: #9f1463;
+  border: 1px solid #44082a;
   pointer-events: none !important;
 }
 .btn-outlined-emerald-500[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 
 .btn-emerald-700 {
@@ -1844,7 +1844,7 @@ blockquote cite {
   cursor: pointer;
   display: inline-flex;
   border: 0;
-  padding: 0.75rem 30px;
+  padding: 1rem 30px;
   border-radius: 4px;
   background-color: hsl(163, 94%, 24%);
   align-content: center;
@@ -1853,28 +1853,28 @@ blockquote cite {
   transition: all 0.4s ease;
   font-weight: 500;
   letter-spacing: 0.0125rem;
-  color: hsl(0, 0%, 96%);
+  color: hsl(326, 78%, 95%);
 }
 .btn-emerald-700[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
+  color: #9f1463;
   pointer-events: none !important;
 }
 .btn-emerald-700[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 .btn-emerald-700.size-sm {
   font-size: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .btn-emerald-700.size-sm i {
   font-size: 12px;
 }
 .btn-emerald-700.size-lg {
   font-size: 24px;
-  padding: 0.75rem 36px;
+  padding: 1rem 36px;
 }
 .btn-emerald-700.size-lg i {
   font-size: 24px;
@@ -1889,16 +1889,16 @@ blockquote cite {
   box-shadow: none;
   background-color: #024532;
   text-decoration: none !important;
-  border: 1px solid hsl(0, 0%, 96%);
+  border: 1px solid hsl(326, 78%, 95%);
 }
 .btn-emerald-700:hover {
   background-color: #05a87a;
 }
 .btn-emerald-700.contained {
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .btn-emerald-700.contained:hover {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 .btn-emerald-700:hover {
   background-color: #048f68 !important;
@@ -1909,12 +1909,12 @@ blockquote cite {
   cursor: pointer;
   display: inline-flex;
   border: 0;
-  padding: 0.75rem 30px;
+  padding: 1rem 30px;
   border-radius: 4px;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   align-content: center;
   align-items: center;
-  border: 1px solid hsl(0, 0%, 9%);
+  border: 1px solid hsl(336, 69%, 30%);
   transition: all 0.4s ease;
   font-weight: 500;
   letter-spacing: 0.0125rem;
@@ -1923,24 +1923,24 @@ blockquote cite {
 }
 .btn-outlined-emerald-700[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
+  color: #9f1463;
   pointer-events: none !important;
 }
 .btn-outlined-emerald-700[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 .btn-outlined-emerald-700.size-sm {
   font-size: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .btn-outlined-emerald-700.size-sm i {
   font-size: 12px;
 }
 .btn-outlined-emerald-700.size-lg {
   font-size: 24px;
-  padding: 0.75rem 36px;
+  padding: 1rem 36px;
 }
 .btn-outlined-emerald-700.size-lg i {
   font-size: 24px;
@@ -1953,18 +1953,18 @@ blockquote cite {
 }
 .btn-outlined-emerald-700:active, .btn-outlined-emerald-700:focus {
   box-shadow: none;
-  background-color: black;
+  background-color: #56102c;
   text-decoration: none !important;
-  border: 1px solid hsl(0, 0%, 96%);
+  border: 1px solid hsl(326, 78%, 95%);
 }
 .btn-outlined-emerald-700:hover {
-  background-color: #303030;
+  background-color: #ac2058;
 }
 .btn-outlined-emerald-700.contained {
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .btn-outlined-emerald-700.contained:hover {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 .btn-outlined-emerald-700:hover {
   color: black;
@@ -1972,14 +1972,14 @@ blockquote cite {
 }
 .btn-outlined-emerald-700[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
-  border: 1px solid #292929;
+  color: #9f1463;
+  border: 1px solid #44082a;
   pointer-events: none !important;
 }
 .btn-outlined-emerald-700[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 
 .btn-complement-emerald-700 {
@@ -1987,7 +1987,7 @@ blockquote cite {
   cursor: pointer;
   display: inline-flex;
   border: 0;
-  padding: 0.75rem 30px;
+  padding: 1rem 30px;
   border-radius: 4px;
   background-color: hsl(163, 94%, 24%);
   align-content: center;
@@ -2000,24 +2000,24 @@ blockquote cite {
 }
 .btn-complement-emerald-700[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
+  color: #9f1463;
   pointer-events: none !important;
 }
 .btn-complement-emerald-700[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 .btn-complement-emerald-700.size-sm {
   font-size: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .btn-complement-emerald-700.size-sm i {
   font-size: 12px;
 }
 .btn-complement-emerald-700.size-lg {
   font-size: 24px;
-  padding: 0.75rem 36px;
+  padding: 1rem 36px;
 }
 .btn-complement-emerald-700.size-lg i {
   font-size: 24px;
@@ -2032,16 +2032,16 @@ blockquote cite {
   box-shadow: none;
   background-color: #024532;
   text-decoration: none !important;
-  border: 1px solid hsl(0, 0%, 96%);
+  border: 1px solid hsl(326, 78%, 95%);
 }
 .btn-complement-emerald-700:hover {
   background-color: #05a87a;
 }
 .btn-complement-emerald-700.contained {
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .btn-complement-emerald-700.contained:hover {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 .btn-complement-emerald-700:hover {
   color: black;
@@ -2053,7 +2053,7 @@ blockquote cite {
   cursor: pointer;
   display: inline-flex;
   border: 0;
-  padding: 0.75rem 30px;
+  padding: 1rem 30px;
   border-radius: 4px;
   background-color: hsl(335, 78%, 42%);
   align-content: center;
@@ -2062,28 +2062,28 @@ blockquote cite {
   transition: all 0.4s ease;
   font-weight: 500;
   letter-spacing: 0.0125rem;
-  color: hsl(0, 0%, 96%);
+  color: hsl(326, 78%, 95%);
 }
 .btn-pink-700[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
+  color: #9f1463;
   pointer-events: none !important;
 }
 .btn-pink-700[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 .btn-pink-700.size-sm {
   font-size: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .btn-pink-700.size-sm i {
   font-size: 12px;
 }
 .btn-pink-700.size-lg {
   font-size: 24px;
-  padding: 0.75rem 36px;
+  padding: 1rem 36px;
 }
 .btn-pink-700.size-lg i {
   font-size: 24px;
@@ -2098,16 +2098,16 @@ blockquote cite {
   box-shadow: none;
   background-color: #911247;
   text-decoration: none !important;
-  border: 1px solid hsl(0, 0%, 96%);
+  border: 1px solid hsl(326, 78%, 95%);
 }
 .btn-pink-700:hover {
   background-color: #e42575;
 }
 .btn-pink-700.contained {
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .btn-pink-700.contained:hover {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 .btn-pink-700:hover {
   background-color: #d51a68 !important;
@@ -2118,12 +2118,12 @@ blockquote cite {
   cursor: pointer;
   display: inline-flex;
   border: 0;
-  padding: 0.75rem 30px;
+  padding: 1rem 30px;
   border-radius: 4px;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   align-content: center;
   align-items: center;
-  border: 1px solid hsl(0, 0%, 9%);
+  border: 1px solid hsl(336, 69%, 30%);
   transition: all 0.4s ease;
   font-weight: 500;
   letter-spacing: 0.0125rem;
@@ -2132,24 +2132,24 @@ blockquote cite {
 }
 .btn-outlined-pink-700[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
+  color: #9f1463;
   pointer-events: none !important;
 }
 .btn-outlined-pink-700[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 .btn-outlined-pink-700.size-sm {
   font-size: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .btn-outlined-pink-700.size-sm i {
   font-size: 12px;
 }
 .btn-outlined-pink-700.size-lg {
   font-size: 24px;
-  padding: 0.75rem 36px;
+  padding: 1rem 36px;
 }
 .btn-outlined-pink-700.size-lg i {
   font-size: 24px;
@@ -2162,18 +2162,18 @@ blockquote cite {
 }
 .btn-outlined-pink-700:active, .btn-outlined-pink-700:focus {
   box-shadow: none;
-  background-color: black;
+  background-color: #56102c;
   text-decoration: none !important;
-  border: 1px solid hsl(0, 0%, 96%);
+  border: 1px solid hsl(326, 78%, 95%);
 }
 .btn-outlined-pink-700:hover {
-  background-color: #303030;
+  background-color: #ac2058;
 }
 .btn-outlined-pink-700.contained {
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .btn-outlined-pink-700.contained:hover {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 .btn-outlined-pink-700:hover {
   color: black;
@@ -2181,14 +2181,14 @@ blockquote cite {
 }
 .btn-outlined-pink-700[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
-  border: 1px solid #292929;
+  color: #9f1463;
+  border: 1px solid #44082a;
   pointer-events: none !important;
 }
 .btn-outlined-pink-700[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 
 .btn-pink-800 {
@@ -2196,7 +2196,7 @@ blockquote cite {
   cursor: pointer;
   display: inline-flex;
   border: 0;
-  padding: 0.75rem 30px;
+  padding: 1rem 30px;
   border-radius: 4px;
   background-color: hsl(336, 74%, 35%);
   align-content: center;
@@ -2205,28 +2205,28 @@ blockquote cite {
   transition: all 0.4s ease;
   font-weight: 500;
   letter-spacing: 0.0125rem;
-  color: hsl(0, 0%, 96%);
+  color: hsl(326, 78%, 95%);
 }
 .btn-pink-800[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
+  color: #9f1463;
   pointer-events: none !important;
 }
 .btn-pink-800[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 .btn-pink-800.size-sm {
   font-size: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .btn-pink-800.size-sm i {
   font-size: 12px;
 }
 .btn-pink-800.size-lg {
   font-size: 24px;
-  padding: 0.75rem 36px;
+  padding: 1rem 36px;
 }
 .btn-pink-800.size-lg i {
   font-size: 24px;
@@ -2241,16 +2241,16 @@ blockquote cite {
   box-shadow: none;
   background-color: #6f1136;
   text-decoration: none !important;
-  border: 1px solid hsl(0, 0%, 96%);
+  border: 1px solid hsl(326, 78%, 95%);
 }
 .btn-pink-800:hover {
   background-color: #c81e62;
 }
 .btn-pink-800.contained {
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .btn-pink-800.contained:hover {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 .btn-pink-800:hover {
   background-color: #b11b57 !important;
@@ -2261,7 +2261,7 @@ blockquote cite {
   cursor: pointer;
   display: inline-flex;
   border: 0;
-  padding: 0.75rem 30px;
+  padding: 1rem 30px;
   border-radius: 4px;
   background-color: hsl(336, 84%, 17%);
   align-content: center;
@@ -2270,28 +2270,28 @@ blockquote cite {
   transition: all 0.4s ease;
   font-weight: 500;
   letter-spacing: 0.0125rem;
-  color: hsl(0, 0%, 96%);
+  color: hsl(326, 78%, 95%);
 }
 .btn-pink-950[disabled] {
   cursor: not-allowed;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   box-shadow: none;
-  color: #5c5c5c;
+  color: #9f1463;
   pointer-events: none !important;
 }
 .btn-pink-950[disabled]:hover {
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
 }
 .btn-pink-950.size-sm {
   font-size: 12px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .btn-pink-950.size-sm i {
   font-size: 12px;
 }
 .btn-pink-950.size-lg {
   font-size: 24px;
-  padding: 0.75rem 36px;
+  padding: 1rem 36px;
 }
 .btn-pink-950.size-lg i {
   font-size: 24px;
@@ -2306,16 +2306,16 @@ blockquote cite {
   box-shadow: none;
   background-color: #21030f;
   text-decoration: none !important;
-  border: 1px solid hsl(0, 0%, 96%);
+  border: 1px solid hsl(326, 78%, 95%);
 }
 .btn-pink-950:hover {
   background-color: #7f0b39;
 }
 .btn-pink-950.contained {
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .btn-pink-950.contained:hover {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 .btn-pink-950:hover {
   background-color: #67092f !important;
@@ -2335,7 +2335,7 @@ blockquote cite {
   position: fixed !important;
   top: 0;
   left: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border-bottom: 1px solid hsl(0, 0%, 15%);
   min-height: 60px;
   z-index: 999 !important;
@@ -2344,7 +2344,7 @@ blockquote cite {
 .badge-neutral-500 {
   border-radius: 64px;
   background-color: hsl(0, 0%, 45%);
-  padding: 0.1875rem 0.375rem;
+  padding: 0.25rem 0.5rem;
   font-size: 12px;
   font-weight: normal;
 }
@@ -2352,7 +2352,7 @@ blockquote cite {
 .badge-neutral-800 {
   border-radius: 64px;
   background-color: hsl(0, 0%, 15%);
-  padding: 0.1875rem 0.375rem;
+  padding: 0.25rem 0.5rem;
   font-size: 12px;
   font-weight: normal;
 }
@@ -2360,7 +2360,7 @@ blockquote cite {
 .badge-outlined-neutral-800 {
   border-radius: 64px;
   background-color: hsl(0, 0%, 15%);
-  padding: 0.1875rem 0.375rem;
+  padding: 0.25rem 0.5rem;
   font-size: 12px;
   font-weight: normal;
   border: 1px solid hsl(0, 0%, 15%);
@@ -2370,7 +2370,7 @@ blockquote cite {
 .badge-neutral-900 {
   border-radius: 64px;
   background-color: hsl(0, 0%, 9%);
-  padding: 0.1875rem 0.375rem;
+  padding: 0.25rem 0.5rem;
   font-size: 12px;
   font-weight: normal;
 }
@@ -2378,7 +2378,7 @@ blockquote cite {
 .badge-emerald-500 {
   border-radius: 64px;
   background-color: hsl(160, 84%, 39%);
-  padding: 0.1875rem 0.375rem;
+  padding: 0.25rem 0.5rem;
   font-size: 12px;
   font-weight: normal;
 }
@@ -2386,7 +2386,7 @@ blockquote cite {
 .badge-emerald-700 {
   border-radius: 64px;
   background-color: hsl(163, 94%, 24%);
-  padding: 0.1875rem 0.375rem;
+  padding: 0.25rem 0.5rem;
   font-size: 12px;
   font-weight: normal;
 }
@@ -2394,7 +2394,7 @@ blockquote cite {
 .badge-outlined-emerald-900 {
   border-radius: 64px;
   background-color: hsl(164, 86%, 16%);
-  padding: 0.1875rem 0.375rem;
+  padding: 0.25rem 0.5rem;
   font-size: 12px;
   font-weight: normal;
   border: 1px solid hsl(164, 86%, 16%);
@@ -2404,7 +2404,7 @@ blockquote cite {
 .badge-pink-700 {
   border-radius: 64px;
   background-color: hsl(335, 78%, 42%);
-  padding: 0.1875rem 0.375rem;
+  padding: 0.25rem 0.5rem;
   font-size: 12px;
   font-weight: normal;
 }
@@ -2412,7 +2412,7 @@ blockquote cite {
 .badge-outlined-pink-900 {
   border-radius: 64px;
   background-color: hsl(336, 69%, 30%);
-  padding: 0.1875rem 0.375rem;
+  padding: 0.25rem 0.5rem;
   font-size: 12px;
   font-weight: normal;
   border: 1px solid hsl(336, 69%, 30%);
@@ -2483,7 +2483,7 @@ blockquote cite {
   display: inline-flex;
 }
 .avatar-group * {
-  border: 4px solid hsl(0, 0%, 9%);
+  border: 4px solid hsl(336, 69%, 30%);
   margin-left: -0.75rem;
   overflow: clip;
 }
@@ -2618,13 +2618,13 @@ blockquote cite {
   cursor: pointer;
   display: flex;
   flex-flow: row wrap;
-  border: 1px solid #242424;
+  border: 1px solid #971c4d;
   padding: 0.25rem;
   border-radius: 16px;
-  background-color: hsl(0, 0%, 9%);
+  background-color: hsl(336, 69%, 30%);
   justify-content: center;
   align-items: center;
-  color: hsl(0, 0%, 96%);
+  color: hsl(326, 78%, 95%);
   max-width: 90vw;
   transition: all 0.4s ease;
 }
@@ -2632,23 +2632,23 @@ blockquote cite {
   display: inline-flex;
   border: 1px solid transparent;
   border-radius: 12px;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
 }
 .taskbar > .task-item:active, .taskbar > .task-item:focus {
-  color: hsl(158, 64%, 52%);
-  border-color: hsl(158, 64%, 52%);
+  color: hsl(329, 86%, 70%);
+  border-color: hsl(329, 86%, 70%);
   background-color: transparent !important;
   text-decoration: none !important;
 }
 .taskbar > .task-item:hover {
-  background-color: #0b3224;
+  background-color: #8e0b4f;
 }
 
 .sidebar {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  border: 1px solid #242424;
+  border: 1px solid #971c4d;
   border-radius: 16px;
   width: 264px;
   max-width: 264px !important;
@@ -2665,7 +2665,7 @@ blockquote cite {
   background-color: transparent;
 }
 .sidebar::-webkit-scrollbar-thumb {
-  background-color: hsl(158, 64%, 52%);
+  background-color: hsl(329, 86%, 70%);
   display: none;
   border: 2px solid transparent;
   border-radius: 16px;
@@ -2693,7 +2693,7 @@ blockquote cite {
 .sidebar nav {
   display: flex;
   flex-flow: column nowrap !important;
-  padding: 0.75rem;
+  padding: 1rem;
   height: 60vh;
 }
 .sidebar nav li {
@@ -2719,23 +2719,23 @@ blockquote cite {
   flex-grow: 1;
 }
 .sidebar nav li a:hover {
-  background-color: #0b3224;
+  background-color: #8e0b4f;
 }
 .sidebar nav li a:hover::before {
   content: "";
   position: absolute;
   left: calc(-1rem - 1px);
   width: 3px;
-  background-color: hsl(158, 64%, 52%);
+  background-color: hsl(329, 86%, 70%);
   border: 2px solid;
-  border-left-color: hsl(158, 64%, 52%);
+  border-left-color: hsl(329, 86%, 70%);
   height: 2rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
 .sidebar nav li a:active, .sidebar nav li a:focus {
-  background-color: #0a0a0a;
-  border: 1px solid hsl(158, 64%, 52%);
+  background-color: #6c1437;
+  border: 1px solid hsl(329, 86%, 70%);
   text-decoration: none !important;
 }
 
@@ -2743,34 +2743,34 @@ blockquote cite {
   display: inline-table;
   width: 100%;
   overflow-x: auto;
-  padding: 0.75rem;
+  padding: 1rem;
   border-radius: 12px;
-  background-color: hsl(0, 0%, 9%);
-  color: hsl(0, 0%, 96%);
+  background-color: hsl(336, 69%, 30%);
+  color: hsl(326, 78%, 95%);
   border-collapse: collapse;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 .tbl tr {
   width: 100%;
 }
 .tbl tr th,
 .tbl tr td {
-  padding: 0.375rem 0.75rem;
+  padding: 0.5rem 1rem;
   vertical-align: middle;
   text-align: left;
-  border-bottom: 1px solid #242424;
+  border-bottom: 1px solid #971c4d;
 }
 
 .tbl-outlined-emerald-900 {
   display: inline-table;
   width: 100%;
   overflow-x: auto;
-  padding: 0.75rem;
+  padding: 1rem;
   border-radius: 12px;
-  background-color: hsl(0, 0%, 9%);
-  color: hsl(0, 0%, 96%);
+  background-color: hsl(336, 69%, 30%);
+  color: hsl(326, 78%, 95%);
   border-collapse: collapse;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   border-collapse: separate !important;
   border: 1px solid hsl(164, 86%, 16%);
 }
@@ -2779,10 +2779,10 @@ blockquote cite {
 }
 .tbl-outlined-emerald-900 tr th,
 .tbl-outlined-emerald-900 tr td {
-  padding: 0.375rem 0.75rem;
+  padding: 0.5rem 1rem;
   vertical-align: middle;
   text-align: left;
-  border-bottom: 1px solid #242424;
+  border-bottom: 1px solid #971c4d;
 }
 .tbl-outlined-emerald-900 th,
 .tbl-outlined-emerald-900 td {
@@ -2797,22 +2797,22 @@ blockquote cite {
   display: inline-table;
   width: 100%;
   overflow-x: auto;
-  padding: 0.75rem;
+  padding: 1rem;
   border-radius: 12px;
-  background-color: hsl(0, 0%, 9%);
-  color: hsl(0, 0%, 96%);
+  background-color: hsl(336, 69%, 30%);
+  color: hsl(326, 78%, 95%);
   border-collapse: collapse;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 .tbl-striped-emerald-900 tr {
   width: 100%;
 }
 .tbl-striped-emerald-900 tr th,
 .tbl-striped-emerald-900 tr td {
-  padding: 0.375rem 0.75rem;
+  padding: 0.5rem 1rem;
   vertical-align: middle;
   text-align: left;
-  border-bottom: 1px solid #242424;
+  border-bottom: 1px solid #971c4d;
 }
 .tbl-striped-emerald-900 tr:nth-child(even) {
   background-color: #097b5d;
@@ -2825,11 +2825,11 @@ form {
   display: inline-flex;
   width: 100%;
   flex-flow: column wrap;
-  gap: 0.75rem;
+  gap: 1rem;
   border-radius: 16px;
-  border: 1px solid #242424;
-  margin-bottom: 0.75rem;
-  padding: 0.75rem;
+  border: 1px solid #971c4d;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 input[type=text],
@@ -2842,11 +2842,11 @@ input[type=color],
 input[type=search],
 input[type=range],
 textarea {
-  color: hsl(0, 0%, 96%);
-  background-color: #0a0a0a;
+  color: hsl(326, 78%, 95%);
+  background-color: #6c1437;
   box-sizing: border-box;
   padding: 8px 12px;
-  border: 1px solid #242424;
+  border: 1px solid #971c4d;
   border-radius: 4px;
   outline: none;
   width: 100%;
@@ -2863,7 +2863,7 @@ input[type=color]:focus,
 input[type=search]:focus,
 input[type=range]:focus,
 textarea:focus {
-  border-color: hsl(158, 64%, 52%);
+  border-color: hsl(329, 86%, 70%);
 }
 
 textarea {
@@ -2871,14 +2871,14 @@ textarea {
 }
 
 fieldset {
-  border: 1px solid #242424;
+  border: 1px solid #971c4d;
   display: inline-flex;
   flex-flow: row wrap;
 }
 
 fieldset,
 label {
-  padding: 0.75rem;
+  padding: 1rem;
   outline: none;
 }
 
@@ -2888,7 +2888,7 @@ input[type=range] {
   appearance: none;
   width: 100%;
   height: 1rem;
-  background: linear-gradient(to right, #0b3224, #60dcaf);
+  background: linear-gradient(to right, #8e0b4f, #f8a0cd);
   border-radius: 50px;
   outline: none;
   transition: opacity 0.2s;
@@ -2898,18 +2898,18 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: hsl(158, 64%, 52%);
+  background-color: hsl(329, 86%, 70%);
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
 input[type=range]:hover::-webkit-slider-thumb {
-  background: #27b07d;
+  background: #f1419c;
 }
 
 input[type=range]:active::-webkit-slider-thumb {
-  background: hsl(0, 0%, 96%);
+  background: hsl(326, 78%, 95%);
 }
 
 input[type=range]:focus {
@@ -2923,8 +2923,8 @@ input[type=radio] {
   width: 1rem;
   height: 1rem;
   margin: auto 0;
-  background-color: #0a0a0a;
-  border: 1px solid #242424;
+  background-color: #6c1437;
+  border: 1px solid #971c4d;
   border-radius: 16px;
   cursor: pointer;
   transition: border-color 0.2s ease-in-out;
@@ -2935,31 +2935,31 @@ input[type=radio] {
 
 input[type=checkbox]:hover,
 input[type=radio]:hover {
-  border-color: #4bd8a4;
+  border-color: #f688c1;
 }
 
 input[type=checkbox]:focus,
 input[type=radio]:focus {
-  border-color: #4bd8a4;
+  border-color: #f688c1;
 }
 
 input[type=checkbox]:checked,
 input[type=radio]:checked {
-  background-color: #4bd8a4;
-  border-color: #4bd8a4;
+  background-color: #f688c1;
+  border-color: #f688c1;
 }
 
 input[type=checkbox]:disabled,
 input[type=radio]:disabled {
-  background-color: #0b3224;
-  border-color: #0b3224;
+  background-color: #8e0b4f;
+  border-color: #8e0b4f;
   cursor: not-allowed;
 }
 
 input[type=checkbox]:checked:disabled,
 input[type=radio]:checked:disabled {
-  background-color: hsl(158, 64%, 52%);
-  border-color: hsl(158, 64%, 52%);
+  background-color: hsl(329, 86%, 70%);
+  border-color: hsl(329, 86%, 70%);
   cursor: not-allowed;
 }
 
@@ -2971,8 +2971,8 @@ input[type=radio]:checked:disabled {
 
 .tooltip {
   position: absolute;
-  padding: 0.75rem;
-  background-color: #0a0a0a;
+  padding: 1rem;
+  background-color: #6c1437;
   border-radius: 4px;
   width: 150px;
   text-align: center;
@@ -2980,8 +2980,8 @@ input[type=radio]:checked:disabled {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s;
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
-  border: 1px solid hsl(158, 64%, 52%);
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
+  border: 1px solid hsl(329, 86%, 70%);
 }
 
 .tooltip::before {
@@ -2990,33 +2990,33 @@ input[type=radio]:checked:disabled {
   position: absolute;
   border-width: 0.5rem;
   border-style: solid;
-  border-color: hsl(158, 64%, 52%) transparent transparent transparent;
+  border-color: hsl(329, 86%, 70%) transparent transparent transparent;
   z-index: -1;
 }
 
 .tooltip-left::before {
-  border-color: transparent transparent transparent hsl(158, 64%, 52%) !important;
+  border-color: transparent transparent transparent hsl(329, 86%, 70%) !important;
   top: 50%;
   left: -1rem;
   transform: translateY(-50%);
 }
 
 .tooltip-right::before {
-  border-color: transparent hsl(158, 64%, 52%) transparent transparent !important;
+  border-color: transparent hsl(329, 86%, 70%) transparent transparent !important;
   top: 50%;
   right: -1rem;
   transform: translateY(-50%);
 }
 
 .tooltip-top::before {
-  border-color: transparent transparent hsl(158, 64%, 52%) transparent !important;
+  border-color: transparent transparent hsl(329, 86%, 70%) transparent !important;
   bottom: -1rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .tooltip-bottom::before {
-  border-color: hsl(158, 64%, 52%) transparent transparent transparent !important;
+  border-color: hsl(329, 86%, 70%) transparent transparent transparent !important;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -3100,15 +3100,15 @@ input[type=radio]:checked:disabled {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  background: hsl(0, 0%, 9%);
-  padding: 0.75rem;
+  background: hsl(336, 69%, 30%);
+  padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 1rem 1rem #0a0a0a;
+  box-shadow: 0 1rem 1rem #6c1437;
   max-width: 60vw;
   margin: 1rem auto;
   border: 2px solid;
   border-left: 5px solid transparent;
-  border-color: hsl(0, 0%, 9%);
+  border-color: hsl(336, 69%, 30%);
   align-items: center;
 }
 .modal-content div {
@@ -3145,8 +3145,8 @@ input[type=radio]:checked:disabled {
   scroll-padding: 1rem;
   width: 600px;
   border-radius: 16px 16px 0 0;
-  border: 1px solid #242424;
-  box-shadow: 0 3px 5px hsl(0, 0%, 4%);
+  border: 1px solid #971c4d;
+  box-shadow: 0 3px 5px hsl(336, 84%, 17%);
 }
 .carousel-container .carousel-item {
   flex: 0 0 100%;
@@ -3174,7 +3174,7 @@ input[type=radio]:checked:disabled {
 }
 
 .bubbled {
-  background: radial-gradient(farthest-side, #121212 90%, transparent) left bottom/8rem 8rem, radial-gradient(farthest-side, #1c1c1c 90%, transparent) left center/5rem 5rem, radial-gradient(farthest-side, #242424 90%, transparent) left top/6rem 6rem, radial-gradient(farthest-side, #1c1c1c 90%, transparent) top center/3rem 3rem, radial-gradient(farthest-side, #242424 90%, transparent) top right/5rem 5rem, radial-gradient(farthest-side, #1c1c1c 90%, transparent) right bottom/8rem 8rem, radial-gradient(farthest-side, #121212 60%, transparent) right bottom/13rem 13rem;
+  background: radial-gradient(farthest-side, #79163e 90%, transparent) left bottom/8rem 8rem, radial-gradient(farthest-side, #8a1946 90%, transparent) left center/5rem 5rem, radial-gradient(farthest-side, #971c4d 90%, transparent) left top/6rem 6rem, radial-gradient(farthest-side, #8a1946 90%, transparent) top center/3rem 3rem, radial-gradient(farthest-side, #971c4d 90%, transparent) top right/5rem 5rem, radial-gradient(farthest-side, #8a1946 90%, transparent) right bottom/8rem 8rem, radial-gradient(farthest-side, #79163e 60%, transparent) right bottom/13rem 13rem;
   background-repeat: no-repeat;
   background-blend-mode: screen;
   -webkit-backdrop-filter: blur(8px);
@@ -3182,7 +3182,7 @@ input[type=radio]:checked:disabled {
 }
 
 .striped {
-  background: repeating-linear-gradient(45deg, hsl(0, 0%, 9%), hsl(0, 0%, 9%) 1rem, #121212 1rem, #121212 2rem);
+  background: repeating-linear-gradient(45deg, hsl(336, 69%, 30%), hsl(336, 69%, 30%) 1rem, #79163e 1rem, #79163e 2rem);
 }
 
 .placeholder {
@@ -3199,27 +3199,27 @@ input[type=radio]:checked:disabled {
 }
 
 .e-1 {
-  box-shadow: 0 0 0.5rem #0a0a0a;
+  box-shadow: 0 0 0.5rem #6c1437;
 }
 
 .e-2 {
-  box-shadow: 0 0.125rem 0.25rem #0a0a0a;
+  box-shadow: 0 0.125rem 0.25rem #6c1437;
 }
 
 .e-3 {
-  box-shadow: 0 0.25rem 0.5rem #0a0a0a;
+  box-shadow: 0 0.25rem 0.5rem #6c1437;
 }
 
 .e-4 {
-  box-shadow: 0 0.5rem 0.75rem #0a0a0a;
+  box-shadow: 0 0.5rem 0.75rem #6c1437;
 }
 
 .e-5 {
-  box-shadow: 0 0.75rem 1rem #0a0a0a;
+  box-shadow: 0 0.75rem 1rem #6c1437;
 }
 
 .e-6 {
-  box-shadow: 0 1rem 1rem #0a0a0a;
+  box-shadow: 0 1rem 1rem #6c1437;
 }
 
 .e-none {
@@ -3231,51 +3231,51 @@ input[type=radio]:checked:disabled {
 }
 
 .p-1 {
-  padding: 0.75rem;
+  padding: 1rem;
 }
 
 .p-2 {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .p-4 {
-  padding: 4.5rem;
+  padding: 6rem;
 }
 
 .pl-1 {
-  padding-left: 0.75rem;
+  padding-left: 1rem;
 }
 
 .pl-2 {
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 }
 
 .pl-3 {
-  padding-left: 3rem;
+  padding-left: 4rem;
 }
 
 .pl-4 {
-  padding-left: 4.5rem;
+  padding-left: 6rem;
 }
 
 .pr-1 {
-  padding-right: 0.75rem;
+  padding-right: 1rem;
 }
 
 .pr-2 {
-  padding-right: 1.5rem;
+  padding-right: 2rem;
 }
 
 .pr-3 {
-  padding-right: 3rem;
+  padding-right: 4rem;
 }
 
 .pr-4 {
-  padding-right: 4.5rem;
+  padding-right: 6rem;
 }
 
 .pt-1 {
-  padding-top: 0.75rem;
+  padding-top: 1rem;
 }
 
 .m-1 {
@@ -3471,15 +3471,15 @@ input[type=radio]:checked:disabled {
 }
 
 .b-solid {
-  border: 1px solid #242424;
+  border: 1px solid #971c4d;
 }
 
 .b-dashed {
-  border: 1px dashed #242424;
+  border: 1px dashed #971c4d;
 }
 
 .b-double {
-  border: 1px double #242424;
+  border: 1px double #971c4d;
 }
 
 .ta {
