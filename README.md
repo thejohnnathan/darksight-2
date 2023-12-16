@@ -39,7 +39,7 @@ You can now customize Darksight to apply themes or SASS overrides.
 Add your SASS override files to the following path:
 
 ```sh
-darksight/sass/*.scs
+darksight/sass/OVERRIDEFILE.scss
 ```
 
 You can also include your own theme easily by adding it to the following path:
