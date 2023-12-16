@@ -1,12 +1,12 @@
 {
   "name": "darksight",
-  "version": "2.0.2",
+  "version": "2.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "John Durtche",
   "license": "ISC",
   "dependencies": {
     "gulp": "^4.0.2",

@@ -3,7 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 const purgecss = require('gulp-purgecss')
 
 function buildStyles() {
-    return src('darksight/**/*.scss') /* change darksight to sass for local */
+    return src('sass/**/*.scss') /* change darksight to sass for local */
     .pipe(sass())
     .pipe(purgecss({ content: ['*.html'] }))
     .pipe(dest('css'))

@@ -10,6 +10,16 @@
     background-position: 100% 100%;
 }
 
+.starry {
+    background-image: url('../assets/starry.png');
+    background-repeat: repeat;
+}
+
+.flowered {
+    background-image: url('../assets/flower.png');
+    background-repeat: repeat;
+}
+
 .bubbled {
     background: 
     radial-gradient(farthest-side, darken($base-background-color, 2) 90%, transparent) left bottom/8rem 8rem,

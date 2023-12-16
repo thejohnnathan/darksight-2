@@ -278,22 +278,6 @@ $colors: (
     "emphasis": hsl(221, 83%, 53%)
 );
 
-//theme color
-$base-background-color: map-get($map: $colors, $key: neutral-900) !default;
-$base-text-color: map-get($map: $colors, $key: neutral-100) !default;
-$base-link-color: map-get($map: $colors, $key: emerald-400) !default;
-$base-code-background-color: map-get($map: $colors, $key: neutral-950) !default;
-
-.bg-gradient {
-    background: linear-gradient(135deg, map-get($map: $colors, $key: emerald-500) 25%, map-get($map: $colors, $key: teal-700) 75%, map-get($map: $colors, $key: cyan-900) 100%);
-}
-
-.bg-animated-gradient {
-    background: linear-gradient(135deg, map-get($map: $colors, $key: emerald-500) 25%, map-get($map: $colors, $key: teal-700) 75%, map-get($map: $colors, $key: cyan-900) 100%);
-    background-size: 400% 400%;
-    animation: animate-background 10s infinite ease-in-out;
-}
-
 @keyframes animate-background {
     0% {
         background-position: 0 50%;
@@ -306,13 +290,6 @@ $base-code-background-color: map-get($map: $colors, $key: neutral-950) !default;
     100% {
         background-position: 0 50%;
     }
-}
-
-.text-gradient {
-    background: linear-gradient(45deg, map-get($map: $colors, $key: emerald-500) 25%, map-get($map: $colors, $key: teal-700) 75%, map-get($map: $colors, $key: cyan-900) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
 }
 
 // material colors
@@ -350,11 +327,7 @@ $base-margin: 0.75rem !default;
 
 // borders
 $base-border: 1px !default;
-$base-border-color: lighten($base-background-color, 5);
 $base-border-radius: 16px !default;
-
-// box-shadow
-$base-box-shadow: 0 3px 5px map-get($map: $colors, $key: neutral-950) !default;
 
 // font sizes
 $base-font-size: 16px !default;
@@ -363,11 +336,6 @@ $font-size-lg: $base-font-size * 1.5;
 $font-size-xl: $base-font-size * 2;
 $font-size-xxl: $base-font-size * 3;
 
-// dark mode
-@media (prefers-color-scheme: dark) {
-    :root {
-        $base-background-color: map-get($map: $colors, $key: neutral-900) !default;
-        $base-text-color: map-get($map: $colors, $key: neutral-100) !default;
-        $base-box-shadow: 1px 3px 5px rgba(255, 255, 255, 0.1) !default;
-    }
-}
+// theme import
+@import './themes/default.scss'
+// @import './themes/pinkness.scss'

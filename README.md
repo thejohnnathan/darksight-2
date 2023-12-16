@@ -1,5 +1,5 @@
 # DARKSIGHT
->v2.0.2
+>v2.1
 
 A dark-themed, CSS library composed of a series of re-usable, responsive, material design components.
 Created for [Vue.js][vue], developed in Gulp, styled with SASS, and lovingly crafted by Front-End Developer [John Durtche][email].
@@ -23,7 +23,7 @@ Using the library is now as easy as downloading one CSS file, and adding the fol
 ```
 ## Development
 
-You can clone this version (2.0.2) of Darksight or build your own. You'll need to install NodeJS and use the following dependencies:
+You can clone this version (2.1) of Darksight or build your own. You'll need to install NodeJS and use the following dependencies:
 
 ```sh
 npm install boxicons --save
@@ -32,6 +32,29 @@ npm install gulp-purge-css -D
 npx gulp
 ```
 
+## Customizing
+
+You can now customize Darksight to apply themes or SASS overrides.
+
+Add your SASS override files to the following path:
+
+```sh
+darksight/sass/*.scs
+```
+
+You can also include your own theme easily by adding it to the following path:
+
+```sh
+darksight/themes/YOURTHEMENAME.scss
+```
+
+Once you have included your new theme SASS file, simply replace the default theme import at the bottom of the <code>_variables.scss</code> file with the relative path of your new theme file:
+
+```sh
+@import 'themes/YOURTHEMENAME.scss';
+```
+
+## Contribute
 Want to contribute? Great!
 
 John Durtche uses Gulp + SASS for the fastest development but recommends Vue + Vite for builds.
