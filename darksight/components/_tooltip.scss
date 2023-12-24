@@ -11,14 +11,15 @@ $bg-color: darken($base-background-color, 5);
     padding: $base-padding;
     background-color: $bg-color;
     border-radius: $base-border-radius * 0.25;
-    width: 150px;
+    font-size: $font-size-sm;
+    width: max-content;
     text-align: center;
     z-index: 1;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s;
     box-shadow: $base-box-shadow;
-    border: $base-border solid $base-link-color;
+    border: $base-border solid $base-border-color;
 }
 
 .tooltip::before {
@@ -27,33 +28,33 @@ $bg-color: darken($base-background-color, 5);
     position: absolute;
     border-width: 0.5rem;
     border-style: solid;
-    border-color: $base-link-color transparent transparent transparent;
+    border-color: $base-border-color transparent transparent transparent;
     z-index: -1;
 }
 
 .tooltip-left::before {
-    border-color: transparent transparent transparent $base-link-color !important;
+    border-color: transparent transparent transparent $base-border-color !important;
     top: 50%;
     left: -1rem;
     transform: translateY(-50%);
 }
 
 .tooltip-right::before {
-    border-color: transparent $base-link-color transparent transparent !important;
+    border-color: transparent $base-border-color transparent transparent !important;
     top: 50%;
     right: -1rem;
     transform: translateY(-50%);
 }
 
 .tooltip-top::before {
-    border-color: transparent transparent $base-link-color transparent !important;
+    border-color: transparent transparent $base-border-color transparent !important;
     bottom: -1rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .tooltip-bottom::before {
-    border-color: $base-link-color transparent transparent transparent !important;
+    border-color: $base-border-color transparent transparent transparent !important;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
@@ -69,7 +70,7 @@ $bg-color: darken($base-background-color, 5);
 
 /* Adjust tooltip positions based on trigger positions */
 .tooltip-container.left .tooltip {
-    left: -190px;
+    right: calc(100% + 1rem);
     top: 50%;
     transform: translateY(-50%);
 }

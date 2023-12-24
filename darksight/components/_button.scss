@@ -5,7 +5,7 @@
     cursor: pointer;
     display: inline-flex;
     border: 0;
-    padding: $base-padding 30px;
+    padding: $base-padding * 0.5 $base-padding;
     border-radius: $base-border-radius * 0.25;
     background-color: $bg-color;
     align-content: center;
@@ -29,7 +29,6 @@
 
     &.size-sm {
         font-size: $font-size-sm;
-        padding: $base-padding;
 
         & i {
             font-size: $font-size-sm;
@@ -38,7 +37,7 @@
 
     &.size-lg {
         font-size: $font-size-lg;
-        padding: $base-padding 36px;
+        padding: $base-padding $base-padding * 2;
 
         & i {
             font-size: $font-size-lg;
@@ -85,11 +84,11 @@
 .btn-group {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: stretch;
     border-radius: $base-border-radius * 0.25;
     background: $base-background-color;
     padding: 0;
     margin: 0;
-    max-width: fit-content;
     gap: 1px;
 
     & * {
@@ -180,8 +179,10 @@
         }
 
         .btn-dropdown-menu {
+            background: $base-background-color;
             position: absolute;
             top: 100%;
+            margin-top: 0.5em;
             left: 0;
             padding: 0.5em 0.25em;
             min-width: 10rem;
@@ -191,6 +192,7 @@
             opacity: 0;
             visibility: hidden;
             transition: opacity 0.2s, visibility 0.2s;
+            z-index: 99;
 
             a {
                 display: block;
