@@ -37,6 +37,24 @@
     }
 }
 
+.bread {
+    @include taskbar;
+
+    &>.crumb {
+        display: inline-flex;
+        border: 1px solid transparent;
+        border-radius: $base-border-radius * 0.75;
+        padding: $base-padding * 0.5 $base-padding;
+
+        &:active,
+        &:focus {
+            border-color: $base-link-color;
+            background-color: transparent !important;
+            text-decoration: none !important;
+        }
+    }
+}
+
 @each $key, $val in $colors {
     .taskbar-#{$key} {
         @include taskbar($val);

@@ -48,3 +48,26 @@ window.addEventListener('click', (event) => {
         hideModal();
     }
 });
+
+// Event to display hidden accordion content when header is clicked
+const headers = document.querySelectorAll('.accordion-header');
+const contents = document.querySelectorAll('.accordion-content');
+
+document.addEventListener('DOMContentLoaded', function () {
+    var accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(function (accordionHeader) {
+        var content = accordionHeader.nextElementSibling;
+        if (content.classList.contains('accordion-content')) {
+            accordionHeader.addEventListener('click', function () {
+                if (this.classList.contains('is-active')) {
+                    this.classList.remove('is-active');
+                    content.style.maxHeight = null;
+                } else {
+                    this.classList.add('is-active');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+            });
+        }
+    });
+});

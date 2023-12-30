@@ -1,0 +1,84 @@
+@use 'sass:math';
+
+@mixin accordion($bg-color: map-get($map: $colors, $key: transparent)) {
+    display: flex;
+    flex-flow: column nowrap;
+    border: $base-border solid $base-border-color;
+    background-color: $base-background-color;
+    font-size: $base-font-size;
+}
+
+.accordion {
+    display: block;
+    width: 100%;
+}
+
+.accordion-item {
+    @include accordion;
+    box-sizing: border-box;
+
+    &:not(:first-of-type) {
+        border-top: 0 !important;
+    }
+}
+
+.accordion-header {
+    cursor: pointer;
+    padding: $base-padding * 2;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    background: $base-background-color;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+        background-color: lighten($base-background-color, 5);
+    }
+
+    & i {
+        font-size: $font-size-lg;
+        float: right;
+    }
+
+    &:focus-within {
+        background-color: lighten($base-background-color, 5);
+
+        & i {
+            transform: rotate(-180deg);
+        }
+    }
+
+    &.is-active {
+        background-color: lighten($base-background-color, 5);
+        outline: 2px solid lighten($base-background-color, 10);
+
+        & i {
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+
+    & p {
+        padding: $base-padding * 2;
+    }
+}
+
+@each $key, $val in $colors {
+    .accordion-#{$key} {
+        @include accordion($val);
+    }
+
+    .accordion-outlined-#{$key} {
+        @include accordion($val);
+        border: $base-border solid $val;
+        background-color: transparent;
+    }
+}

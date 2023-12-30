@@ -29,6 +29,7 @@
 
     &.size-sm {
         font-size: $font-size-sm;
+        padding: $base-padding * 0.5;
 
         & i {
             font-size: $font-size-sm;
@@ -73,6 +74,13 @@
 
         &:hover {
             box-shadow: 0 0.5rem 0.75rem darken($base-background-color, 5);
+        }
+    }
+
+    &.is-active {
+        background-color: lighten($base-background-color, 5);
+        & i {
+            transform: rotate(-180deg);
         }
     }
 }
