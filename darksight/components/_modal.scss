@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     z-index: 99;
+    padding: 0;
 }
 
 .modal-content {
@@ -18,15 +19,16 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     background: $base-background-color;
-    padding: $base-padding;
+    padding: 1em;
     border-radius: $base-border-radius * 0.5;
     box-shadow: 0 1rem 1rem darken($base-background-color, 5);
     max-width: 60vw;
-    margin: 1rem auto;
+    margin: 1em auto 0 auto;
     border: $base-border * 2 solid;
     border-left: $base-border * 5 solid transparent;
     border-color: $base-background-color;
     align-items: center;
+    animation: slideup 0.8s ease-in-out;
 
     & div {
         display: inline-flex;
@@ -37,7 +39,7 @@
             margin: auto 1rem auto 0;
             text-align: center;
             font-size: $font-size-xxl;
-            width: max-content;
+            width: 4rem;
 
             & i {
                 padding: 0;

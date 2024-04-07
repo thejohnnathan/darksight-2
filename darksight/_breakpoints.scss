@@ -46,10 +46,20 @@ $breakpoints: (
     main {
         margin-top: 10rem !important;
     }
-    
-    .navbar .row div {
-        margin: 0 auto !important;
+
+    .navbar .row div,
+    .navbar .row nav {
+        display: inline-flex !important;
+        margin: 0 !important;
         justify-content: center !important;
         width: 100%;
+        float: none;
+        gap: none;
+        flex-wrap: nowrap !important;
+    }
+
+    .modal-content {
+        margin-top: 3em !important;
+        max-width: 80vw !important;
     }
 }

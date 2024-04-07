@@ -292,6 +292,20 @@ $colors: (
     }
 }
 
+@keyframes slideup {
+    0% {
+        opacity: 0;
+        trasform: translateY(100%);
+    }
+    50% {
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 // material colors
 $info-surface-color: map-get($map: $colors, $key: teal-200);
 $info-text-color: map-get($map: $colors, $key: teal-700);
