@@ -36,9 +36,10 @@
                         <span class="tooltip" id="tooltip-bottom-type">Typography</span>
                     </li>
                     <li class="tooltip-container bottom m-1">
-                        <a href="#" data-target="grid" class="text-white text-hover-emerald-400 font-lg tooltip-trigger"
-                            aria-describedby="tooltip-bottom-grid"><i class="bx bxs-grid bx-burst-hover"></i></a>
-                        <span class="tooltip" id="tooltip-bottom-grid">Grid System</span>
+                        <a href="#" data-target="layout"
+                            class="text-white text-hover-emerald-400 font-lg tooltip-trigger"
+                            aria-describedby="tooltip-bottom-layout"><i class="bx bxs-layout bx-burst-hover"></i></a>
+                        <span class="tooltip" id="tooltip-bottom-layout">Layout System</span>
                     </li>
                     <li class="tooltip-container bottom m-1">
                         <a href="#" data-target="color"
@@ -95,7 +96,7 @@
                         styled with SASS, and lovingly crafted by Front-End Developer <a
                             href="mailto:johndurtche@gmail.com" target="_blank">John Durtche</a>.
                     </p>
-                    <p class="mb-5">Divided into 8 main categories: Typography, Grid System, Color Palette, Icons,
+                    <p class="mb-5">Divided into 8 main categories: Typography, Layout System, Color Palette, Icons,
                         Components, Utilities, and Release Notes.</p>
                 </div>
                 <footer>
@@ -197,10 +198,11 @@
             </div>
         </section>
         <hr class="mt-4 mb-4" />
-        <section id="grid">
-            <h3 class="mb-2"><i class="bx bxs-grid p-2 br-sm bg-neutral-800 font-xl mr-2 text-emerald-500"></i>Grid
+        <section id="layout">
+            <h3 class="mb-2"><i class="bx bxs-layout p-2 br-sm bg-neutral-800 font-xl mr-2 text-emerald-500"></i>Layout
                 System</h3>
-            <p class="mb-1">Our Grid System uses a standard 12-column implementation with default 1rem gutters but we
+            <p class="mb-1">Our primary layout system is a grid that uses a standard 12-column implementation with
+                default 1rem gutters but we
                 also offer 2x
                 and 3x gutter options with the <code>.gap-2</code> and <code>.gap-3</code> classes.</p>
             <p class="subtitle">1200px 12C</p>
@@ -317,10 +319,10 @@
                     </div>
                 </div>
             </div>
-            <h3 class="weight-light text-emerald-400 mt-2 mb-2">Tiles <sup
-                    class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
+            <h3 class="weight-light text-emerald-400 mt-2 mb-2">Tiles</h3>
             <p class="mb-3">
-                Our secondary grid system is inspired by <a href="https://bulma.io" target="_blank">Bulma.io</a>. Tiles
+                Our secondary layout system is inspired by <a href="https://bulma.io" target="_blank">Bulma.io</a>.
+                Tiles
                 can be used to create grid-like arrangements and various design patterns with the use of expandable row
                 and column classes like <code>.rows-2</code> and <code>.cols-5</code>. The parent <code>.tiles</code>
                 accept the Gap classes, and their children <code>.tile</code> include <code>&dollar;base-margin</code>
@@ -363,6 +365,112 @@
                 <div class="tile bg-neutral-950 cols-4 rows-2">
                     <p>2 rows and 4 cols</p>
                 </div>
+            </div>
+            <h3 class="weight-light text-emerald-400 mt-3 mb-2">Slide Container <sup
+                    class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
+            <p class="mb-3">
+                Our tertiary layout system is a sliding container designed specifically with mobile, touch-friendly
+                devices in mind. It is simply a <code>.slide-container</code> element with nested <code>.item</code>
+                elements with a horizontal scrollbar that is draggable with the mouse.
+            </p>
+            <div class="slide-container">
+                <div class="item vs-card">
+                    <div class="card_img">
+                        <img src="https://placebeard.it/640x360" alt="" />
+                        <div class="card_interactions">
+                            <button class="btn p-1" type="button">
+                                <i class="bx bx-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card_title">
+                        <h5>Title</h5>
+                    </div>
+                    <div class="card_text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipliscing elit.</p>
+                    </div>
+                </div>
+                <div class="item vs-card">
+                    <div class="card_img">
+                        <img src="https://placebeard.it/640x360" alt="" />
+                        <div class="card_interactions">
+                            <button class="btn p-1" type="button">
+                                <i class="bx bx-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card_title">
+                        <h5>Title</h5>
+                    </div>
+                    <div class="card_text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipliscing elit.</p>
+                    </div>
+                </div>
+                <div class="item vs-card">
+                    <div class="card_img">
+                        <img src="https://placebeard.it/640x360" alt="" />
+                        <div class="card_interactions">
+                            <button class="btn p-1" type="button">
+                                <i class="bx bx-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card_title">
+                        <h5>Title</h5>
+                    </div>
+                    <div class="card_text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipliscing elit.</p>
+                    </div>
+                </div>
+                <div class="item vs-card">
+                    <div class="card_img">
+                        <img src="https://placebeard.it/640x360" alt="" />
+                        <div class="card_interactions">
+                            <button class="btn p-1" type="button">
+                                <i class="bx bx-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card_title">
+                        <h5>Title</h5>
+                    </div>
+                    <div class="card_text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipliscing elit.</p>
+                    </div>
+                </div>
+                <div class="item vs-card">
+                    <div class="card_img">
+                        <img src="https://placebeard.it/640x360" alt="" />
+                        <div class="card_interactions">
+                            <button class="btn p-1" type="button">
+                                <i class="bx bx-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card_title">
+                        <h5>Title</h5>
+                    </div>
+                    <div class="card_text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipliscing elit.</p>
+                    </div>
+                </div>
+                <div class="item vs-card">
+                    <div class="card_img">
+                        <img src="https://placebeard.it/640x360" alt="" />
+                        <div class="card_interactions">
+                            <button class="btn p-1" type="button">
+                                <i class="bx bx-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card_title">
+                        <h5>Title</h5>
+                    </div>
+                    <div class="card_text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipliscing elit.</p>
+                    </div>
+                </div>
+                <!-- ... more items ... -->
             </div>
         </section>
         <hr class="mb-4 mt-4" />
@@ -968,7 +1076,8 @@
                 <div class="row gap-2 justify-center">
                     <div class="justify-center">
                         <div class="btn-group e-2">
-                            <a href="#" class="btn-emerald-500 text-hover-black"><i class="bx bx-envelope font-lg"></i></a>
+                            <a href="#" class="btn-emerald-500 text-hover-black"><i
+                                    class="bx bx-envelope font-lg"></i></a>
                             <a href="#" class="btn-emerald-500 text-hover-black"><i class="bx bx-send font-lg"></i></a>
                             <a href="#" class="btn-emerald-500 text-hover-black"><i class="bx bx-trash font-lg"></i></a>
                         </div>
@@ -993,9 +1102,9 @@
                                 <i class="bx bx-chevron-down"></i>
                             </button>
                             <div class="btn-dropdown-menu">
-                               <a href="#">Option 1</a>
-                               <a href="#">Option 2</a>
-                               <a href="#">Option 3</a>
+                                <a href="#">Option 1</a>
+                                <a href="#">Option 2</a>
+                                <a href="#">Option 3</a>
                             </div>
                         </div>
                     </div>
@@ -1006,9 +1115,9 @@
                                 <i class="bx bx-chevron-down"></i>
                             </button>
                             <div class="btn-dropdown-menu">
-                               <a href="#">Option 1</a>
-                               <a href="#">Option 2</a>
-                               <a href="#">Option 3</a>
+                                <a href="#">Option 1</a>
+                                <a href="#">Option 2</a>
+                                <a href="#">Option 3</a>
                             </div>
                         </div>
                     </div>
@@ -1055,7 +1164,7 @@
                     <div class="taskbar mt-2 g-1">
                         <a href="#" class="task-item"><i class="bx bx-info-circle mr-1"></i> About</a>
                         <a href="#" class="task-item"><i class="bx bx-text mr-1"></i> Type</a>
-                        <a href="#" class="task-item"><i class="bx bx-grid mr-1"></i> Grid</a>
+                        <a href="#" class="task-item"><i class="bx bxs-layout mr-1"></i> Layout</a>
                         <a href="#" class="task-item"><i class="bx bx-palette mr-1"></i> Colors</a>
                         <a href="#" class="task-item"><i class="bx bxs-cube mr-1"></i> Icons</a>
                         <a href="#" class="task-item"><i class="bx bxs-component mr-1"></i> Components</a>
@@ -1067,7 +1176,7 @@
                     <div class="taskbar mt-2 font-lg g-1">
                         <a href="#" class="task-item"><i class="bx bx-info-circle"></i></a>
                         <a href="#" class="task-item"><i class="bx bx-text"></i></a>
-                        <a href="#" class="task-item"><i class="bx bx-grid"></i></a>
+                        <a href="#" class="task-item"><i class="bx bxs-layout"></i></a>
                         <a href="#" class="task-item"><i class="bx bx-palette"></i></a>
                         <a href="#" class="task-item"><i class="bx bxs-cube"></i></a>
                         <a href="#" class="task-item"><i class="bx bxs-component"></i></a>
@@ -1078,18 +1187,18 @@
             </article>
             <article>
                 <h3 class="mb-4 weight-light text-emerald-400">Breadcrumbs <sup
-                    class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
-                    <div class="row gap-2 justify-center mb-2">
-                        <div class="bread b-none">
-                            <a href="#" class="crumb">Item</a>
-                            <i class="bx bx-chevron-right"></i>
-                            <a href="#" class="crumb">Item</a>
-                            <i class="bx bx-chevron-right"></i>
-                            <a href="#" class="crumb">Item</a>
-                            <i class="bx bx-chevron-right"></i>
-                            <a href="#" class="crumb">Item</a>
-                        </div>
+                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
+                <div class="row gap-2 justify-center mb-2">
+                    <div class="bread b-none">
+                        <a href="#" class="crumb">Item</a>
+                        <i class="bx bx-chevron-right"></i>
+                        <a href="#" class="crumb">Item</a>
+                        <i class="bx bx-chevron-right"></i>
+                        <a href="#" class="crumb">Item</a>
+                        <i class="bx bx-chevron-right"></i>
+                        <a href="#" class="crumb">Item</a>
                     </div>
+                </div>
                 <div class="row gap-2 justify-center">
                     <div class="bread">
                         <a href="#" class="crumb">Item</a>
@@ -1193,7 +1302,7 @@
                                 <a href="#"><i class="bx bx-text mr-1"></i><span>Typography</span></a>
                             </li>
                             <li>
-                                <a href="#"><i class="bx bx-grid mr-1"></i><span>Grid System</span></a>
+                                <a href="#"><i class="bx bx-layout mr-1"></i><span>Layout System</span></a>
                             </li>
                             <li>
                                 <a href="#"><i class="bx bx-palette mr-1"></i><span>Color Palette</span></a>
@@ -1840,10 +1949,32 @@
                     <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.1</div>
                 </header>
                 <div class="card_text mb-2">
+                    <h6 class="mt-1 mb-2 text-emerald-400 weight-light">April 4th, 2024</h6>
+                    <ul class="bx-ul">
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Renamed the Grid System Section to Layout
+                            System and updated all references to reflect and changed the section's icon to a layout icon
+                            instead of a grid icon.
+                        </li>
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added new <code>.slide-container</code>
+                            and child <code>.item</code> elements to the newly renamed Layout System Section and
+                            included the mouse events to <code>events.js</code> for dragging the container.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-2 card">
+                <header class="card_title">
+                    <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.1</div>
+                </header>
+                <div class="card_text mb-2">
                     <h6 class="mt-1 mb-2 text-emerald-400 weight-light">December 29th, 2023</h6>
                     <ul class="bx-ul">
                         <li>
-                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added Breadcrumbs and Accordion components to the Components Section and updated the <code>events.js</code> with corresponding event click listeners for proper user experience.
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added Breadcrumbs and Accordion components
+                            to the Components Section and updated the <code>events.js</code> with corresponding event
+                            click listeners for proper user experience.
                         </li>
                     </ul>
                 </div>
@@ -1856,7 +1987,8 @@
                     <h6 class="mt-1 mb-2 text-emerald-400 weight-light">December 22nd, 2023</h6>
                     <ul class="bx-ul">
                         <li>
-                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added a new Dropdown Button with list menu in Components Section.
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added a new Dropdown Button with list menu
+                            in Components Section.
                         </li>
                     </ul>
                 </div>
@@ -1869,16 +2001,23 @@
                     <h6 class="mt-1 mb-2 text-emerald-400 weight-light">December 16th, 2023</h6>
                     <ul class="bx-ul">
                         <li>
-                            <i class="bx bx-plus bx-fw text-emerald-400"></i> New Themes and local SASS overrides implemented.
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> New Themes and local SASS overrides
+                            implemented.
                         </li>
                         <li>
-                            <i class="bx bx-plus bx-fw text-emerald-400"></i> New Themes available using the <code>darksight/themes/*.scss</code> path. Simply add your override SASS in the themes folder and then import your theme at the bottom of the <code>_variables.scss</code> file.
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> New Themes available using the
+                            <code>darksight/themes/*.scss</code> path. Simply add your override SASS in the themes
+                            folder and then import your theme at the bottom of the <code>_variables.scss</code> file.
                         </li>
                         <li>
-                            <i class="bx bx-plus bx-fw text-emerald-400"></i> New themes Default and Pinkness added to the Themes folder, new <code>.starry</code> and <code>.flower</code> Material styles, and a <code>pinkness.html</code> design file added for the Pinkness theme.
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> New themes Default and Pinkness added to
+                            the Themes folder, new <code>.starry</code> and <code>.flower</code> Material styles, and a
+                            <code>pinkness.html</code> design file added for the Pinkness theme.
                         </li>
                         <li>
-                            <i class="bx bx-plus bx-fw text-emerald-400"></i> For local development, the <code>darksight/sass/*.scss</code> path is where you can now place your local SASS variable overrides thanks to Gulp and its updated <code>gulpfile.js</code>.
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> For local development, the
+                            <code>darksight/sass/*.scss</code> path is where you can now place your local SASS variable
+                            overrides thanks to Gulp and its updated <code>gulpfile.js</code>.
                         </li>
                     </ul>
                 </div>
@@ -1914,7 +2053,7 @@
                     <h6 class="mt-1 mb-2 text-emerald-400 weight-light">November 9th, 2023</h6>
                     <ul class="bx-ul">
                         <li>
-                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added a new option to the Grid Layout
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added a new option to the Layout System
                             Seciton called Tiles, inspired by Bulma.io. New classes for <code>.tile</code> included like
                             <code>.rows-3</code> and <code>.cols-5</code> and included new Tile Gaps
                             (<code>.gap-4</code>, etc.) to allow row and column expansion.

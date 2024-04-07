@@ -392,10 +392,6 @@
   content: "\eadb";
 }
 
-.bx-grid:before {
-  content: "\eafa";
-}
-
 .bx-group:before {
   content: "\eaff";
 }
@@ -414,6 +410,10 @@
 
 .bx-info-circle:before {
   content: "\eb21";
+}
+
+.bx-layout:before {
+  content: "\eb31";
 }
 
 .bx-left-arrow-alt:before {
@@ -524,12 +524,12 @@
   content: "\eda2";
 }
 
-.bxs-grid:before {
-  content: "\edd4";
-}
-
 .bxs-info-circle:before {
   content: "\edf4";
+}
+
+.bxs-layout:before {
+  content: "\ee03";
 }
 
 .bxs-quote-single-left:before {
@@ -556,11 +556,11 @@
   }
 }
 .bg-gradient {
-  background: linear-gradient(135deg, hsl(160, 84%, 39%) 25%, hsl(175, 77%, 26%) 75%, hsl(196, 64%, 24%) 100%);
+  background: linear-gradient(45deg, hsl(160, 84%, 39%) 25%, hsl(175, 77%, 26%) 75%, hsl(196, 64%, 24%) 100%);
 }
 
 .bg-animated-gradient {
-  background: linear-gradient(135deg, hsl(160, 84%, 39%) 25%, hsl(175, 77%, 26%) 75%, hsl(196, 64%, 24%) 100%);
+  background: linear-gradient(45deg, hsl(160, 84%, 39%) 25%, hsl(175, 77%, 26%) 75%, hsl(196, 64%, 24%) 100%);
   background-size: 400% 400%;
   animation: animate-background 10s infinite ease-in-out;
 }
@@ -872,6 +872,24 @@ blockquote cite {
   display: flex !important;
   flex-flow: row wrap;
   align-items: stretch;
+}
+
+.slide-container {
+  overflow-x: scroll;
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  overflow-y: hidden;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+.slide-container .item {
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+  box-sizing: border-box;
 }
 
 .tiles {
