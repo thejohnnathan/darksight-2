@@ -1494,22 +1494,39 @@
                 <h3 class="mb-4 weight-light text-emerald-400">Modals <sup
                         class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
                 <div class="row gap-2 justify-center">
-                    <button class="btn-outlined-emerald-500" title="showNotification" id="showNotification"
-                        type="button">Show Notification</button>
-
-                    <div class="modal" id="notificationModal">
+                    <button class="btn-outlined-emerald-500" title="showModal" id="showModal" type="button">Show
+                        Modal</button>
+            
+                    <div class="modal" id="isModal">
                         <div class="modal-content">
                             <div class="modal-icon">
                                 <i class="bx bxs-error"></i>
                             </div>
                             <div class="modal-text">
-                                <h5>Notification</h5>
-                                <p>This is the notification message.</p>
+                                <h5>Modal</h5>
+                                <p>This is the modal message.</p>
                             </div>
                             <button class="btn close" id="closeModal">&times;</button>
                         </div>
                     </div>
                 </div>
+            </article>
+            <article>
+                <h3 class="mb-4 weight-light text-emerald-400">Notifications <sup
+                        class="badge-emerald-500 text-neutral-950 weight-bold">New</sup></h3>
+                <div class="row gap-2 justify-center">
+                    <button class="btn-outlined-emerald-500" title="showNotification" id="showNotification" type="button">Show
+                        Notification</button>
+            
+                    <div class="notification is-success" id="isNotification">
+                        <div class="notification-content">
+                            <div class="notification-icon">
+                                <i class="bx bx-check"></i>
+                            </div>
+                            <p>This is a success notification message.</p>
+                            <div class="notification-progress"></div>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
@@ -1938,6 +1955,19 @@
                         class="bx bx-calendar-edit p-2 br-sm bg-neutral-900 font-xl mr-2 text-emerald-500 mb-1 ml-1"></i>Release
                     Notes</h3>
             </header>
+            <div class="mb-2 card">
+                <header class="card_title">
+                    <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.1</div>
+                </header>
+                <div class="card_text mb-2">
+                    <h6 class="mt-1 mb-2 text-emerald-400 weight-light">April 8th, 2024</h6>
+                    <ul class="bx-ul">
+                        <li>
+                            <i class="bx bx-plus bx-fw text-emerald-400"></i> Added <code>.notification</code> component and approrpiate keyframes to <code>_variables.scss</code> and script to <code>events.js</code>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="mb-2 card">
                 <header class="card_title">
                     <div class="badge-emerald-500 text-neutral-950 weight-bold">v2.1</div>

@@ -29,31 +29,31 @@ let startX;
 let scrollLeft;
 
 slider.addEventListener('mousedown', (e) => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
 });
 slider.addEventListener('mouseleave', () => {
-  isDown = false;
-  slider.classList.remove('active');
+    isDown = false;
+    slider.classList.remove('active');
 });
 slider.addEventListener('mouseup', () => {
-  isDown = false;
-  slider.classList.remove('active');
+    isDown = false;
+    slider.classList.remove('active');
 });
 slider.addEventListener('mousemove', (e) => {
-  if(!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 3; //scroll-fast
-  slider.scrollLeft = scrollLeft - walk;
-  console.log(walk);
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    slider.scrollLeft = scrollLeft - walk;
+    console.log(walk);
 });
 
 // Get references to the modal and button elements
-const modal = document.getElementById('notificationModal');
-const showModalButton = document.getElementById('showNotification');
+const modal = document.getElementById('isModal');
+const showModalButton = document.getElementById('showModal');
 const closeModalButton = document.getElementById('closeModal');
 
 // Function to show the modal
@@ -76,6 +76,34 @@ closeModalButton.addEventListener('click', hideModal);
 window.addEventListener('click', (event) => {
     if (event.target === modal) {
         hideModal();
+    }
+});
+
+// Get references to the notification and button elements
+const notification = document.getElementById('isNotification');
+const showNotificationButton = document.getElementById('showNotification');
+const closeNotificationButton = document.getElementById('closeNotification');
+
+// Function to show the notification
+function showNotification() {
+    notification.style.display = 'block';
+}
+
+// Function to hide the notification
+function hideNotification() {
+    notification.style.display = 'none';
+}
+
+// Event listener to show the notification when the button is clicked
+showNotificationButton.addEventListener('click', showNotification);
+
+// Event listener to hide the notification when the close button is clicked
+closeNotificationButton.addEventListener('click', hideNotification);
+
+// Event listener to hide the notification when clicking outside the notification
+window.addEventListener('click', (event) => {
+    if (event.target === notification) {
+        hideNotification();
     }
 });
 
