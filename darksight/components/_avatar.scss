@@ -88,12 +88,17 @@
 @each $key, $val in $colors {
     .avatar-#{$key} {
         @include avatar($val);
+        background-color: $base-border-color;
+    }
+
+    .avatar-outlined {
+        border: $base-border solid $base-border-color;
     }
 
     .avatar-outlined-#{$key} {
         @include avatar($val);
         color: lighten($val, 20);
         border: $base-border solid $val;
-        background-color: transparent;
+        background-color: $base-layout-background-color;
     }
 }

@@ -51,6 +51,29 @@ slider.addEventListener('mousemove', (e) => {
     console.log(walk);
 });
 
+// Event to display hidden accordion content when header is clicked
+const headers = document.querySelectorAll('.accordion-header');
+const contents = document.querySelectorAll('.accordion-content');
+
+document.addEventListener('DOMContentLoaded', function () {
+    var accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(function (accordionHeader) {
+        var content = accordionHeader.nextElementSibling;
+        if (content.classList.contains('accordion-content')) {
+            accordionHeader.addEventListener('click', function () {
+                if (this.classList.contains('is-active')) {
+                    this.classList.remove('is-active');
+                    content.style.maxHeight = null;
+                } else {
+                    this.classList.add('is-active');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+            });
+        }
+    });
+});
+
 // Get references to the modal and button elements
 const modal = document.getElementById('isModal');
 const showModalButton = document.getElementById('showModal');
@@ -105,27 +128,4 @@ window.addEventListener('click', (event) => {
     if (event.target === notification) {
         hideNotification();
     }
-});
-
-// Event to display hidden accordion content when header is clicked
-const headers = document.querySelectorAll('.accordion-header');
-const contents = document.querySelectorAll('.accordion-content');
-
-document.addEventListener('DOMContentLoaded', function () {
-    var accordionHeaders = document.querySelectorAll('.accordion-header');
-
-    accordionHeaders.forEach(function (accordionHeader) {
-        var content = accordionHeader.nextElementSibling;
-        if (content.classList.contains('accordion-content')) {
-            accordionHeader.addEventListener('click', function () {
-                if (this.classList.contains('is-active')) {
-                    this.classList.remove('is-active');
-                    content.style.maxHeight = null;
-                } else {
-                    this.classList.add('is-active');
-                    content.style.maxHeight = content.scrollHeight + 'px';
-                }
-            });
-        }
-    });
 });

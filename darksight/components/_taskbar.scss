@@ -32,7 +32,7 @@
         }
 
         &:hover {
-            background-color: darken($base-link-color, 40);
+            background-color: $base-layout-background-color;
         }
     }
 }

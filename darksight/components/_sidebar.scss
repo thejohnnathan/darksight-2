@@ -96,7 +96,7 @@
                 flex-grow: 1;
 
                 &:hover {
-                    background-color: darken($base-link-color, 40);
+                    background-color: $base-layout-background-color;
 
                     &::before {
                         content: '';
@@ -133,4 +133,9 @@
         @extend .sidebar;
         background-color: $val;
     }
+}
+
+.sidebar.active {
+    @extend .sidebar;
+    background-color: $base-layout-background-color;
 }

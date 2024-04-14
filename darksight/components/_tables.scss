@@ -39,6 +39,12 @@
         }
     }
 
+    .tbl-outlined {
+        @include tbl;
+        border-collapse: separate !important;
+        border: $base-border solid $base-border-color;
+    }
+
     .tbl-outlined-#{$key} {
         @include tbl;
         border-collapse: separate !important;
@@ -52,6 +58,18 @@
 
         & td:hover {
             background-color: lighten($val, 5);
+        }
+    }
+
+    .tbl-striped {
+        @include tbl;
+
+        & tr:nth-child(even) {
+            background-color: $base-layout-background-color;
+        }
+
+        & td:hover {
+            background-color: lighten($base-layout-background-color, 5);
         }
     }
 
