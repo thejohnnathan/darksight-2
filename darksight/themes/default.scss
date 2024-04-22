@@ -9,7 +9,7 @@ $base-layout-background-color: map-get($map: $colors, $key: neutral-950) !defaul
 $base-border-color: lighten($base-background-color, 5) !default;
 
 .bg-layout-color {
-    background: map-get($map: $colors, $key: slate-950);
+    background: map-get($map: $colors, $key: neutral-950);
 }
 
 .bg-gradient {
@@ -30,6 +30,16 @@ $base-border-color: lighten($base-background-color, 5) !default;
 }
 
 .text-link {
+    color: $base-link-color;
+}
+
+.card_title i {
+    background: map-get($map: $colors, $key: stone-800);
+    color: $base-link-color;
+}
+
+* h3 i {
+    background: map-get($map: $colors, $key: stone-800);
     color: $base-link-color;
 }
 

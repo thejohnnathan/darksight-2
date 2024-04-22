@@ -83043,19 +83043,60 @@ input[type=radio]:checked:disabled {
 
 .glass {
   background-blend-mode: overlay;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
 }
 
-.fractal {
-  background-image: url("../assets/fractal_bg.png");
+.shapes {
+  background-image: url("../assets/shapes_bg.svg");
   background-size: 100%;
   background-position: 100% 100%;
+  background-blend-mode: overlay;
+  background-color: hsl(222, 47%, 11%);
 }
 
 .starry {
-  background-image: url("../assets/starry.png");
+  background-image: url("../assets/starry_bg.svg");
   background-repeat: repeat;
+  background-blend-mode: overlay;
+  background-color: hsl(222, 47%, 11%);
+}
+
+.hexagons {
+  background-image: url("../assets/hexagons_bg.svg");
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  background-color: hsl(222, 47%, 11%);
+}
+
+.geometric {
+  background-image: url("../assets/geometric_bg.svg");
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  background-color: hsl(222, 47%, 11%);
+}
+
+.waves {
+  background-image: url("../assets/waves_bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100% 100%;
+  background-blend-mode: overlay;
+  background-color: hsl(222, 47%, 11%);
+}
+
+.dotted {
+  background-image: url("../assets/dotted_bg.svg");
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  background-color: hsl(222, 47%, 11%);
+}
+
+.flowered {
+  background-image: url("../assets/flowered_bg.svg");
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  background-color: hsl(222, 47%, 11%);
 }
 
 .bubbled {

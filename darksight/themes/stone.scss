@@ -1,0 +1,53 @@
+//DARKSIGHT stone theme
+$base-box-shadow: 0 3px 5px map-get($map: $colors, $key: stone-950) !default;
+$base-background-color: map-get($map: $colors, $key: stone-900) !default;
+$base-text-color: map-get($map: $colors, $key: stone-100) !default;
+$base-link-color: map-get($map: $colors, $key: cyan-500) !default;
+$base-link-hover-color: map-get($map: $colors, $key: cyan-300) !default;
+$base-code-background-color: map-get($map: $colors, $key: stone-950) !default;
+$base-layout-background-color: map-get($map: $colors, $key: stone-950) !default;
+$base-border-color: lighten($base-background-color, 5) !default;
+
+.bg-layout-color {
+    background: map-get($map: $colors, $key: stone-950);
+}
+
+.bg-gradient {
+    background: linear-gradient(45deg, map-get($map: $colors, $key: cyan-500) 25%, map-get($map: $colors, $key: blue-700) 75%, map-get($map: $colors, $key: cyan-900) 100%);
+}
+
+.bg-animated-gradient {
+    background: linear-gradient(45deg, map-get($map: $colors, $key: cyan-500) 25%, map-get($map: $colors, $key: blue-700) 75%, map-get($map: $colors, $key: cyan-900) 100%);
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, map-get($map: $colors, $key: cyan-500) 25%, map-get($map: $colors, $key: blue-700) 75%, map-get($map: $colors, $key: cyan-900) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.text-link {
+    color: $base-link-color;
+}
+
+.card_title i {
+    background: map-get($map: $colors, $key: stone-800);
+    color: $base-link-color;
+}
+
+* h3 i {
+    background: map-get($map: $colors, $key: stone-800);
+    color: $base-link-color;
+}
+
+// dark mode
+@media (prefers-color-scheme: dark) {
+    :root {
+        $base-background-color: map-get($map: $colors, $key: stone-900) !default;
+        $base-text-color: map-get($map: $colors, $key: stone-100) !default;
+        $base-box-shadow: 1px 3px 5px rgba(255, 255, 255, 0.1) !default;
+    }
+}
